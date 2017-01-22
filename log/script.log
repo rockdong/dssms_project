@@ -42,3 +42,4 @@ Traceback (most recent call last):
   File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
     return Database.Cursor.execute(self, query, params)
 OperationalError: no such column: company_staff.organization_id
+2017-01-21 23:07:14,000 [Thread-3:10988] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
