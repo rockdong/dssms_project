@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'company',
+    'project',
 ]
 
 MIDDLEWARE = [
@@ -195,7 +196,7 @@ LOGGING = {
             'level': 'INFO',
             'propagate': False
         },
-        'blog.views': {
+        'views': {
             'handlers': ['default', 'error'],
             'level': 'DEBUG',
             'propagate': True
