@@ -114,8 +114,6 @@ class Action(models.Model):
         return self.pro_flow_blank.pro_flow_name + " > " + self.pro_flow_blank.pro_flow_name
 
 
-
-
 '''
 
 class Pic(models.Model):
