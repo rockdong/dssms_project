@@ -46,7 +46,7 @@ class Actor(models.Model):
 
 class ProFlowBlank(models.Model):
     """
-    Description: 项目流程块
+    Description: 项目流程块，比如：意向，设计，施工，售后服务
     """
     pro = models.ForeignKey(Pro, verbose_name='项目')
     pro_flow_name = models.CharField(max_length=50, verbose_name='项目流程块')
@@ -72,7 +72,7 @@ class PlanFlow(models.Model):
         verbose_name_plural=verbose_name
 
     def __unicode__(self):
-        return pro.pro_name + " > [ 预计开始时间:" + pre_st_date + ", 预计结束时间:" + pre_ed_date + " ]"
+        return self.pro_flow_blank.pro.pro_name + " > [ 预计开始时间:" + pre_st_date + ", 预计结束时间:" + pre_ed_date + " ]"
 
 
 class Actual(models.Model):
@@ -88,8 +88,35 @@ class Actual(models.Model):
         verbose_name_plural=verbose_name
 
     def __unicode__(self):
-        return pro.pro_name + " > [ 实际开始时间:" + pre_st_date + ", 实际结束时间:" + pre_ed_date + " ]"
+        return self.pro_flow_blank.pro.pro_name + " > [ 实际开始时间:" + pre_st_date + ", 实际结束时间:" + pre_ed_date + " ]"
 
+
+class Action(models.Model):
+    """
+    Description: 项目流程块下面的行为，如：现场勘查，设计提案，装修工程预算报价
+    """
+    action_types = (
+        ('0', '一般行为'),
+        ('1', '设计图'),
+        ('3', '报价'),
+        ('4', '合同'),
+    )
+
+    pro_flow_blank = models.ForeignKey(ProFlowBlank, verbose_name='项目流程块')
+    action_content = models.CharField(max_length=50, verbose_name='行为')
+    action_type = models.CharField(choices=action_types, max_length=20, verbose_name='行为类型')
+
+    class Meta:
+        verbose_name='行为'
+        verbose_name_plural=verbose_name
+
+    def __unicode__(self):
+        return self.pro_flow_blank.pro_flow_name + " > " + self.pro_flow_blank.pro_flow_name
+
+
+
+
+'''
 
 class Pic(models.Model):
     """
@@ -138,7 +165,7 @@ class Subitem(models.Model):
         verbose_name='子项目'
         verbose_name_plural=verbose_name
 
-
+'''
 # class ProTemplate(models.Model):
 #     """
 #     Description: 项目模板
