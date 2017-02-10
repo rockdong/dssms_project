@@ -96,10 +96,10 @@ class Action(models.Model):
     Description: 项目流程块下面的行为，如：现场勘查，设计提案，装修工程预算报价
     """
     action_types = (
-        ('0', '一般行为'),
-        ('1', '设计图'),
-        ('3', '报价'),
-        ('4', '合同'),
+        ('0', '一般行为'),# 字符串
+        ('1', '设计图'),# 图纸的地址
+        ('3', '报价'),# 报价编号
+        ('4', '合同'),# 合同编号
     )
 
     pro_flow_blank = models.ForeignKey(ProFlowBlank, verbose_name='项目流程块')
@@ -113,6 +113,25 @@ class Action(models.Model):
     def __unicode__(self):
         return self.pro_flow_blank.pro_flow_name + " > " + self.pro_flow_blank.pro_flow_name
 
+
+class QuotationTemp(models.Model):
+    """
+    Description: 报价单模板
+    """
+    
+
+    class Meta:
+        pass
+
+
+class Quotation(models.Model):
+    """
+    Description: 报价单
+    """
+    
+
+    class Meta:
+        pass
 
 '''
 

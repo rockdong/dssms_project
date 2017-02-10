@@ -1,5 +1,4 @@
-2017-01-20 04:02:06,209 [Thread-4:123145369120768] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
-2017-01-20 04:03:13,034 [Thread-10:123145360707584] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/company/staff/
+2017-02-09 03:31:42,467 [Thread-16:123145349603328] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /login
 Traceback (most recent call last):
   File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
     response = get_response(request)
@@ -7,766 +6,574 @@ Traceback (most recent call last):
     response = self.process_exception_by_middleware(e, request)
   File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
-    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
-    self._fetch_all()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
-    self._result_cache = list(self.iterator())
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
-    results = compiler.execute_sql()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
-    return Database.Cursor.execute(self, query, params)
-OperationalError: no such column: company_staff.organization_id
-<<<<<<< HEAD
-2017-01-21 23:07:14,000 [Thread-3:10988] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
-=======
-2017-01-22 01:44:47,085 [Thread-4:123145546571776] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
-2017-01-22 03:21:32,220 [Thread-4:123145492606976] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/company/staff/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
-    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
-    self._fetch_all()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
-    self._result_cache = list(self.iterator())
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
-    results = compiler.execute_sql()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
-    return Database.Cursor.execute(self, query, params)
-OperationalError: no such column: company_staff.organization_id
-2017-01-22 03:23:41,433 [Thread-10:123145517383680] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/company/staff/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1657, in changelist_view
-    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
-    self._fetch_all()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
-    self._result_cache = list(self.iterator())
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
-    results = compiler.execute_sql()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
-    return Database.Cursor.execute(self, query, params)
-OperationalError: no such column: company_staff.organization_id
-2017-01-22 03:25:08,991 [Thread-15:123145402777600] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/company/staff/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1450, in changeform_view
-    self.save_related(request, form, formsets, not add)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1029, in save_related
-    form.save_m2m()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/forms/models.py", line 436, in _save_m2m
-    f.save_form_data(self.instance, cleaned_data[f.name])
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/fields/related.py", line 1573, in save_form_data
-    getattr(instance, self.attname).set(data)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.py", line 938, in set
-    old_ids = set(self.using(db).values_list(self.target_field.target_field.attname, flat=True))
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 256, in __iter__
-    self._fetch_all()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1087, in _fetch_all
-    self._result_cache = list(self.iterator())
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 155, in __iter__
-    for row in compiler.results_iter():
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 789, in results_iter
-    results = self.execute_sql(MULTI)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
-    return Database.Cursor.execute(self, query, params)
-OperationalError: no such table: company_staff_skills
-2017-01-22 05:53:21,827 [Thread-4:123145419739136] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
-2017-01-22 05:59:56,775 [Thread-40:123145502937088] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/company/staff/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1449, in changeform_view
-    self.save_model(request, new_object, form, not add)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1007, in save_model
-    obj.save()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
-    force_update=force_update, update_fields=update_fields)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 824, in save_base
-    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 908, in _save_table
-    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
-    using=using, raw=raw)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1045, in _insert
-    return query.get_compiler(using=using).execute_sql(return_id)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
-    return Database.Cursor.execute(self, query, params)
-OperationalError: table company_staff has no column named department_id
-2017-01-22 06:02:37,485 [Thread-2:123145368866816] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/company/staff/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1449, in changeform_view
-    self.save_model(request, new_object, form, not add)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1007, in save_model
-    obj.save()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
-    force_update=force_update, update_fields=update_fields)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 824, in save_base
-    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 908, in _save_table
-    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
-    using=using, raw=raw)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1045, in _insert
-    return query.get_compiler(using=using).execute_sql(return_id)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
-    return Database.Cursor.execute(self, query, params)
-OperationalError: table company_staff has no column named department_id
-2017-01-22 06:02:49,246 [Thread-7:123145368866816] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/company/staff/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1449, in changeform_view
-    self.save_model(request, new_object, form, not add)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1007, in save_model
-    obj.save()
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 796, in save
-    force_update=force_update, update_fields=update_fields)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 824, in save_base
-    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 908, in _save_table
-    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 947, in _do_insert
-    using=using, raw=raw)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1045, in _insert
-    return query.get_compiler(using=using).execute_sql(return_id)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
-    return self.cursor.execute(sql, params)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 337, in execute
-    return Database.Cursor.execute(self, query, params)
-OperationalError: table company_staff has no column named department_id
-2017-01-22 06:07:27,924 [Thread-59:123145519624192] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 37, in __unicode__
-    return type(pro_actors)
-NameError: global name 'pro_actors' is not defined
-2017-01-22 06:09:01,913 [Thread-15:123145399349248] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-TypeError: coercing to Unicode: need string or buffer, type found
-2017-01-22 06:10:33,039 [Thread-7:123145370931200] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-TypeError: coercing to Unicode: need string or buffer, NoneType found
-2017-01-22 06:11:31,664 [Thread-6:123145543966720] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-TypeError: coercing to Unicode: need string or buffer, NoneType found
-2017-01-22 06:12:21,403 [Thread-6:123145459478528] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 37, in __unicode__
-    print type(self.pro_actors__set)
-AttributeError: 'Actor' object has no attribute 'pro_actors__set'
-2017-01-22 06:15:48,290 [Thread-4:123145394262016] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 37, in __unicode__
-    print type(self.pro_actors_set.all())
-AttributeError: 'Actor' object has no attribute 'pro_actors_set'
-2017-01-22 06:16:34,208 [Thread-5:123145393188864] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 37, in __unicode__
-    print type(self.pro_actors_set.all())
-AttributeError: 'Actor' object has no attribute 'pro_actors_set'
-2017-01-22 06:16:43,689 [Thread-10:123145393188864] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 37, in __unicode__
-    print type(self.pro_actors_set.all())
-AttributeError: 'Actor' object has no attribute 'pro_actors_set'
-2017-01-22 07:40:50,436 [Thread-6:123145436418048] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 38, in __unicode__
-    for act in self.pro_actors_set.all():
-AttributeError: 'Actor' object has no attribute 'pro_actors_set'
-2017-01-22 07:41:32,811 [Thread-6:123145502982144] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 38, in __unicode__
-    for act in self.pro_actors__set.all():
-AttributeError: 'Actor' object has no attribute 'pro_actors__set'
-2017-01-22 07:43:32,357 [Thread-6:123145469837312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 38, in __unicode__
-    for act in self.pro_actors.objects.all():
-AttributeError: 'ManyRelatedManager' object has no attribute 'objects'
-2017-01-22 07:43:55,252 [Thread-6:123145454530560] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/project/actor/add/
-Traceback (most recent call last):
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
-    response = get_response(request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
-    return self.admin_site.admin_view(view)(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
-    return view(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
-    return self.changeform_view(request, None, form_url, extra_context)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
-    return bound_func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
-    response = view_func(request, *args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
-    return func.__get__(self, type(self))(*args2, **kwargs2)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
-    return func(*args, **kwargs)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
-    self.log_addition(request, new_object, change_message)
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/admin/options.py", line 719, in log_addition
-    object_repr=force_text(object),
-  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/encoding.py", line 78, in force_text
-    s = six.text_type(s)
-  File "/Users/user/workspace/Python/web/dssms/project/models.py", line 38, in __unicode__
-    for act in self.pro_actors.object.all():
-AttributeError: 'ManyRelatedManager' object has no attribute 'object'
->>>>>>> d783d9f3211d801aee306f9f629111dd57e49041
+  File "/Users/user/workspace/Python/web/dssms/company/views.py", line 39, in do_login
+    return render(request, 'clogin.html', {'company_login':company_login, 'error':''})
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/loader_tags.py", line 152, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/loader_tags.py", line 149, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/loader_tags.py", line 129, in find_template
+    template_name, skip=history,
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 574, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 11: 'static'. Did you forget to register or load this tag?
+2017-02-09 07:42:50,856 [Thread-41:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-09 07:42:50,859 [Thread-39:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-09 07:42:50,861 [Thread-40:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-09 07:42:50,866 [Thread-43:123145367715840] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-09 07:42:50,871 [Thread-42:123145363509248] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-09 07:42:50,878 [Thread-44:123145371922432] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-09 07:42:50,906 [Thread-45:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-09 07:42:50,910 [Thread-46:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-09 07:42:50,920 [Thread-47:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-09 07:42:50,923 [Thread-48:123145367715840] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-09 07:42:50,927 [Thread-49:123145363509248] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-09 07:42:50,929 [Thread-50:123145371922432] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-09 07:42:50,934 [Thread-51:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-09 07:46:16,003 [Thread-57:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-09 07:46:16,022 [Thread-58:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-09 07:46:16,028 [Thread-59:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-09 07:46:16,032 [Thread-60:123145363509248] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-09 07:46:16,047 [Thread-61:123145367715840] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-09 07:46:16,050 [Thread-63:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-09 07:46:16,061 [Thread-62:123145371922432] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-09 07:46:16,071 [Thread-64:123145380335616] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-09 07:46:16,088 [Thread-65:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-09 07:46:16,092 [Thread-66:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-09 07:46:16,102 [Thread-67:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-09 07:46:16,104 [Thread-68:123145363509248] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-09 07:46:16,107 [Thread-69:123145367715840] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-09 07:46:16,123 [Thread-70:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-09 07:46:16,141 [Thread-71:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-09 07:46:16,155 [Thread-72:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a1.jpg
+2017-02-09 07:46:16,179 [Thread-73:123145363509248] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a2.jpg
+2017-02-09 07:46:16,213 [Thread-74:123145367715840] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a3.jpg
+2017-02-09 07:46:16,248 [Thread-76:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a5.jpg
+2017-02-09 07:46:16,265 [Thread-77:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a6.jpg
+2017-02-09 07:46:16,270 [Thread-75:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a4.jpg
+2017-02-09 07:46:16,305 [Thread-79:123145363509248] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a8.jpg
+2017-02-09 07:46:16,303 [Thread-78:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a7.jpg
+2017-02-09 07:46:46,295 [Thread-83:123145363509248] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-09 07:46:46,302 [Thread-80:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-09 07:46:46,312 [Thread-81:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-09 07:46:46,313 [Thread-84:123145367715840] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-09 07:46:46,310 [Thread-82:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-09 07:46:46,319 [Thread-85:123145371922432] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-09 07:47:28,079 [Thread-87:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-09 07:50:30,450 [Thread-102:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-09 07:50:30,495 [Thread-104:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-09 07:50:30,511 [Thread-105:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a1.jpg
+2017-02-09 07:50:30,706 [Thread-107:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a3.jpg
+2017-02-09 07:50:30,711 [Thread-108:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a4.jpg
+2017-02-09 07:50:30,720 [Thread-109:123145363509248] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a5.jpg
+2017-02-09 07:50:30,724 [Thread-106:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a2.jpg
+2017-02-09 07:50:30,727 [Thread-110:123145367715840] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a6.jpg
+2017-02-09 07:50:30,733 [Thread-111:123145371922432] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a7.jpg
+2017-02-09 07:50:30,791 [Thread-118:123145367715840] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a8.jpg
+2017-02-09 07:50:31,712 [Thread-120:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 07:53:28,987 [Thread-133:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-09 07:53:29,002 [Thread-134:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-09 07:53:29,016 [Thread-135:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a1.jpg
+2017-02-09 07:53:29,033 [Thread-136:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a2.jpg
+2017-02-09 07:53:29,049 [Thread-137:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a3.jpg
+2017-02-09 07:53:29,078 [Thread-138:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a4.jpg
+2017-02-09 07:53:29,120 [Thread-140:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a5.jpg
+2017-02-09 07:53:29,146 [Thread-141:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a6.jpg
+2017-02-09 07:53:29,157 [Thread-142:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a7.jpg
+2017-02-09 07:53:29,162 [Thread-143:123145359302656] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a8.jpg
+2017-02-09 07:53:29,312 [Thread-151:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 07:57:10,187 [Thread-164:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 07:58:31,742 [Thread-165:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /layout_app.html
+2017-02-09 08:12:44,082 [Thread-170:123145355096064] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:14:02,360 [Thread-173:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:14:48,537 [Thread-176:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:14:55,554 [Thread-179:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:15:22,474 [Thread-182:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:16:28,801 [Thread-185:123145350889472] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:25:19,498 [Thread-5:123145412214784] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:25:49,333 [Thread-9:123145412214784] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:26:19,973 [Thread-12:123145416421376] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:28:14,968 [Thread-15:123145412214784] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:28:26,550 [Thread-20:123145412214784] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:28:48,806 [Thread-4:123145451266048] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:29:32,804 [Thread-7:123145451266048] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:31:40,043 [Thread-11:123145451266048] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:33:52,883 [Thread-14:123145451266048] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:35:57,400 [Thread-5:123145569181696] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:39:02,791 [Thread-7:123145569181696] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:41:53,678 [Thread-11:123145569181696] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:47:24,746 [Thread-14:123145573388288] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:49:19,422 [Thread-17:123145569181696] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:49:59,991 [Thread-20:123145569181696] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:50:58,104 [Thread-21:123145569181696] [django.request:152] [base:get_response] [WARNING]- Not Found: /mail.html
+2017-02-09 08:50:59,764 [Thread-23:123145573388288] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-09 08:51:03,732 [Thread-24:123145577594880] [django.request:152] [base:get_response] [WARNING]- Not Found: /mail.html
+2017-02-10 01:34:02,103 [Thread-5:123145418575872] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-02-10 01:34:10,252 [Thread-7:123145426989056] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 01:34:46,654 [Thread-8:123145405956096] [django.request:152] [base:get_response] [WARNING]- Not Found: /table_static.html
+2017-02-10 01:35:49,747 [Thread-17:123145410162688] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 01:40:10,756 [Thread-25:123145405956096] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 01:55:39,226 [Thread-53:123145414369280] [django.request:152] [base:get_response] [WARNING]- Not Found: /cindex.html
+2017-02-10 01:55:39,906 [Thread-54:123145418575872] [django.request:152] [base:get_response] [WARNING]- Not Found: /cindex.html
+2017-02-10 01:55:40,035 [Thread-55:123145422782464] [django.request:152] [base:get_response] [WARNING]- Not Found: /cindex.html
+2017-02-10 01:55:40,177 [Thread-56:123145405956096] [django.request:152] [base:get_response] [WARNING]- Not Found: /cindex.html
+2017-02-10 01:55:52,923 [Thread-63:123145405956096] [django.request:152] [base:get_response] [WARNING]- Not Found: /cindex.html
+2017-02-10 01:55:53,395 [Thread-64:123145405956096] [django.request:152] [base:get_response] [WARNING]- Not Found: /cindex.html
+2017-02-10 01:55:53,552 [Thread-65:123145405956096] [django.request:152] [base:get_response] [WARNING]- Not Found: /cindex.html
+2017-02-10 01:55:53,700 [Thread-66:123145405956096] [django.request:152] [base:get_response] [WARNING]- Not Found: /cindex.html
+2017-02-10 02:05:53,688 [Thread-109:123145422782464] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 02:14:51,599 [Thread-118:123145405956096] [django.request:152] [base:get_response] [WARNING]- Not Found: /mail.html
+2017-02-10 02:14:58,324 [Thread-121:123145414369280] [django.request:152] [base:get_response] [WARNING]- Not Found: /layout_app.html
+2017-02-10 02:18:44,762 [Thread-2:123145486524416] [django.request:152] [base:get_response] [WARNING]- Not Found: /layout_app.html
+2017-02-10 02:19:23,312 [Thread-3:123145365880832] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 02:19:23,316 [Thread-4:123145370087424] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 02:19:23,327 [Thread-5:123145374294016] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 02:19:23,334 [Thread-7:123145382707200] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 02:19:23,355 [Thread-8:123145386913792] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 02:19:23,340 [Thread-6:123145378500608] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 02:19:23,360 [Thread-9:123145391120384] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 02:19:23,418 [Thread-10:123145365880832] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 02:19:23,453 [Thread-13:123145378500608] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:19:23,473 [Thread-14:123145365880832] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:19:23,479 [Thread-11:123145370087424] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 02:19:23,536 [Thread-15:123145378500608] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:19:23,542 [Thread-16:123145365880832] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 02:19:23,562 [Thread-12:123145374294016] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 02:19:23,566 [Thread-17:123145382707200] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 02:19:23,636 [Thread-18:123145365880832] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:19:23,649 [Thread-19:123145365880832] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:19:23,667 [Thread-20:123145365880832] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:20:33,348 [Thread-30:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 02:21:52,650 [Thread-31:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /ui_chart.html
+2017-02-10 02:38:17,804 [Thread-35:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /index.html
+2017-02-10 02:39:17,587 [Thread-40:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 02:39:17,604 [Thread-41:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 02:39:17,615 [Thread-42:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 02:39:17,621 [Thread-43:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 02:39:17,646 [Thread-46:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 02:39:17,650 [Thread-45:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 02:39:17,653 [Thread-44:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 02:39:17,694 [Thread-49:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 02:39:17,673 [Thread-47:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 02:39:17,711 [Thread-50:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:39:17,714 [Thread-48:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 02:39:17,740 [Thread-51:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:39:17,747 [Thread-52:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:39:17,761 [Thread-53:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 02:39:17,781 [Thread-54:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 02:39:17,813 [Thread-55:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 02:39:17,846 [Thread-56:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:39:17,864 [Thread-57:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:39:17,889 [Thread-58:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:39:22,808 [Thread-62:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 02:39:22,812 [Thread-64:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 02:39:22,823 [Thread-63:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 02:39:22,827 [Thread-65:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 02:39:22,840 [Thread-66:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 02:39:22,845 [Thread-67:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 02:39:22,847 [Thread-68:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 02:39:22,908 [Thread-73:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 02:39:22,911 [Thread-71:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:39:22,914 [Thread-70:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 02:39:22,918 [Thread-69:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 02:39:22,923 [Thread-72:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:39:22,927 [Thread-74:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:39:22,943 [Thread-75:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 02:39:22,954 [Thread-76:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 02:39:22,973 [Thread-77:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 02:39:23,026 [Thread-78:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 02:39:23,046 [Thread-79:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:39:23,079 [Thread-80:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:39:23,095 [Thread-81:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:39:47,734 [Thread-85:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 02:39:47,749 [Thread-86:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 02:39:47,753 [Thread-84:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 02:39:47,756 [Thread-87:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 02:39:47,770 [Thread-88:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 02:39:47,784 [Thread-89:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 02:39:47,791 [Thread-90:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 02:39:47,848 [Thread-91:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 02:39:47,865 [Thread-92:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 02:39:47,866 [Thread-93:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 02:39:47,872 [Thread-94:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:39:47,878 [Thread-96:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:39:47,883 [Thread-95:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:39:47,888 [Thread-97:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 02:39:47,908 [Thread-98:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 02:42:17,996 [Thread-102:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 02:42:18,010 [Thread-106:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 02:42:18,030 [Thread-103:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 02:42:18,034 [Thread-104:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 02:42:18,037 [Thread-107:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 02:42:18,047 [Thread-105:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 02:42:18,049 [Thread-108:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 02:42:18,072 [Thread-109:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 02:42:18,085 [Thread-110:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 02:42:18,088 [Thread-111:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 02:42:18,124 [Thread-113:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:42:18,122 [Thread-112:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:42:18,140 [Thread-116:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 02:42:18,147 [Thread-115:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 02:42:18,151 [Thread-114:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:42:18,183 [Thread-117:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:42:18,211 [Thread-118:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:56:29,692 [Thread-124:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 02:56:32,147 [Thread-126:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 02:56:32,161 [Thread-127:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 02:56:32,181 [Thread-129:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 02:56:32,182 [Thread-128:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 02:56:32,245 [Thread-130:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 02:56:32,252 [Thread-131:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 02:56:32,263 [Thread-132:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 02:56:32,278 [Thread-133:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 02:56:32,296 [Thread-134:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 02:56:32,384 [Thread-135:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 02:56:32,384 [Thread-137:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:56:32,388 [Thread-138:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 02:56:32,396 [Thread-139:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 02:56:32,399 [Thread-140:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:56:32,406 [Thread-136:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 02:56:32,439 [Thread-141:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 02:56:32,453 [Thread-142:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 02:56:36,375 [Thread-145:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /index.html
+2017-02-10 02:56:39,440 [Thread-148:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /mail.html
+2017-02-10 02:57:51,170 [Thread-158:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 02:57:53,063 [Thread-159:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /ui_chart.html
+2017-02-10 02:57:56,640 [Thread-161:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /index.html
+2017-02-10 03:03:39,909 [Thread-167:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /index.html
+2017-02-10 03:03:43,532 [Thread-170:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:06:40,970 [Thread-174:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:09:04,519 [Thread-179:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:14:46,401 [Thread-180:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /ui_chart.html
+2017-02-10 03:22:21,704 [Thread-186:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:22:26,163 [Thread-190:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:22:42,270 [Thread-194:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:24:53,322 [Thread-198:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:25:21,388 [Thread-202:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:25:56,037 [Thread-206:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:27:41,692 [Thread-210:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:28:13,050 [Thread-214:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:28:18,005 [Thread-218:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:28:42,943 [Thread-222:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:29:15,314 [Thread-226:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:29:30,437 [Thread-230:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:30:29,565 [Thread-234:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:31:27,177 [Thread-238:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 03:32:16,574 [Thread-242:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:18:22,781 [Thread-246:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:20:04,103 [Thread-252:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:20:17,400 [Thread-256:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:25:22,210 [Thread-260:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:25:33,739 [Thread-264:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:25:43,145 [Thread-268:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:25:54,978 [Thread-274:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:25:57,841 [Thread-276:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 06:25:57,857 [Thread-277:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 06:25:57,860 [Thread-278:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 06:25:57,874 [Thread-279:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 06:25:57,896 [Thread-280:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 06:25:57,899 [Thread-281:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 06:25:57,906 [Thread-282:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 06:25:57,938 [Thread-285:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 06:25:57,953 [Thread-284:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 06:25:57,956 [Thread-283:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 06:25:57,961 [Thread-286:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 06:25:58,003 [Thread-288:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 06:25:58,010 [Thread-287:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 06:25:58,026 [Thread-289:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 06:25:58,050 [Thread-291:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 06:25:58,052 [Thread-290:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 06:25:58,085 [Thread-292:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 06:25:58,106 [Thread-293:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 06:25:58,132 [Thread-294:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 06:26:44,514 [Thread-304:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:27:33,528 [Thread-308:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:28:09,685 [Thread-312:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:28:11,797 [Thread-316:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:29:25,479 [Thread-320:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:29:43,519 [Thread-324:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:30:03,055 [Thread-328:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:30:37,913 [Thread-332:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:30:44,282 [Thread-336:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:32:55,410 [Thread-340:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:33:09,633 [Thread-344:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:33:50,510 [Thread-348:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:34:16,443 [Thread-359:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:38:09,710 [Thread-363:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:40:01,993 [Thread-367:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:40:43,304 [Thread-371:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:42:28,065 [Thread-375:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:43:17,993 [Thread-379:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:43:46,497 [Thread-383:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:44:51,512 [Thread-387:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:51:13,591 [Thread-389:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 06:51:13,615 [Thread-390:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 06:51:13,628 [Thread-391:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 06:51:13,633 [Thread-392:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 06:51:13,638 [Thread-393:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 06:51:13,659 [Thread-394:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 06:51:13,662 [Thread-395:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 06:51:13,697 [Thread-397:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 06:51:13,713 [Thread-396:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 06:51:13,727 [Thread-401:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 06:51:13,732 [Thread-398:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 06:51:13,744 [Thread-399:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 06:51:13,788 [Thread-400:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 06:51:13,796 [Thread-402:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 06:51:13,800 [Thread-403:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 06:51:13,803 [Thread-404:123145394790400] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 06:51:13,842 [Thread-405:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 06:51:13,888 [Thread-406:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 06:51:13,924 [Thread-407:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 06:51:13,942 [Thread-408:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 06:52:49,398 [Thread-418:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 06:53:03,931 [Thread-422:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:07:59,643 [Thread-426:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:08:06,361 [Thread-427:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /ui_chart.html
+2017-02-10 07:08:58,597 [Thread-436:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:09:13,278 [Thread-438:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:09:13,303 [Thread-439:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:09:13,323 [Thread-440:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:09:13,327 [Thread-441:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:09:13,346 [Thread-442:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:09:13,355 [Thread-444:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 07:09:13,357 [Thread-443:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:09:13,389 [Thread-445:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 07:09:13,417 [Thread-446:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:09:13,421 [Thread-447:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:09:13,433 [Thread-448:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:09:13,456 [Thread-449:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:09:13,469 [Thread-450:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:09:13,499 [Thread-451:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:09:13,520 [Thread-452:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:09:13,523 [Thread-453:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:13:02,768 [Thread-461:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:13:52,994 [Thread-465:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:15:59,772 [Thread-469:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:17:49,314 [Thread-473:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:18:29,549 [Thread-484:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:18:29,575 [Thread-487:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:18:29,578 [Thread-485:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:18:29,591 [Thread-486:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:18:29,593 [Thread-488:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:18:29,614 [Thread-489:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:18:29,627 [Thread-490:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 07:18:29,644 [Thread-493:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:18:29,675 [Thread-491:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:18:29,680 [Thread-492:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:18:29,731 [Thread-495:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:18:29,740 [Thread-494:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 07:18:29,746 [Thread-497:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:18:29,749 [Thread-498:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:18:29,761 [Thread-496:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:18:29,796 [Thread-499:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:18:29,831 [Thread-500:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:18:29,850 [Thread-501:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:18:29,863 [Thread-502:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:18:29,875 [Thread-503:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:18:35,337 [Thread-505:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /dashboard.html
+2017-02-10 07:18:38,600 [Thread-510:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:18:52,297 [Thread-517:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:19:07,659 [Thread-518:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /ui_chart.html
+2017-02-10 07:22:30,862 [Thread-524:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:22:40,879 [Thread-525:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /ui_chart.html
+2017-02-10 07:22:47,272 [Thread-529:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:22:47,285 [Thread-530:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:22:47,319 [Thread-532:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:22:47,336 [Thread-531:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:22:47,338 [Thread-533:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:22:47,347 [Thread-535:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 07:22:47,352 [Thread-534:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:22:47,398 [Thread-536:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 07:22:47,431 [Thread-537:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:22:47,453 [Thread-539:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:22:47,468 [Thread-538:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:22:47,482 [Thread-540:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:22:47,518 [Thread-542:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:22:47,520 [Thread-541:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:22:47,525 [Thread-543:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:22:47,541 [Thread-544:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:22:47,558 [Thread-545:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:22:47,575 [Thread-546:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:26:19,107 [Thread-552:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:26:21,359 [Thread-555:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:26:21,370 [Thread-556:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:26:21,388 [Thread-557:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:26:21,393 [Thread-558:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:26:21,440 [Thread-559:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:26:21,464 [Thread-560:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:26:21,569 [Thread-563:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:26:21,589 [Thread-562:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:26:21,590 [Thread-561:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:26:21,598 [Thread-564:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:26:21,608 [Thread-565:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:26:21,612 [Thread-567:123145398996992] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:26:21,616 [Thread-566:123145394790400] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:26:21,621 [Thread-568:123145403203584] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:26:21,628 [Thread-569:123145407410176] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 07:26:21,733 [Thread-570:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 07:26:21,756 [Thread-572:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:26:21,761 [Thread-571:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:26:21,781 [Thread-573:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:26:21,789 [Thread-574:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:26:21,852 [Thread-575:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:26:21,859 [Thread-576:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:26:21,865 [Thread-577:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:26:21,869 [Thread-578:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:26:21,915 [Thread-579:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:26:21,948 [Thread-580:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:26:21,969 [Thread-581:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:26:29,230 [Thread-586:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:26:29,241 [Thread-587:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:26:29,275 [Thread-588:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:26:29,283 [Thread-589:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:26:29,322 [Thread-590:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:26:29,326 [Thread-591:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:26:29,376 [Thread-592:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:26:29,378 [Thread-593:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:26:29,399 [Thread-594:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:26:29,408 [Thread-595:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:26:29,415 [Thread-597:123145394790400] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:26:29,416 [Thread-596:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:26:29,431 [Thread-598:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 07:26:29,480 [Thread-600:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:26:29,494 [Thread-599:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 07:26:29,514 [Thread-601:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:26:29,537 [Thread-602:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:26:29,561 [Thread-604:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:26:29,589 [Thread-603:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:26:29,593 [Thread-606:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:26:29,604 [Thread-607:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:26:29,609 [Thread-605:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:26:29,656 [Thread-608:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:26:29,719 [Thread-609:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:26:29,758 [Thread-610:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:26:29,781 [Thread-611:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:36:45,994 [Thread-617:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:36:47,705 [Thread-620:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:36:47,729 [Thread-619:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:36:47,751 [Thread-621:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:36:47,777 [Thread-623:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:36:47,793 [Thread-622:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:36:47,808 [Thread-624:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:36:47,814 [Thread-625:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:36:47,819 [Thread-626:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:37:36,939 [Thread-630:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:37:39,405 [Thread-632:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:37:39,412 [Thread-633:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:37:39,423 [Thread-634:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:37:39,435 [Thread-635:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:37:39,451 [Thread-636:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:37:39,455 [Thread-637:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:37:39,474 [Thread-638:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 07:37:39,513 [Thread-639:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:37:39,595 [Thread-641:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 07:37:39,598 [Thread-642:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:37:39,603 [Thread-644:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:37:39,604 [Thread-643:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:37:39,610 [Thread-645:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:37:39,616 [Thread-640:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:37:39,647 [Thread-646:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:37:39,648 [Thread-647:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:37:39,674 [Thread-648:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:37:39,700 [Thread-649:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:37:39,782 [Thread-650:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:37:39,813 [Thread-651:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:38:33,853 [Thread-657:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:38:44,135 [Thread-660:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:38:56,152 [Thread-667:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:39:16,123 [Thread-671:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:39:17,873 [Thread-673:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:39:17,884 [Thread-674:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:39:17,900 [Thread-675:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:39:17,957 [Thread-676:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:39:17,975 [Thread-677:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:39:17,979 [Thread-678:123145382170624] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:39:17,982 [Thread-679:123145386377216] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:39:17,987 [Thread-680:123145390583808] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:41:18,229 [Thread-689:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:41:20,104 [Thread-691:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:41:20,132 [Thread-693:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:41:20,135 [Thread-692:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:41:20,147 [Thread-694:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:41:20,174 [Thread-695:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:41:20,178 [Thread-696:123145373757440] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 07:41:20,185 [Thread-697:123145377964032] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:41:20,220 [Thread-698:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:41:20,235 [Thread-699:123145369550848] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:42:26,477 [Thread-703:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:44:40,336 [Thread-708:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:54:06,401 [Thread-847:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:54:08,314 [Thread-850:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:54:11,948 [Thread-855:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:54:12,839 [Thread-859:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:54:16,570 [Thread-863:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:54:17,179 [Thread-866:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:54:49,084 [Thread-867:123145365344256] [django.request:152] [base:get_response] [WARNING]- Not Found: /layout_fullwidth.html
+2017-02-10 07:56:37,538 [Thread-6:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:56:53,218 [Thread-10:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 07:56:54,914 [Thread-12:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 07:56:54,945 [Thread-14:123145579966464] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 07:56:54,950 [Thread-13:123145575759872] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 07:56:54,971 [Thread-15:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 07:56:54,975 [Thread-16:123145584173056] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 07:56:55,007 [Thread-18:123145579966464] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 07:56:55,011 [Thread-17:123145575759872] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 07:56:55,043 [Thread-19:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/bootstrap.js
+2017-02-10 07:56:55,078 [Thread-20:123145575759872] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-load.js
+2017-02-10 07:56:55,097 [Thread-21:123145579966464] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.config.js
+2017-02-10 07:56:55,116 [Thread-23:123145588379648] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:56:55,124 [Thread-22:123145584173056] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-jp.js
+2017-02-10 07:56:55,130 [Thread-24:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:56:55,200 [Thread-25:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 07:56:55,203 [Thread-26:123145575759872] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 07:56:55,207 [Thread-27:123145579966464] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-nav.js
+2017-02-10 07:56:55,230 [Thread-28:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/ui-toggle.js
+2017-02-10 07:58:17,381 [Thread-32:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:05:52,422 [Thread-40:123145571553280] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:06:10,083 [Thread-45:123145584173056] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:07:08,603 [Thread-62:123145579966464] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:07:17,138 [Thread-64:123145588379648] [django.request:152] [base:get_response] [WARNING]- Not Found: /ui_chart.html
+2017-02-10 08:10:57,591 [Thread-5:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:14:10,827 [Thread-10:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:14:13,712 [Thread-13:123145557102592] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font-awesome.min.css
+2017-02-10 08:14:13,730 [Thread-14:123145561309184] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/simple-line-icons.css
+2017-02-10 08:14:13,755 [Thread-12:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/animate.css
+2017-02-10 08:14:13,760 [Thread-16:123145569722368] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/bootstrap.css
+2017-02-10 08:14:13,770 [Thread-17:123145573928960] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/app.css
+2017-02-10 08:14:13,774 [Thread-15:123145565515776] [django.request:152] [base:get_response] [WARNING]- Not Found: /css/font.css
+2017-02-10 08:14:13,779 [Thread-18:123145578135552] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/jquery.min.js
+2017-02-10 08:14:13,824 [Thread-19:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/logo.png
+2017-02-10 08:14:13,827 [Thread-20:123145557102592] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a0.jpg
+2017-02-10 08:14:41,922 [Thread-24:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:14:52,258 [Thread-29:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:16:36,881 [Thread-33:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 08:17:13,636 [Thread-38:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 09:31:04,317 [Thread-46:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 09:35:46,952 [Thread-54:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/charts/easypiechart/jquery.easy-pie-chart.js
+2017-02-10 09:51:36,665 [Thread-63:123145552896000] [django.request:152] [base:get_response] [WARNING]- Not Found: /index.html
+2017-02-10 09:51:45,026 [Thread-66:123145561309184] [django.request:152] [base:get_response] [WARNING]- Not Found: /layout_boxed.html

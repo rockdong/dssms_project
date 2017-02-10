@@ -1,15 +1,31 @@
 {% extends 'blogin.html' %}
 {% load staticfiles %}
-{#标题#}
-{% block title %}DSSMS 管理系统{% endblock %}
-{#导入包#}
-{% block include %}
-    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-grid.css' %}">
-    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-reboot.css' %}">
-    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
-{% endblock %}
-{#内容部分#}
-{% block contain %}
 
+{% block title %}
+    DSSMS 管理平台
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-reboot.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-grid.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap/js/bootstrap.js' %}"/>
+    <link rel="stylesheet" href="{% static 'company/company.css' %}"/>
+{% endblock %}
+
+{% block contain %}
+    <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        {{ error }}
+        {{ company_login.as_p }}
+
+        <input type="submit" value="登陆"/>
+        <input class="input" type="button" value="忘记密码" onclick="forget()"/>
+        <input class="input" type="button" value="注册公司" onclick="regist()"/>
+    </form>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'company/company.js' %}"></script>
 {% endblock %}

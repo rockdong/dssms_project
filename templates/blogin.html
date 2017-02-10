@@ -1,16 +1,28 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    {#标题#}
     <title>{% block title %}
-    
+
     {% endblock %}</title>
-    {% block include %}
-    
+
+    {#导入包#}
+    {% block css %}
+
     {% endblock %}
 </head>
 <body>
+
+{#内容部分#}
 {% block contain %}
+
+{% endblock %}
+
+{# JavaScript #}
+{% block js %}
 
 {% endblock %}
 </body>

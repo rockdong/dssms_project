@@ -1,0 +1,6 @@
+2017-02-09 02:28:23,445 [Thread-3:123145517207552] [views:36] [views:do_login] [ERROR]- 
+2017-02-09 02:28:23,446 [Thread-3:123145517207552] [views:37] [views:do_login] [ERROR]- Staff matching query does not exist.
+2017-02-09 03:31:42,465 [Thread-16:123145349603328] [views:38] [views:do_login] [ERROR]- Invalid block tag on line 11: 'static'. Did you forget to register or load this tag?
+2017-02-09 06:50:52,487 [Thread-2:123145350889472] [views:38] [views:do_login] [ERROR]- Invalid block tag on line 11: 'static'. Did you forget to register or load this tag?
+2017-02-09 06:52:02,202 [Thread-5:123145350889472] [views:38] [views:do_login] [ERROR]- Invalid block tag on line 11: 'static'. Did you forget to register or load this tag?
+2017-02-09 06:53:53,101 [Thread-6:123145350889472] [views:38] [views:do_login] [ERROR]- Invalid block tag on line 11: 'static'. Did you forget to register or load this tag?

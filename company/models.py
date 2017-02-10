@@ -84,7 +84,8 @@ class Staff(models.Model):
     organization = models.ForeignKey(Organization, verbose_name='公司')
     department = models.ForeignKey(Department, verbose_name='部门')
     staff_name = models.CharField(max_length=20, null=False, blank=False, verbose_name='姓名')
-    staff_sex = models.CharField(choices=sex_char, max_length=1, null=False, blank=False, verbose_name='性别')
+    
+    sex = models.CharField(choices=sex_char, max_length=1, null=False, blank=False, verbose_name='性别')
     login_name = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆账号')
     password = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆密码')
     skills = models.ManyToManyField(Skill, verbose_name='技术/能力')
