@@ -72,3 +72,12 @@ def form_element(request):
 	except Exception as e:
 		logger.error(e)
 		return render(request, 'page_404.html')
+
+#页面跳转
+def index(request, value):
+	try:
+		page = value + ".html"
+		return render(request, page)
+	except Exception as e:
+		logger.error(e)
+		return  render(request, 'page_404.html')

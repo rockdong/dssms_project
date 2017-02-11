@@ -8,3 +8,7 @@ function regist() {
 function forget() {
     self.location = "forget";
 }
+
+function index() {
+    self.location = "index";
+}

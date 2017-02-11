@@ -10,12 +10,12 @@ $(function () {
     });
     // 如果当前节点下面没有 ul 子节点，说明菜单项中没有子项
     $("nav > ul.nav > li > a:only-child").bind('click', function () {
-        alert("hello");
+        getHtmlCode($(this).attr("name"));
     });
 
 });
 
 function getHtmlCode(value) {
     $("#content").html("");
-    $("#content").load(value);
+    $("#content").load('index/' + value);
 }
