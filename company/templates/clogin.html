@@ -34,26 +34,26 @@
     <div class="app app-header-fixed  ">
 
 
-<div class="container w-xxl w-auto-xs" ng-controller="SigninFormController" ng-init="app.settings.container = false;">
+<div class="container w-xxl w-auto-xs" ng-controller="SigninFormController" ng-init="app.settings.container = false;" ng-app="app">
   <a href class="navbar-brand block m-t">DSSMS 装饰公司管理平台</a>
   <div class="m-b-lg">
     <div class="wrapper text-center">
       <strong>欢迎登陆</strong>
     </div>
-    <form name="form" class="form-validation" action="{% url 'index' %}" method="POST">
+    <form name="form" class="form-validation" action="{% url 'index' %}" method="POST" novalidate>
       {% csrf_token %}
       <div class="text-danger wrapper text-center" ng-show="authError">
           {{ error }}
       </div>
       <div class="list-group list-group-sm">
         <div class="list-group-item">
-          <input name="companyname" type="companyname" placeholder="公司名称" class="form-control no-border" ng-model="user.email" required>
+          <input name="companyname" type="text" placeholder="公司名称" class="form-control no-border" required/>
         </div>
         <div class="list-group-item">
-          <input name="username" type="username" placeholder="用户名" class="form-control no-border" ng-model="user.email" required>
+          <input name="username" type="text" placeholder="用户名" class="form-control no-border" required/>
         </div>
         <div class="list-group-item">
-           <input name="password" type="password" placeholder="用户密码" class="form-control no-border" ng-model="user.password" required>
+           <input name="password" type="password" placeholder="用户密码" class="form-control no-border" required/>
         </div>
       </div>
       <button type="submit" class="btn btn-lg btn-primary btn-block">登陆</button>
@@ -63,7 +63,7 @@
       <a ui-sref="access.signup" class="btn btn-lg btn-default btn-block" onclick="regist()">注册</a>
     </form>
   </div>
-  <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">
+  <div class="text-center">
     <p>
   <small class="text-muted">Web app framework base on Bootstrap and AngularJS<br>&copy; 2014</small>
 </p>
@@ -72,7 +72,6 @@
 
 
 </div>
-
 {% endblock %}
 
 {% block js %}
@@ -85,4 +84,6 @@
     <script src="{% static 'js/ui-jp.js' %}"></script>
     <script src="{% static 'js/ui-nav.js' %}"></script>
     <script src="{% static 'js/ui-toggle.js' %}"></script>
+    <script src="{% static 'js/angular.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
 {% endblock %}
