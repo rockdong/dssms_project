@@ -60,3 +60,7 @@
 2017-02-13 08:34:20,489 [Thread-379:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
 2017-02-13 08:34:59,273 [Thread-401:123145562947584] [views:82] [views:index] [ERROR]- index.html
 2017-02-13 08:35:02,404 [Thread-409:123145562947584] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 22:36:26,309 [Thread-72:10544] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 22:44:25,016 [Thread-207:10956] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 22:45:30,890 [Thread-279:8404] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 22:59:00,299 [Thread-871:2448] [views:82] [views:index] [ERROR]- index.html
