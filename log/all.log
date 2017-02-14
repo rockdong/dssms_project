@@ -5664,3 +5664,578 @@ VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <Regex
 2017-02-13 23:34:07,009 [Thread-1055:15544] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/manage_staffs HTTP/1.1" 200 389
 2017-02-13 23:34:07,436 [Thread-1056:712] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/art_staffs HTTP/1.1" 200 389
 2017-02-13 23:34:07,839 [Thread-1057:9388] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/construction_staffs HTTP/1.1" 200 389
+2017-02-13 23:36:56,039 [Thread-1058:10624] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-13 23:36:56,042 [Thread-1058:10624] [django.server:131] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2618
+2017-02-13 23:36:56,219 [Thread-1059:13320] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-13 23:36:56,220 [Thread-1059:13320] [django.server:131] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2618
+2017-02-14 19:26:33,377 [Dummy-1:10512] [django.db.backends:90] [utils:execute] [DEBUG]- (0.008) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-02-14 19:26:33,387 [Dummy-1:10512] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-02-14 19:35:12,263 [Thread-2:13680] [django.server:131] [basehttp:log_message] [INFO]- "GET /index HTTP/1.1" 200 3136
+2017-02-14 19:35:24,181 [Thread-4:16296] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/animate.css HTTP/1.1" 200 17968
+2017-02-14 19:35:24,188 [Thread-6:9120] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/simple-line-icons.css HTTP/1.1" 200 11572
+2017-02-14 19:35:24,190 [Thread-5:6600] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/font-awesome.min.css HTTP/1.1" 200 21987
+2017-02-14 19:35:24,194 [Thread-3:7608] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.css HTTP/1.1" 200 143948
+2017-02-14 19:35:24,194 [Thread-7:8980] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/font.css HTTP/1.1" 200 696
+2017-02-14 19:35:24,200 [Thread-8:1092] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/app.css HTTP/1.1" 200 86091
+2017-02-14 19:35:24,217 [Thread-9:13156] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 93113
+2017-02-14 19:35:24,221 [Thread-18:5232] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/app.js HTTP/1.1" 200 238818
+2017-02-14 19:35:24,240 [Thread-10:7564] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/company/company.js HTTP/1.1" 200 212
+2017-02-14 19:35:24,246 [Thread-11:1312] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.js HTTP/1.1" 200 68089
+2017-02-14 19:35:24,250 [Thread-13:13728] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/ui-jp.config.js HTTP/1.1" 200 1887
+2017-02-14 19:35:24,252 [Thread-14:12264] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/ui-jp.js HTTP/1.1" 200 460
+2017-02-14 19:35:24,256 [Thread-12:16348] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/ui-load.js HTTP/1.1" 200 2245
+2017-02-14 19:35:24,259 [Thread-19:12112] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/bg.jpg HTTP/1.1" 200 14972
+2017-02-14 19:35:24,266 [Thread-15:4568] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/ui-nav.js HTTP/1.1" 200 620
+2017-02-14 19:35:24,267 [Thread-20:2824] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro-bold.woff HTTP/1.1" 200 26608
+2017-02-14 19:35:24,267 [Thread-21:4556] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro.woff HTTP/1.1" 200 27248
+2017-02-14 19:35:24,275 [Thread-16:9612] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/ui-toggle.js HTTP/1.1" 200 379
+2017-02-14 19:35:24,289 [Thread-17:6656] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/angular.js HTTP/1.1" 200 813732
+2017-02-14 19:35:24,967 [Thread-22:4192] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:24,974 [Thread-22:4192] [django.server:131] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2618
+2017-02-14 19:35:32,401 [Thread-23:3684] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "company_staff"."id", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."login_name", "company_staff"."password", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" WHERE ("company_staff"."password" = 'yu' AND "company_staff"."organization_id" = '春暖花' AND "company_staff"."login_name" = 'yu'); args=(u'yu', u'\u6625\u6696\u82b1', u'yu')
+2017-02-14 19:35:32,403 [Thread-23:3684] [views:24] [views:do_login] [DEBUG]- 余某
+2017-02-14 19:35:32,410 [Thread-23:3684] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "company_organization"."company_name", "company_organization"."company_license", "company_organization"."corporation", "company_organization"."corporation_contact", "company_organization"."date_regedit" FROM "company_organization" WHERE "company_organization"."company_name" = '春暖花'; args=(u'\u6625\u6696\u82b1',)
+2017-02-14 19:35:32,414 [Thread-23:3684] [django.server:131] [basehttp:log_message] [INFO]- "POST /index HTTP/1.1" 200 52085
+2017-02-14 19:35:32,437 [Thread-24:11512] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/nestable/nestable.css HTTP/1.1" 200 3257
+2017-02-14 19:35:32,440 [Thread-25:8604] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/slider/slider.css HTTP/1.1" 200 2014
+2017-02-14 19:35:32,447 [Thread-26:8776] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/chosen/chosen.css HTTP/1.1" 200 10334
+2017-02-14 19:35:32,448 [Thread-27:10756] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/spinner/jquery.bootstrap-touchspin.css HTTP/1.1" 200 1061
+2017-02-14 19:35:32,450 [Thread-28:2084] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/datatables/dataTables.bootstrap.css HTTP/1.1" 200 7262
+2017-02-14 19:35:32,451 [Thread-29:14008] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/footable/footable.core.css HTTP/1.1" 200 5637
+2017-02-14 19:35:32,451 [Thread-30:16272] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jvectormap/jquery-jvectormap.css HTTP/1.1" 200 837
+2017-02-14 19:35:32,459 [Thread-31:10544] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/logo.png HTTP/1.1" 200 2621
+2017-02-14 19:35:32,563 [Thread-32:9256] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a0.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:32,563 [Thread-33:11660] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a1.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:32,565 [Thread-34:2920] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a2.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:32,565 [Thread-35:14264] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a3.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:32,572 [Thread-36:6564] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 65452
+2017-02-14 19:35:32,575 [Thread-37:15276] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/Simple-Line-Icons.woff HTTP/1.1" 200 59324
+2017-02-14 19:35:32,575 [Thread-38:10144] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23320
+2017-02-14 19:35:32,578 [Thread-40:7344] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a4.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:32,578 [Thread-39:5364] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro-light.woff HTTP/1.1" 200 26540
+2017-02-14 19:35:32,579 [Thread-41:8656] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a5.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:32,582 [Thread-42:13452] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/charts/easypiechart/jquery.easy-pie-chart.js HTTP/1.1" 200 7302
+2017-02-14 19:35:32,586 [Thread-43:1860] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/company/index.js HTTP/1.1" 200 1125
+2017-02-14 19:35:32,592 [Thread-44:12444] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/charts/sparkline/jquery.sparkline.min.js HTTP/1.1" 200 43149
+2017-02-14 19:35:32,599 [Thread-45:4232] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/charts/flot/jquery.flot.min.js HTTP/1.1" 200 36677
+2017-02-14 19:35:32,601 [Thread-46:2588] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/charts/flot/jquery.flot.resize.js HTTP/1.1" 200 2568
+2017-02-14 19:35:32,602 [Thread-47:10528] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/charts/flot/jquery.flot.tooltip.min.js HTTP/1.1" 200 5942
+2017-02-14 19:35:32,605 [Thread-48:11424] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/charts/flot/jquery.flot.spline.js HTTP/1.1" 200 5636
+2017-02-14 19:35:32,608 [Thread-49:4168] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/charts/flot/jquery.flot.orderBars.js HTTP/1.1" 200 6225
+2017-02-14 19:35:32,611 [Thread-50:11576] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/charts/flot/jquery.flot.pie.min.js HTTP/1.1" 200 10528
+2017-02-14 19:35:32,615 [Thread-51:808] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/slimscroll/jquery.slimscroll.min.js HTTP/1.1" 200 4726
+2017-02-14 19:35:32,622 [Thread-52:6312] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jvectormap/jquery-jvectormap.min.js HTTP/1.1" 200 33330
+2017-02-14 19:35:32,632 [Thread-55:5228] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/sortable/jquery.sortable.js HTTP/1.1" 200 2908
+2017-02-14 19:35:32,634 [Thread-53:6484] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jvectormap/jquery-jvectormap-world-mill-en.js HTTP/1.1" 200 144313
+2017-02-14 19:35:32,634 [Thread-56:14204] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/nestable/jquery.nestable.js HTTP/1.1" 200 18451
+2017-02-14 19:35:32,638 [Thread-54:6800] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jvectormap/jquery-jvectormap-us-aea-en.js HTTP/1.1" 200 112067
+2017-02-14 19:35:32,638 [Thread-57:13952] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/file/bootstrap-filestyle.min.js HTTP/1.1" 200 6668
+2017-02-14 19:35:32,640 [Thread-58:11548] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/slider/bootstrap-slider.js HTTP/1.1" 200 23350
+2017-02-14 19:35:32,647 [Thread-59:14916] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/chosen/chosen.jquery.min.js HTTP/1.1" 200 26967
+2017-02-14 19:35:32,650 [Thread-60:13140] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/spinner/jquery.bootstrap-touchspin.min.js HTTP/1.1" 200 8974
+2017-02-14 19:35:32,653 [Thread-61:9524] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/wysiwyg/bootstrap-wysiwyg.js HTTP/1.1" 200 6656
+2017-02-14 19:35:32,653 [Thread-62:1840] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/wysiwyg/jquery.hotkeys.js HTTP/1.1" 200 3763
+2017-02-14 19:35:32,657 [Thread-63:14968] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/datatables/jquery.dataTables.min.js HTTP/1.1" 200 76071
+2017-02-14 19:35:32,658 [Thread-64:9648] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/datatables/dataTables.bootstrap.js HTTP/1.1" 200 4881
+2017-02-14 19:35:32,661 [Thread-65:11636] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/footable/footable.all.min.js HTTP/1.1" 200 30048
+2017-02-14 19:35:32,664 [Thread-66:11360] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a6.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:32,667 [Thread-67:12672] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a7.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:32,667 [Thread-68:10516] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a8.jpg HTTP/1.1" 200 2789
+2017-02-14 19:35:37,826 [Thread-69:15212] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 389
+2017-02-14 19:35:45,032 [Thread-70:13172] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_grid HTTP/1.1" 200 5384
+2017-02-14 19:35:46,394 [Thread-71:10772] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_widget HTTP/1.1" 200 27033
+2017-02-14 19:35:46,437 [Thread-72:7404] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,457 [Thread-72:7404] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/c0.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,473 [Thread-73:8140] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,474 [Thread-74:14940] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,479 [Thread-75:15908] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,480 [Thread-76:5648] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,483 [Thread-77:7156] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,493 [Thread-73:8140] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a5.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,497 [Thread-74:14940] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a2.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,500 [Thread-75:15908] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a4.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,505 [Thread-76:5648] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a8.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,506 [Thread-78:13196] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,513 [Thread-77:7156] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a3.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,549 [Thread-78:13196] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a1.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,561 [Thread-79:7492] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,562 [Thread-80:11804] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,562 [Thread-81:14800] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,565 [Thread-82:5720] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:35:46,572 [Thread-79:7492] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a9.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,572 [Thread-80:11804] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a6.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,575 [Thread-81:14800] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a7.jpg HTTP/1.1" 404 2615
+2017-02-14 19:35:46,575 [Thread-82:5720] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a10.jpg HTTP/1.1" 404 2618
+2017-02-14 19:36:05,496 [Thread-83:10576] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_sortable HTTP/1.1" 200 6372
+2017-02-14 19:36:06,900 [Thread-84:15388] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_portlet HTTP/1.1" 200 8327
+2017-02-14 19:36:06,940 [Thread-85:5940] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:06,944 [Thread-86:9336] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:06,947 [Thread-87:7472] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:06,947 [Thread-88:15348] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:06,948 [Thread-85:5940] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a1.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:06,951 [Thread-86:9336] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a2.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:06,954 [Thread-87:7472] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a3.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:06,957 [Thread-88:15348] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a4.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:09,826 [Thread-89:4928] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_timeline HTTP/1.1" 200 7500
+2017-02-14 19:36:09,868 [Thread-90:7280] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:09,882 [Thread-91:9068] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:09,884 [Thread-92:9272] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:09,884 [Thread-93:3048] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:09,885 [Thread-94:9544] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:09,888 [Thread-90:7280] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a4.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:09,898 [Thread-91:9068] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a7.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:09,898 [Thread-92:9272] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a8.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:09,901 [Thread-93:3048] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a9.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:09,903 [Thread-94:9544] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a10.jpg HTTP/1.1" 404 2618
+2017-02-14 19:36:10,878 [Thread-95:12892] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_jvectormap HTTP/1.1" 200 7343
+2017-02-14 19:36:13,174 [Thread-96:13200] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_button HTTP/1.1" 200 12938
+2017-02-14 19:36:14,226 [Thread-97:11332] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_icon HTTP/1.1" 200 110705
+2017-02-14 19:36:15,395 [Thread-98:14744] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_grid HTTP/1.1" 200 5384
+2017-02-14 19:36:16,415 [Thread-99:10008] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/ui_widget HTTP/1.1" 200 27033
+2017-02-14 19:36:16,470 [Thread-100:12076] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,470 [Thread-101:14684] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,473 [Thread-102:8852] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,480 [Thread-103:10412] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,482 [Thread-104:5216] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,486 [Thread-105:14512] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,493 [Thread-100:12076] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/c0.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,496 [Thread-101:14684] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a5.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,499 [Thread-102:8852] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a2.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,506 [Thread-103:10412] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a4.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,507 [Thread-104:5216] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a8.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,510 [Thread-106:6020] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,513 [Thread-105:14512] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a3.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,536 [Thread-106:6020] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a1.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,548 [Thread-107:11016] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,552 [Thread-108:7712] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,555 [Thread-109:16092] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,555 [Thread-110:12108] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 19:36:16,561 [Thread-107:11016] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a9.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,565 [Thread-108:7712] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a6.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,566 [Thread-109:16092] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a7.jpg HTTP/1.1" 404 2615
+2017-02-14 19:36:16,568 [Thread-110:12108] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a10.jpg HTTP/1.1" 404 2618
+2017-02-14 19:36:18,155 [Thread-111:4052] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/table_static HTTP/1.1" 200 10278
+2017-02-14 19:36:19,898 [Thread-112:8000] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/table_footable HTTP/1.1" 200 4559
+2017-02-14 19:36:21,375 [Thread-113:14736] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/table_datatable HTTP/1.1" 200 1102
+2017-02-14 19:36:58,894 [Thread-114:10196] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/table_datatable HTTP/1.1" 200 1102
+2017-02-14 19:37:53,920 [Thread-115:11676] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1202
+2017-02-14 19:48:32,608 [Thread-116:14932] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "company_staff"."id", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."login_name", "company_staff"."password", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" WHERE ("company_staff"."password" = 'yu' AND "company_staff"."organization_id" = '春暖花' AND "company_staff"."login_name" = 'yu'); args=(u'yu', u'\u6625\u6696\u82b1', u'yu')
+2017-02-14 19:48:32,609 [Thread-116:14932] [views:24] [views:do_login] [DEBUG]- 余某
+2017-02-14 19:48:32,621 [Thread-116:14932] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "company_organization"."company_name", "company_organization"."company_license", "company_organization"."corporation", "company_organization"."corporation_contact", "company_organization"."date_regedit" FROM "company_organization" WHERE "company_organization"."company_name" = '春暖花'; args=(u'\u6625\u6696\u82b1',)
+2017-02-14 19:48:32,625 [Thread-116:14932] [django.server:131] [basehttp:log_message] [INFO]- "POST /index HTTP/1.1" 200 52085
+2017-02-14 19:48:32,648 [Thread-117:7800] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/animate.css HTTP/1.1" 304 0
+2017-02-14 19:48:32,651 [Thread-118:14220] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+2017-02-14 19:48:32,653 [Thread-119:14468] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/simple-line-icons.css HTTP/1.1" 304 0
+2017-02-14 19:48:32,654 [Thread-120:13444] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/font.css HTTP/1.1" 304 0
+2017-02-14 19:48:32,667 [Thread-121:5800] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/slider/slider.css HTTP/1.1" 304 0
+2017-02-14 19:48:32,671 [Thread-122:8688] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/spinner/jquery.bootstrap-touchspin.css HTTP/1.1" 304 0
+2017-02-14 19:48:32,673 [Thread-123:14936] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jvectormap/jquery-jvectormap.css HTTP/1.1" 304 0
+2017-02-14 19:48:32,677 [Thread-124:14100] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/logo.png HTTP/1.1" 304 0
+2017-02-14 19:48:32,684 [Thread-125:7920] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a0.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:32,931 [Thread-126:724] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a1.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:32,936 [Thread-127:3192] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a2.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:32,938 [Thread-128:4668] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a3.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:32,940 [Thread-129:13304] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a4.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:32,944 [Thread-130:14168] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 304 0
+2017-02-14 19:48:32,944 [Thread-131:2912] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a5.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:32,944 [Thread-132:4252] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a6.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:32,954 [Thread-133:12220] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/ui-nav.js HTTP/1.1" 304 0
+2017-02-14 19:48:32,959 [Thread-134:8560] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/ui-toggle.js HTTP/1.1" 304 0
+2017-02-14 19:48:32,977 [Thread-135:15660] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/bg.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:33,019 [Thread-136:13484] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/wysiwyg/jquery.hotkeys.js HTTP/1.1" 304 0
+2017-02-14 19:48:33,023 [Thread-137:2640] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/datatables/dataTables.bootstrap.js HTTP/1.1" 304 0
+2017-02-14 19:48:33,029 [Thread-138:10012] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a7.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:33,032 [Thread-139:14184] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a8.jpg HTTP/1.1" 304 0
+2017-02-14 19:48:34,811 [Thread-140:6128] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1175
+2017-02-14 20:41:23,006 [Thread-141:15076] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "company_staff"."id", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."login_name", "company_staff"."password", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" WHERE ("company_staff"."password" = 'yu' AND "company_staff"."organization_id" = '春暖花' AND "company_staff"."login_name" = 'yu'); args=(u'yu', u'\u6625\u6696\u82b1', u'yu')
+2017-02-14 20:41:23,006 [Thread-141:15076] [views:24] [views:do_login] [DEBUG]- 余某
+2017-02-14 20:41:23,012 [Thread-141:15076] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "company_organization"."company_name", "company_organization"."company_license", "company_organization"."corporation", "company_organization"."corporation_contact", "company_organization"."date_regedit" FROM "company_organization" WHERE "company_organization"."company_name" = '春暖花'; args=(u'\u6625\u6696\u82b1',)
+2017-02-14 20:41:23,016 [Thread-141:15076] [django.server:131] [basehttp:log_message] [INFO]- "POST /index HTTP/1.1" 200 52085
+2017-02-14 20:41:23,039 [Thread-142:15908] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/animate.css HTTP/1.1" 304 0
+2017-02-14 20:41:23,042 [Thread-143:8008] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+2017-02-14 20:41:23,048 [Thread-144:3920] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/simple-line-icons.css HTTP/1.1" 304 0
+2017-02-14 20:41:23,049 [Thread-145:10972] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/font.css HTTP/1.1" 304 0
+2017-02-14 20:41:23,176 [Thread-146:9612] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/logo.png HTTP/1.1" 304 0
+2017-02-14 20:41:23,184 [Thread-147:11016] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a0.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,188 [Thread-148:5800] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a1.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,194 [Thread-149:232] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a2.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,200 [Thread-150:11568] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a3.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,207 [Thread-151:3916] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a4.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,211 [Thread-152:15488] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a5.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,217 [Thread-153:13104] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a6.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,221 [Thread-154:4452] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a7.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,282 [Thread-155:5368] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/a8.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,328 [Thread-156:11220] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/bg.jpg HTTP/1.1" 304 0
+2017-02-14 20:41:23,332 [Thread-157:13160] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 304 0
+2017-02-14 20:41:25,635 [Thread-158:5296] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/dashboard HTTP/1.1" 200 11397
+2017-02-14 20:41:25,746 [Thread-159:7432] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 20:41:25,753 [Thread-160:2820] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 20:41:25,757 [Thread-161:6256] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 20:41:25,762 [Thread-162:11460] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 20:41:25,765 [Thread-163:3624] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 20:41:25,767 [Thread-164:5916] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 20:41:25,769 [Thread-159:7432] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a1.jpg HTTP/1.1" 404 2615
+2017-02-14 20:41:25,769 [Thread-165:628] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 20:41:25,772 [Thread-166:13308] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-02-14 20:41:25,773 [Thread-160:2820] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a2.jpg HTTP/1.1" 404 2615
+2017-02-14 20:41:25,782 [Thread-161:6256] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a3.jpg HTTP/1.1" 404 2615
+2017-02-14 20:41:25,786 [Thread-162:11460] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a4.jpg HTTP/1.1" 404 2615
+2017-02-14 20:41:25,789 [Thread-163:3624] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a5.jpg HTTP/1.1" 404 2615
+2017-02-14 20:41:25,790 [Thread-164:5916] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a6.jpg HTTP/1.1" 404 2615
+2017-02-14 20:41:25,792 [Thread-165:628] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a7.jpg HTTP/1.1" 404 2615
+2017-02-14 20:41:25,792 [Thread-166:13308] [django.server:131] [basehttp:log_message] [WARNING]- "GET /img/a8.jpg HTTP/1.1" 404 2615
+2017-02-14 20:41:26,920 [Thread-167:11056] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1175
+2017-02-14 20:45:37,618 [Thread-168:9520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT "company_staff"."id", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."login_name", "company_staff"."password", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" WHERE ("company_staff"."password" = 'yu' AND "company_staff"."organization_id" = '春暖花' AND "company_staff"."login_name" = 'yu'); args=(u'yu', u'\u6625\u6696\u82b1', u'yu')
+2017-02-14 20:45:37,618 [Thread-168:9520] [views:24] [views:do_login] [DEBUG]- 余某
+2017-02-14 20:45:37,625 [Thread-168:9520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.000) SELECT "company_organization"."company_name", "company_organization"."company_license", "company_organization"."corporation", "company_organization"."corporation_contact", "company_organization"."date_regedit" FROM "company_organization" WHERE "company_organization"."company_name" = '春暖花'; args=(u'\u6625\u6696\u82b1',)
+2017-02-14 20:45:37,628 [Thread-168:9520] [django.server:131] [basehttp:log_message] [INFO]- "POST /index HTTP/1.1" 200 52085
+2017-02-14 20:45:37,878 [Thread-170:14424] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro-bold.woff HTTP/1.1" 200 26608
+2017-02-14 20:45:37,878 [Thread-172:6600] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro.woff HTTP/1.1" 200 27248
+2017-02-14 20:45:37,878 [Thread-171:4976] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/Simple-Line-Icons.woff HTTP/1.1" 200 59324
+2017-02-14 20:45:37,878 [Thread-169:6780] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 65452
+2017-02-14 20:45:37,881 [Thread-173:9684] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro-light.woff HTTP/1.1" 200 26540
+2017-02-14 20:45:39,703 [Thread-174:8376] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1177
+2017-02-14 20:46:34,880 [Thread-175:6380] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1177
+2017-02-14 20:46:35,392 [Thread-176:9740] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1177
+2017-02-14 20:46:35,572 [Thread-177:7344] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1177
+2017-02-14 20:46:35,752 [Thread-178:15324] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1177
+2017-02-14 20:46:35,910 [Thread-179:12020] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1177
+2017-02-14 20:46:36,293 [Thread-180:8812] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1177
+2017-02-14 20:46:36,456 [Thread-181:3972] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1177
+2017-02-14 20:48:46,131 [Thread-182:7404] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1532
+2017-02-14 20:51:07,871 [Thread-183:7020] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1570
+2017-02-14 20:51:30,197 [Thread-184:15488] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1563
+2017-02-14 20:51:39,157 [Thread-185:11524] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 1570
+2017-02-14 21:08:10,802 [Thread-186:1440] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004761F98>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974AC8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000480A6D8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000480ADD8>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:08:10,805 [Thread-186:1440] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2542
+2017-02-14 21:08:13,661 [Thread-187:9776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EFEB8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004761F98>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049FEB70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000480ABE0>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:08:13,663 [Thread-187:9776] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2542
+2017-02-14 21:08:16,112 [Thread-188:10088] [django.server:131] [basehttp:log_message] [INFO]- "GET /index HTTP/1.1" 200 3136
+2017-02-14 21:08:16,345 [Thread-189:14284] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro-bold.woff HTTP/1.1" 200 26608
+2017-02-14 21:08:16,346 [Thread-190:5480] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro.woff HTTP/1.1" 200 27248
+2017-02-14 21:08:17,480 [Thread-191:412] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 HTTP/1.1" 200 65452
+2017-02-14 21:08:17,480 [Thread-192:7552] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/Simple-Line-Icons.woff HTTP/1.1" 200 59324
+2017-02-14 21:08:17,480 [Thread-193:5612] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/fonts/sourcesanspro/sourcesanspro-light.woff HTTP/1.1" 200 26540
+2017-02-14 21:08:19,269 [Thread-194:14536] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EF048>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EFCF8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004A09A20>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004A09F60>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:08:19,269 [Thread-194:14536] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2542
+2017-02-14 21:08:43,355 [Thread-200:6320] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974B38>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EFEB8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004A48080>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004A48A20>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:08:43,355 [Thread-200:6320] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2548
+2017-02-14 21:08:43,869 [Thread-201:5396] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974DD8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EF048>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004A09E10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004A09CC0>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:08:43,871 [Thread-201:5396] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2548
+2017-02-14 21:09:13,565 [Thread-202:628] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974898>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974B38>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049FEDA0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049FEA58>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:09:13,568 [Thread-202:628] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2556
+2017-02-14 21:09:14,124 [Thread-203:6848] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974D68>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974DD8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049A0198>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049FEC50>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:09:14,125 [Thread-203:6848] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2556
+2017-02-14 21:09:14,259 [Thread-204:13896] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004824A58>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974898>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049A0FD0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049A05C0>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:09:14,259 [Thread-204:13896] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2556
+2017-02-14 21:09:52,507 [Thread-205:3308] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000049749E8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004824A58>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004998AC8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049A0C88>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:09:52,509 [Thread-205:3308] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2671
+2017-02-14 21:10:15,884 [Thread-206:9236] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x000000000477B048>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974D68>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004998F28>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004998160>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:10:15,887 [Thread-206:9236] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2692
+2017-02-14 21:10:16,377 [Thread-207:14044] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974C18>>, 'user': <SimpleLazyObject: <function <lambda> at 0x000000000477B048>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049A0940>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049A0668>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:10:16,378 [Thread-207:14044] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2692
+2017-02-14 21:10:16,526 [Thread-208:11432] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974E48>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004824A58>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004799E80>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004799FD0>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:10:16,528 [Thread-208:11432] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2692
+2017-02-14 21:10:16,684 [Thread-209:1072] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974CF8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974C18>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004A092E8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004799A20>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:10:16,686 [Thread-209:1072] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2692
+2017-02-14 21:13:48,996 [Thread-210:8812] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974EB8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974E48>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004A09D30>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004A09160>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:13:48,996 [Thread-210:8812] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2696
+2017-02-14 21:14:17,039 [Thread-211:13704] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974F28>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974CF8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000481FA58>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004A09CF8>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:14:17,040 [Thread-211:13704] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2708
+2017-02-14 21:14:28,681 [Thread-212:384] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004974748>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974EB8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004A48E48>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004A48358>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:14:28,684 [Thread-212:384] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2701
+2017-02-14 21:14:29,190 [Thread-213:15288] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000049747B8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974F28>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049FE6D8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004A485F8>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:14:29,191 [Thread-213:15288] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2701
+2017-02-14 21:14:29,344 [Thread-214:216] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EFCF8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x0000000004974748>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049FE390>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049FED68>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:14:29,345 [Thread-214:216] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2701
+2017-02-14 21:15:15,936 [Thread-215:15508] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EFB38>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000049747B8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049FE9E8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049FEF28>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:15:15,937 [Thread-215:15508] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2718
+2017-02-14 21:15:42,661 [Thread-216:12624] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EFA58>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EFCF8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000480ADA0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000480AD68>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:15:42,664 [Thread-216:12624] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2705
+2017-02-14 21:16:29,095 [Thread-217:6280] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EF828>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EFB38>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049980B8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000480AB38>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:16:29,095 [Thread-217:6280] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2537
+2017-02-14 21:16:43,845 [Thread-218:14504] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EF048>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EFA58>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004998128>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004998B70>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:16:43,848 [Thread-218:14504] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2541
+2017-02-14 21:17:07,519 [Thread-219:13968] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004A180B8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EF828>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000004900908>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004998358>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:17:07,519 [Thread-219:13968] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2483
+2017-02-14 21:17:08,012 [Thread-220:14424] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EFCF8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EF048>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000480A630>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000480A160>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:17:08,013 [Thread-220:14424] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2483
+2017-02-14 21:17:08,167 [Thread-221:4000] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000048EFEB8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EFE48>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049FE5F8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000480A5C0>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:17:08,168 [Thread-221:4000] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2483
+2017-02-14 21:17:08,322 [Thread-222:6780] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'page' in template 'all_staffs.html'.
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [page] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0000000004824A58>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000048EFCF8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000049FE400>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000049FE710>, u'request': <WSGIRequest: GET '/index/all_staffs'>}, {}]"
+2017-02-14 21:17:08,323 [Thread-222:6780] [django.server:131] [basehttp:log_message] [INFO]- "GET /index/all_staffs HTTP/1.1" 200 2483
