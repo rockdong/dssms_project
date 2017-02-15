@@ -1,7 +1,7 @@
 # coding:utf-8
 
-from django.shortcuts import render, render_to_response
-import logging
+from django.shortcuts import render, render_to_response, HttpResponse
+import logging, json
 from company.models import *
 from company.forms import *
 
@@ -81,3 +81,16 @@ def index(request, value):
 	except Exception as e:
 		logger.error(e)
 		return  render(request, 'page_404.html')
+
+# 获取所有员工数据
+def getAllStaffs(request):
+	try:
+		if request.method == "GET":
+			staffs = Staff.objects.all()
+			rs = {}
+			rs['result'] = 'hello'
+			rs['message'] = 'world'
+			return HttpResponse({'staffs':staffs})
+	except Exception as e:
+		logger.error(e)
+		return render(request, 'page_404.html')

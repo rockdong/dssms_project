@@ -1,6 +1,6 @@
 
 <!-- content -->
-<div class="app-content-body ">
+<div class="app-content-body " ng-app="staffsApp">
     <div class="bg-light lter b-b wrapper-md">
         <h1 class="m-n font-thin h3">所有人员</h1>
     </div>
@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-body">
+                    <div class="panel-body" ng-controller="staffsCtrl">
                         <table class="table table-hover" data-toggle="table">
                             <thead>
                             <tr>
@@ -21,27 +21,47 @@
                             </tr>
                             </thead>
                             <tbody>
+                            {#                            {% for staff in staffs %}#}
+                            {#                                <td>{{ staff.staff_name }}</td>#}
+                            {#                                <td>{{ staff.sex }}</td>#}
+                            {#                                <td>{{ staff.department.department_name }}</td>#}
+                            {#                                <td>{{ staff.login_name }}</td>#}
+                            {#                                <td>{{ staff.password }}</td>#}
+                            {#                                <td><a class="btn btn-xs btn-default">查看</a></td>#}
+                            {#                            {% endfor %}#}
+
                             <tr ng-repeat="staff in staffs">
-                                <td>姓名</td>
-                                <td>性别</td>
-                                <td>部门</td>
+                                <td>[[ staff.staff_name ]]</td>
+                                <td>[[ staff.sex ]]</td>
+                                <td>[[ staff.department.department_name ]]</td>
                                 <td>职位</td>
                                 <td>状态</td>
-                                <td><a class="btn btn-xs btn-default">查看</a></td>
+                                <td><a class="btn btn-xs btn-default" ng-click="sayHello()">查看</a></td>
                             </tr>
                             </tbody>
                         </table>
                         <!-- 分页 -->
                         <nav>
-                            <ul class="pagination">
-                                <li>
+                            <ul class="pagination pagination-sm">
+                                <li class="disabled">
                                     <a ng-click="Previous()">
                                         <span>上一页</span>
                                     </a>
                                 </li>
-                                <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >
-                                    <a ng-click="selectPage(page)" >{{ page }}</a>
+                                <li>
+                                    <a href="#">1</a>
                                 </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+{#                                <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >#}
+{#                                    <a ng-click="selectPage(page)" >#}
+{#                                        {{ page }}#}
+{#                                    </a>#}
+{#                                </li>#}
                                 <li>
                                     <a ng-click="Next()">
                                         <span>下一页</span>
@@ -56,64 +76,55 @@
         </div>
     </div>
 </div>
-<script>
-    var allStaffsApp = angular.model('allStaffApp', []);
 
-    allStaffsApp.run(function ($http) {
-        $scope.staffs = [];
-        $http.get('getAllStaffs').success(function (data) {
-            $scope.staffs = data;
-        });
-    });
 
-    allStaffsApp.controller('allStaffsCtrl', function ($scope) {
-        $scope.data = response.data.records;
-        //分页总数
-        $scope.pageSize = 5;
-        $scope.pages = Math.ceil($scope.data.length / $scope.pageSize); //分页数
-        $scope.newPages = $scope.pages > 5 ? 5 : $scope.pages;
-        $scope.pageList = [];
-        $scope.selPage = 1;
-        //设置表格数据源(分页)
-        $scope.setData = function () {
-            $scope.items = $scope.data.slice(($scope.pageSize * ($scope.selPage - 1)), ($scope.selPage * $scope.pageSize));//通过当前页数筛选出表格当前显示数据
-        }
-        $scope.items = $scope.data.slice(0, $scope.pageSize);
-        //分页要repeat的数组
-        for (var i = 0; i < $scope.newPages; i++) {
-            $scope.pageList.push(i + 1);
-        }
-        //打印当前选中页索引
-        $scope.selectPage = function (page) {
-            //不能小于1大于最大
-            if (page < 1 || page > $scope.pages) return;
-            //最多显示分页数5
-            if (page > 2) {
-                //因为只显示5个页数，大于2页开始分页转换
-                var newpageList = [];
-                for (var i = (page - 3) ; i < ((page + 2) > $scope.pages ? $scope.pages : (page + 2)) ; i++) {
-                    newpageList.push(i + 1);
-                }
-                $scope.pageList = newpageList;
-            }
-            $scope.selPage = page;
-            $scope.setData();
-            $scope.isActivePage(page);
-            console.log("选择的页：" + page);
-        };
-        //设置当前选中页样式
-        $scope.isActivePage = function (page) {
-            return $scope.selPage == page;
-        };
-
-        //上一页
-        $scope.Previous = function () {
-            $scope.selectPage($scope.selPage - 1);
-        }
-        //下一页
-        $scope.Next = function () {
-            $scope.selectPage($scope.selPage + 1);
-        };
-    });
-</script>
+{#    allStaffsApp.controller('allStaffsCtrl', function ($scope) {#}
+{#        $scope.data = response.data.records;#}
+{#        //分页总数#}
+{#        $scope.pageSize = 5;#}
+{#        $scope.pages = Math.ceil($scope.data.length / $scope.pageSize); //分页数#}
+{#        $scope.newPages = $scope.pages > 5 ? 5 : $scope.pages;#}
+{#        $scope.pageList = [];#}
+{#        $scope.selPage = 1;#}
+{#        //设置表格数据源(分页)#}
+{#        $scope.setData = function () {#}
+{#            $scope.items = $scope.data.slice(($scope.pageSize * ($scope.selPage - 1)), ($scope.selPage * $scope.pageSize));//通过当前页数筛选出表格当前显示数据#}
+{#        }#}
+{#        $scope.items = $scope.data.slice(0, $scope.pageSize);#}
+{#        //分页要repeat的数组#}
+{#        for (var i = 0; i < $scope.newPages; i++) {#}
+{#            $scope.pageList.push(i + 1);#}
+{#        }#}
+{#        //打印当前选中页索引#}
+{#        $scope.selectPage = function (page) {#}
+{#            //不能小于1大于最大#}
+{#            if (page < 1 || page > $scope.pages) return;#}
+{#            //最多显示分页数5#}
+{#            if (page > 2) {#}
+{#                //因为只显示5个页数，大于2页开始分页转换#}
+{#                var newpageList = [];#}
+{#                for (var i = (page - 3) ; i < ((page + 2) > $scope.pages ? $scope.pages : (page + 2)) ; i++) {#}
+{#                    newpageList.push(i + 1);#}
+{#                }#}
+{#                $scope.pageList = newpageList;#}
+{#            }#}
+{#            $scope.selPage = page;#}
+{#            $scope.setData();#}
+{#            $scope.isActivePage(page);#}
+{#            console.log("选择的页：" + page);#}
+{#        };#}
+{#        //设置当前选中页样式#}
+{#        $scope.isActivePage = function (page) {#}
+{#            return $scope.selPage == page;#}
+{#        };#}
+{##}
+{#        //上一页#}
+{#        $scope.Previous = function () {#}
+{#            $scope.selectPage($scope.selPage - 1);#}
+{#        }#}
+{#        //下一页#}
+{#        $scope.Next = function () {#}
+{#            $scope.selectPage($scope.selPage + 1);#}
+{#        };#}
+{#    });#}
 <!-- / content -->

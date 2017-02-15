@@ -20,5 +20,6 @@ urlpatterns = [
     url(r'^index$', do_login, name='index'),
     url(r'^regist', do_regist, name='regist'),
     url(r'^forget', do_forget, name='forget'),
-    url(r'^index/(\w*)', index, name='index'),
+    url(r'^index/(\w*)', index, name='go'),
+    url(r'^getAllStaffs', getAllStaffs, name='getAllStaffs'),
 ]

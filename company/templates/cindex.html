@@ -23,11 +23,11 @@
 
 {% block contain %}
 
-<div class="app app-header-fixed  ">
+<div class="app app-header-fixed">
 
 {% block menu %}
   <!-- header -->
-  <header id="header" class="app-header navbar" role="menu">
+  <header id="header" class="app-header navbar" role="menu" ng-app="menuApp">
           <!-- navbar header -->
       <div class="navbar-header bg-dark">
         <button class="pull-right visible-xs dk" ui-toggle="show" target=".navbar-collapse">
@@ -192,7 +192,7 @@
         <!-- / link and dropdown -->
 
         <!-- search form -->
-        <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" data-target=".navbar-collapse" role="search" ng-controller="TypeaheadDemoCtrl">
+        <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" data-target=".navbar-collapse" role="search">
           <div class="form-group">
             <div class="input-group">
               <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm bg-light no-border rounded padder" placeholder="Search projects...">
@@ -293,7 +293,7 @@
 
 {% block aside %}
   <!-- aside -->
-  <aside id="aside" class="app-aside hidden-xs bg-dark">
+  <aside id="aside" class="app-aside hidden-xs bg-dark" ng-app="menuApp">
           <div class="aside-wrap">
         <div class="navi-wrap">
           <!-- user -->
@@ -506,6 +506,21 @@
                   <li class="nav-sub-header">
                     <a>
                       <span>信息添加</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a name="add_staffs" href="#">
+                      <span>添加人员</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a name="form_element" href="#">
+                      <span>Form elements</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a name="form_element" href="#">
+                      <span>Form elements</span>
                     </a>
                   </li>
                   <li>
@@ -962,10 +977,10 @@
 
 {% block js %}
     <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/angular.js' %}"></script>
     <script src="{% static 'js/bootstrap.js' %}"></script>
     <script src="{% static 'js/ui-nav.js' %}"></script>
     <script src="{% static 'js/ui-toggle.js' %}"></script>
-    <script src="{% static 'js/charts/easypiechart/jquery.easy-pie-chart.js' %}"></script>
     <script src="{% static 'company/index.js' %}"></script>
     <script src="{% static 'js/charts/easypiechart/jquery.easy-pie-chart.js' %}"></script>
     <script src="{% static 'js/charts/sparkline/jquery.sparkline.min.js' %}"></script>
@@ -990,4 +1005,5 @@
     <script src="{% static 'js/datatables/jquery.dataTables.min.js' %}"></script>
     <script src="{% static 'js/datatables/dataTables.bootstrap.js' %}"></script>
     <script src="{% static 'js/footable/footable.all.min.js' %}"></script>
+
 {% endblock %}
