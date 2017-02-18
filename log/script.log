@@ -840,3 +840,43 @@
 2017-02-15 09:07:41,804 [Thread-420:123145441058816] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a5.jpg
 2017-02-15 09:07:41,821 [Thread-422:123145449472000] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a8.jpg
 2017-02-15 09:07:41,826 [Thread-423:123145453678592] [django.request:152] [base:get_response] [WARNING]- Not Found: /img/a7.jpg
+2017-02-18 09:45:03,232 [Thread-2:123145346969600] [django.request:152] [base:get_response] [WARNING]- Not Found: /staffs/
+2017-02-18 09:45:18,012 [Thread-3:123145346969600] [django.request:152] [base:get_response] [WARNING]- Not Found: /staffs/all
+2017-02-18 09:45:51,739 [Thread-2:123145457102848] [django.request:152] [base:get_response] [WARNING]- Not Found: /staffs/all
+2017-02-18 09:46:15,944 [Thread-3:123145456566272] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view company.views.staffs didn't return an HttpResponse object. It returned None instead.
+2017-02-18 09:46:31,103 [Thread-4:123145456566272] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/all
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view company.views.staffs didn't return an HttpResponse object. It returned None instead.
+2017-02-18 09:50:25,740 [Thread-2:123145377837056] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/all
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view company.views.staffs didn't return an HttpResponse object. It returned None instead.
+2017-02-18 09:52:07,713 [Thread-2:123145452515328] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/all
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view company.views.staffs didn't return an HttpResponse object. It returned None instead.
+2017-02-18 09:52:43,585 [Thread-2:123145488433152] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/all
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view company.views.staffs didn't return an HttpResponse object. It returned None instead.
+2017-02-18 09:53:35,377 [Thread-3:123145495519232] [django.request:152] [base:get_response] [WARNING]- Not Found: /
+2017-02-18 09:53:37,669 [Thread-4:123145495519232] [django.request:152] [base:get_response] [WARNING]- Not Found: /
