@@ -228,3 +228,8 @@
 2017-02-15 03:28:31,952 [Thread-5:123145456410624] [views:96] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
 2017-02-15 03:28:48,733 [Thread-3:123145437151232] [views:97] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
 2017-02-15 03:29:18,328 [Thread-3:123145570205696] [views:97] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-18 09:46:15,941 [Thread-3:123145456566272] [views:40] [views:staffs] [ERROR]- Staff matching query does not exist.
+2017-02-18 09:46:31,100 [Thread-4:123145456566272] [views:40] [views:staffs] [ERROR]- Staff matching query does not exist.
+2017-02-18 09:50:25,740 [Thread-2:123145377837056] [views:40] [views:staffs] [ERROR]- Staff matching query does not exist.
+2017-02-18 09:52:07,712 [Thread-2:123145452515328] [views:40] [views:staffs] [ERROR]- (u"Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the StaffSerializer serializer.",)
+2017-02-18 09:52:43,585 [Thread-2:123145488433152] [views:40] [views:staffs] [ERROR]- Field name `organization__company_name` is not valid for model `Staff`.
