@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en" ng-app="helloWorldApp"> 
+    <head> 
+        <title>AngularJS Hello World</title>             
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="js/libs/jquery-1.10.2.min.js"></script>  
+        <script src="js/libs/angular.js"></script>        
+        <script src="js/libs/angular-route.js"></script> 
+        <script src="js/libs/angular-resource.js"></script> 
+        <script src="js/libs/angular-cookies.js"></script> 
+
+        <script src="js/app.js"></script> 
+        <script src="js/controllers.js"></script>        
+        <script src="js/services.js"></script> 
+
+
+    </head> 
+    <body> 
+        <ul>
+            <li>
+                <a ng-href=".#!/main">main</a>
+            </li>
+            <li>
+                <a ng-href=".#!/show">show</a>
+            </li>
+        </ul>
+        <div ng-view></div>
+        <div class="btn btn-default">{{"ArgularJS"}}</div>
+        <div class="btn btn-success">Bootstarp</div>
+    </body> 
+</html> 
