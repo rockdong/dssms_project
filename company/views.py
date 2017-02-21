@@ -1,6 +1,7 @@
 # coding:utf-8
 
-#from django.shortcuts import render, render_to_response, HttpResponse
+from django.shortcuts import render, render_to_response, HttpResponse, HttpResponseRedirect
+
 import logging, json
 from company.models import *
 #from company.forms import *
@@ -40,12 +41,31 @@ def staffs(request, departname):
 		logger.error(e)
 
 
-# def staff(request, pk):
-# 	try:
-# 		if request.method == 'GET':
-#
-# 	except Exception as e:
-# 		logger.error(e)
+def login(request):
+	try:
+		print request.path
+		if request.method == 'POST':
+			companyname = request.POST.get('companyname', None)
+			username = request.POST.get('username', None)
+			password = request.POST.get('password', None)
+			staff = Staff.objects.get(organization__company_name=companyname, login_name=username, password=password)
+			if staff:
+				# return render_to_response(request, 'cindex.html')
+				# return index(request, 'cindex')
+				return HttpResponseRedirect('/index/cindex.html')
+		else:
+			return render(request, 'clogin.html')
+	except Exception as e:
+		logger.error(e)
+
+#页面跳转
+def index(request, value):
+	try:
+		page = value + ".html"
+		return render(request, page)
+	except Exception as e:
+		logger.error(e)
+		return  render(request, 'page_404.html')
 
 
 
