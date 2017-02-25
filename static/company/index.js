@@ -22,22 +22,6 @@ menuApp.run(function () {
     });
 });
 
-var staffsApp = angular.module('staffsApp', []);
-
-staffsApp.config(function ($interpolateProvider) {
-    $interpolateProvider.startSymbol('[[');
-    $interpolateProvider.endSymbol(']]');
-});
-
-staffsApp.run(function () {
-    alert("hello");
-});
-
-staffsApp.controller('staffsCtrl', function ($scope) {
-    $scope.sayHello = function () {
-        alert("hello");
-    }
-});
 
 // $(function () {
 //     // 给每个一可点击跳转的菜单加载方法
@@ -64,5 +48,5 @@ staffsApp.controller('staffsCtrl', function ($scope) {
 
 function getHtmlCode(value) {
     $("#content").html("");
-    $("#content").load('index/' + value);
+    $("#content").load(value);
 }

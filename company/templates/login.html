@@ -40,7 +40,7 @@
     <div class="wrapper text-center">
       <strong>欢迎登陆</strong>
     </div>
-    <form name="form" class="form-validation" action="{% url 'index' %}" method="POST" novalidate>
+    <form name="form" class="form-validation" action="{% url 'login' %}" method="POST" novalidate>
       {% csrf_token %}
       <div class="text-danger wrapper text-center" ng-show="authError">
           {{ error }}

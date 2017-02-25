@@ -1,43 +1,41 @@
 # coding:utf-8
 
-#from django.shortcuts import render, render_to_response, HttpResponse
-import logging, json
+from django.shortcuts import render, render_to_response, HttpResponse
+from company.forms import *
+import logging
 from company.models import *
 #from company.forms import *
-from company.serializers import *
-from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.renderers import JSONRenderer
-from rest_framework.parsers import JSONParser
 
 # Create your views here.
 
 logger = logging.getLogger('views')
 
-class JSONResponse(HttpResponse):
-    """
-    An HttpResponse that renders its content into JSON.
-    """
-
-    def __init__(self, data, **kwargs):
-        content = JSONRenderer().render(data)
-        kwargs['content_type'] = 'application/json'
-        super(JSONResponse, self).__init__(content, **kwargs)
-
-@csrf_exempt
-def staffs(request, departname):
-	try:
-		if request.method == 'GET':
-			if departname == "all":
-				staffs = Staff.objects.all()
-				serializer = StaffSerializer(staffs, many=True)
-				return JSONResponse(serializer.data)
-			else:
-				staffs = Staff.objects.get(department__department_name=departname)
-				serializer = StaffSerializer(staffs, many=True)
-				return JSONResponse(serializer.data)
-	except Exception as e:
-		logger.error(e)
+# class JSONResponse(HttpResponse):
+#     """
+#     An HttpResponse that renders its content into JSON.
+#     """
+#
+#     def __init__(self, data, **kwargs):
+#         content = JSONRenderer().render(data)
+#         kwargs['content_type'] = 'application/json'
+#         super(JSONResponse, self).__init__(content, **kwargs)
+#
+# @csrf_exempt
+# def staffs(request, departname):
+# 	try:
+# 		if request.method == 'GET':
+# 			if departname == "all":
+# 				staffs = Staff.objects.all()
+# 				serializer = StaffSerializer(staffs, many=True)
+# 				return JSONResponse(serializer.data)
+# 			else:
+# 				staffs = Staff.objects.get(department__department_name=departname)
+# 				serializer = StaffSerializer(staffs, many=True)
+# 				return JSONResponse(serializer.data)
+# 	except Exception as e:
+# 		logger.error(e)
+#
+#
 
 
 # def staff(request, pk):
@@ -95,45 +93,53 @@ def staffs(request, departname):
 #         return HttpResponse(status=204)
 
 # # 改动之前的代码 # #
-# # 公司成员登陆界面
-# def do_login(request):
-# 	try:
-# 		company_login = CompanyLoginForm()
-# 		if request.method == 'POST' :
-# 			company_login = CompanyLoginForm(request.POST)
-# 			if company_login.is_valid():
-# 				# 登陆
-# 				companyname = company_login.cleaned_data["companyname"]
-# 				username = company_login.cleaned_data["username"]
-# 				password = company_login.cleaned_data["password"]
-# 				staff = Staff.objects.get(organization__company_name=companyname, login_name=username, password=password)
-# 				logger.debug(staff.staff_name)
-# 				if staff is not None :
-# 					return render(request, 'cindex.html', {'staff':staff})
-# 				else:
-# 					return render(request, 'clogin.html', {'error':'没有该用户', 'company_login':company_login})
-# 			else:
-# 				logger.error("数据验证失败 : " + company_login.errors)
-# 		return render(request, 'clogin.html', {'company_login': company_login, 'error':company_login.errors})
-# 	except Exception as e:
-# 		logger.error(e)
-# 		return render(request, 'clogin.html', {'company_login':company_login, 'error':''})
+# 公司成员登陆界面
+def login(request):
+	try:
+		company_login = CompanyLoginForm()
+		if request.method == 'POST' :
+			company_login = CompanyLoginForm(request.POST)
+			if company_login.is_valid():
+				# 登陆
+				companyname = company_login.cleaned_data["companyname"]
+				username = company_login.cleaned_data["username"]
+				password = company_login.cleaned_data["password"]
+				staff = Staff.objects.get(organization__company_name=companyname, login_name=username, password=password)
+				logger.debug(staff.staff_name)
+				if staff is not None :
+					return render(request, 'index.html', {'staff':staff})
+				else:
+					return render(request, 'login.html', {'error':'没有该用户', 'company_login':company_login})
+			else:
+				logger.error("数据验证失败 : " + company_login.errors)
+		return render(request, 'login.html', {'company_login': company_login, 'error':company_login.errors})
+	except Exception as e:
+		logger.error(e)
+		return render(request, 'login.html', {'company_login':company_login, 'error':''})
 #
-# #用户注册
-# def do_regist(request):
-# 	try:
-# 		return render(request, 'regist.html')
-# 	except Exception as e:
-# 		logger.error(e)
-# 		return render(request, 'page_404.html')
-#
-# #忘记密码
-# def do_forget(request):
-# 	try:
-# 		return render(request, 'forget.html')
-# 	except Exception as e:
-# 		logger.error(e)
-# 		return render(request, 'page_404.html')
+#用户注册
+def do_regist(request):
+	try:
+		if request.method == "POST":
+			print request.POST.get('company_name', None)
+			print request.POST.get('company_license', None)
+			print request.POST.get('corporation', None)
+			print request.POST.get('sex', None)
+			print request.POST.get('corporation_contact', None)
+			print request.POST.get('user_name', None)
+			print request.POST.get('password', None)
+		return render(request, 'regist.html')
+	except Exception as e:
+		logger.error(e)
+		return render(request, 'page_404.html')
+
+#忘记密码
+def do_forget(request):
+	try:
+		return render(request, 'forget.html')
+	except Exception as e:
+		logger.error(e)
+		return render(request, 'page_404.html')
 #
 # #跳转到 layout_app.html
 # def layout_app(request):
@@ -159,15 +165,16 @@ def staffs(request, departname):
 # 		logger.error(e)
 # 		return render(request, 'page_404.html')
 #
-# #页面跳转
-# def index(request, value):
-# 	try:
-# 		page = value + ".html"
-# 		return render(request, page)
-# 	except Exception as e:
-# 		logger.error(e)
-# 		return  render(request, 'page_404.html')
-#
+#页面跳转
+def index(request, value):
+	try:
+		page = value + ".html"
+		print page
+		return render(request, page)
+	except Exception as e:
+		logger.error(e)
+		return  render(request, 'login.html')
+
 # # 获取所有员工数据
 # def getAllStaffs(request):
 # 	try:
