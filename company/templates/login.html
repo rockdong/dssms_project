@@ -40,20 +40,24 @@
     <div class="wrapper text-center">
       <strong>欢迎登陆</strong>
     </div>
+<<<<<<< HEAD:company/templates/login.html
     <form name="form" class="form-validation" action="{% url 'login' %}" method="POST" novalidate>
+=======
+    <form name="form" class="form-validation" method="POST", ng-submit="login(user)" novalidate>
+>>>>>>> e276f3f7d16b1e767a88825a955af01da4e41916:company/templates/clogin.html
       {% csrf_token %}
       <div class="text-danger wrapper text-center" ng-show="authError">
           {{ error }}
       </div>
       <div class="list-group list-group-sm">
         <div class="list-group-item">
-          <input name="companyname" type="text" placeholder="公司名称" class="form-control no-border" required/>
+          <input name="companyname" type="text" placeholder="公司名称" class="form-control no-border" ng-model="user.companyname" required/>
         </div>
         <div class="list-group-item">
-          <input name="username" type="text" placeholder="用户名" class="form-control no-border" required/>
+          <input name="username" type="text" placeholder="用户名" class="form-control no-border" ng-model="user.username" required/>
         </div>
         <div class="list-group-item">
-           <input name="password" type="password" placeholder="用户密码" class="form-control no-border" required/>
+           <input name="password" type="password" placeholder="用户密码" class="form-control no-border" ng-model="user.password" required/>
         </div>
       </div>
       <button type="submit" class="btn btn-lg btn-primary btn-block">登陆</button>
@@ -79,11 +83,11 @@
     <script type="text/javascript" src="{% static 'company/company.js' %}"></script>
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.js' %}"></script>
-    <script src="{% static 'js/ui-load.js' %}"></script>
-    <script src="{% static 'js/ui-jp.config.js' %}"></script>
-    <script src="{% static 'js/ui-jp.js' %}"></script>
+{#    <script src="{% static 'js/ui-load.js' %}"></script>#}
+{#    <script src="{% static 'js/ui-jp.config.js' %}"></script>#}
+{#    <script src="{% static 'js/ui-jp.js' %}"></script>#}
     <script src="{% static 'js/ui-nav.js' %}"></script>
     <script src="{% static 'js/ui-toggle.js' %}"></script>
     <script src="{% static 'js/angular.js' %}"></script>
-    <script src="{% static 'js/app.js' %}"></script>
+{#    <script src="{% static 'js/app.js' %}"></script>#}
 {% endblock %}

@@ -17,8 +17,13 @@ from django.conf.urls import url
 from company.views import *
 
 urlpatterns = [
+<<<<<<< HEAD
     url(r'^login', login, name='login'),
     url(r'^regist', do_regist, name='regist'),
     url(r'^forget', do_forget, name='forget'),
     url(r'^index/(\w*)$', index, name='index'),
+=======
+    url(r'^index/(\w*)', index, name='index'),
+    url(r'^login', login, name='login'),
+>>>>>>> e276f3f7d16b1e767a88825a955af01da4e41916
 ]

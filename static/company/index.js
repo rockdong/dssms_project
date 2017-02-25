@@ -48,5 +48,9 @@ menuApp.run(function () {
 
 function getHtmlCode(value) {
     $("#content").html("");
+<<<<<<< HEAD
     $("#content").load(value);
+=======
+    $("#content").load('/index/' + value);
+>>>>>>> e276f3f7d16b1e767a88825a955af01da4e41916
 }

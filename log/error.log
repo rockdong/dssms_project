@@ -1,0 +1,445 @@
+2017-02-13 01:23:41,996 [Thread-18:123145524797440] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:23:42,972 [Thread-19:123145529004032] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:23:43,375 [Thread-20:123145533210624] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:23:43,804 [Thread-21:123145512177664] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:23:46,379 [Thread-22:123145512177664] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:23:50,952 [Thread-23:123145512177664] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:25:13,683 [Thread-29:123145512177664] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:25:14,870 [Thread-30:123145516384256] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:25:15,152 [Thread-31:123145520590848] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:25:15,356 [Thread-32:123145524797440] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:25:16,787 [Thread-33:123145529004032] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 01:25:20,324 [Thread-34:123145533210624] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 07:22:30,527 [Thread-2:123145470513152] [views:33] [views:do_login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-13 07:32:41,809 [Thread-8:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:33:44,237 [Thread-37:123145474719744] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:34:24,818 [Thread-45:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:34:40,878 [Thread-58:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:01,751 [Thread-80:123145474719744] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:05,291 [Thread-88:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:05,820 [Thread-96:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:06,081 [Thread-104:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:06,258 [Thread-112:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:06,449 [Thread-120:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:06,632 [Thread-128:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:06,812 [Thread-136:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:06,989 [Thread-144:123145470513152] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:36:50,826 [Thread-3:123145403949056] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 07:52:53,006 [Thread-25:123145399742464] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:06:57,506 [Thread-38:123145399742464] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:07:08,389 [Thread-46:123145399742464] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:16:26,891 [Thread-89:123145399742464] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:16:37,184 [Thread-97:123145399742464] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:18:47,485 [Thread-3:123145344618496] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:18:48,402 [Thread-11:123145344618496] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:18:49,497 [Thread-28:123145344618496] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:18:52,610 [Thread-56:123145344618496] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:18:58,944 [Thread-77:123145344618496] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:19:05,448 [Thread-94:123145344618496] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:19:13,253 [Thread-103:123145348825088] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:22:22,503 [Thread-3:123145567154176] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:22:29,454 [Thread-12:123145567154176] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:29:07,222 [Thread-231:123145567154176] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:29:08,489 [Thread-239:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:29:09,164 [Thread-247:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:29:09,897 [Thread-255:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:29:10,414 [Thread-263:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:29:10,841 [Thread-271:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:29:11,148 [Thread-279:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:29:11,372 [Thread-287:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:30:38,483 [Thread-295:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:31:49,200 [Thread-306:123145567154176] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:31:50,047 [Thread-314:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:31:50,206 [Thread-322:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:31:50,349 [Thread-330:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:31:50,512 [Thread-338:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:34:19,235 [Thread-347:123145567154176] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:34:19,960 [Thread-355:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:34:20,151 [Thread-363:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:34:20,321 [Thread-371:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:34:20,489 [Thread-379:123145562947584] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 08:34:59,273 [Thread-401:123145562947584] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 08:35:02,404 [Thread-409:123145562947584] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 22:36:26,309 [Thread-72:10544] [views:82] [views:index] [ERROR]- index.html
+2017-02-13 22:44:25,016 [Thread-207:10956] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 22:45:30,890 [Thread-279:8404] [views:82] [views:index] [ERROR]- undefined.html
+2017-02-13 22:59:00,299 [Thread-871:2448] [views:82] [views:index] [ERROR]- index.html
+2017-02-15 02:39:25,861 [Thread-28:123145527087104] [views:82] [views:index] [ERROR]- allStaffs.html
+2017-02-15 02:39:25,895 [Thread-31:123145539706880] [views:82] [views:index] [ERROR]- css.html
+2017-02-15 02:39:25,896 [Thread-29:123145531293696] [views:82] [views:index] [ERROR]- css.html
+2017-02-15 02:39:25,896 [Thread-33:123145522880512] [views:82] [views:index] [ERROR]- css.html
+2017-02-15 02:39:25,897 [Thread-32:123145543913472] [views:82] [views:index] [ERROR]- css.html
+2017-02-15 02:39:25,904 [Thread-34:123145527087104] [views:82] [views:index] [ERROR]- css.html
+2017-02-15 02:39:25,905 [Thread-30:123145535500288] [views:82] [views:index] [ERROR]- css.html
+2017-02-15 02:39:25,921 [Thread-36:123145552326656] [views:82] [views:index] [ERROR]- js.html
+2017-02-15 02:39:25,922 [Thread-35:123145548120064] [views:82] [views:index] [ERROR]- js.html
+2017-02-15 02:39:25,927 [Thread-37:123145522880512] [views:82] [views:index] [ERROR]- js.html
+2017-02-15 02:39:25,929 [Thread-38:123145531293696] [views:82] [views:index] [ERROR]- js.html
+2017-02-15 02:39:25,940 [Thread-40:123145535500288] [views:82] [views:index] [ERROR]- js.html
+2017-02-15 02:39:25,943 [Thread-39:123145527087104] [views:82] [views:index] [ERROR]- js.html
+2017-02-15 02:39:25,973 [Thread-41:123145535500288] [views:82] [views:index] [ERROR]- js.html
+2017-02-15 02:51:13,412 [Thread-127:123145522880512] [views:82] [views:index] [ERROR]- Invalid block tag on line 78: 'static'. Did you forget to register or load this tag?
+2017-02-15 02:51:14,641 [Thread-135:123145522880512] [views:82] [views:index] [ERROR]- Invalid block tag on line 78: 'static'. Did you forget to register or load this tag?
+2017-02-15 03:13:31,169 [Thread-319:123145522880512] [views:82] [views:index] [ERROR]- getAllStaffs.html
+2017-02-15 03:14:32,669 [Thread-5:123145419628544] [views:82] [views:index] [ERROR]- getAllStaffs.html
+2017-02-15 03:14:43,276 [Thread-6:123145419091968] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,819 [Thread-26:123145419091968] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,857 [Thread-29:123145431711744] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,868 [Thread-31:123145440124928] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,868 [Thread-27:123145423298560] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,873 [Thread-30:123145435918336] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,876 [Thread-28:123145427505152] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,877 [Thread-32:123145419091968] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,878 [Thread-33:123145431711744] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,932 [Thread-34:123145419091968] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,934 [Thread-36:123145427505152] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,943 [Thread-37:123145431711744] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,947 [Thread-35:123145423298560] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,954 [Thread-38:123145435918336] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:07,960 [Thread-39:123145440124928] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:31,873 [Thread-2:123145364037632] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:31,949 [Thread-3:123145364037632] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:31,970 [Thread-5:123145372450816] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:31,981 [Thread-4:123145368244224] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,008 [Thread-6:123145376657408] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,015 [Thread-7:123145364037632] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,021 [Thread-8:123145368244224] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,022 [Thread-9:123145372450816] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,033 [Thread-10:123145380864000] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,044 [Thread-11:123145385070592] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,074 [Thread-13:123145364037632] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,090 [Thread-15:123145364037632] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,093 [Thread-12:123145376657408] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:32,096 [Thread-14:123145368244224] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,026 [Thread-16:123145362964480] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,055 [Thread-17:123145362964480] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,066 [Thread-18:123145367171072] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,070 [Thread-19:123145371377664] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,071 [Thread-20:123145375584256] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,074 [Thread-21:123145379790848] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,076 [Thread-22:123145383997440] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,106 [Thread-23:123145362964480] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,110 [Thread-24:123145367171072] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,115 [Thread-25:123145379790848] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,123 [Thread-26:123145375584256] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,136 [Thread-28:123145383997440] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,137 [Thread-27:123145371377664] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:15:39,156 [Thread-29:123145362964480] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:17,929 [Thread-2:123145415782400] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:17,989 [Thread-4:123145419988992] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:17,998 [Thread-7:123145432608768] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:17,997 [Thread-6:123145428402176] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:17,996 [Thread-3:123145415782400] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,001 [Thread-5:123145424195584] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,005 [Thread-8:123145436815360] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,029 [Thread-9:123145419988992] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,047 [Thread-10:123145424195584] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,082 [Thread-12:123145419988992] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,085 [Thread-13:123145424195584] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,089 [Thread-14:123145428402176] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,089 [Thread-11:123145415782400] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:18,103 [Thread-15:123145432608768] [views:91] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:16:57,399 [Thread-3:123145523101696] [views:82] [views:index] [ERROR]- getAllStaffs.html
+2017-02-15 03:17:07,390 [Thread-5:123145522565120] [views:82] [views:index] [ERROR]- getAllStaffs.html
+2017-02-15 03:17:44,454 [Thread-6:123145522565120] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:55,088 [Thread-25:123145522565120] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,624 [Thread-39:123145522565120] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,660 [Thread-42:123145535184896] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,662 [Thread-40:123145526771712] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,662 [Thread-45:123145522565120] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,663 [Thread-41:123145530978304] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,666 [Thread-44:123145543598080] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,667 [Thread-43:123145539391488] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,685 [Thread-46:123145530978304] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,696 [Thread-47:123145526771712] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,706 [Thread-50:123145539391488] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,711 [Thread-48:123145522565120] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,719 [Thread-49:123145535184896] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,722 [Thread-51:123145530978304] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:17:58,726 [Thread-52:123145543598080] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:18:30,439 [Thread-55:123145530978304] [views:82] [views:index] [ERROR]- getAllStaffs.html
+2017-02-15 03:18:52,869 [Thread-60:123145522565120] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:19:05,609 [Thread-62:123145522565120] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:06,276 [Thread-3:123145386074112] [views:92] [views:getAllStaffs] [ERROR]- global name 'count' is not defined
+2017-02-15 03:20:13,507 [Thread-5:123145385537536] [views:92] [views:getAllStaffs] [ERROR]- global name 'count' is not defined
+2017-02-15 03:20:30,206 [Thread-3:123145526870016] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,726 [Thread-4:123145526333440] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,755 [Thread-7:123145538953216] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,757 [Thread-8:123145543159808] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,758 [Thread-9:123145547366400] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,759 [Thread-5:123145530540032] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,762 [Thread-10:123145526333440] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,763 [Thread-6:123145534746624] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,777 [Thread-11:123145538953216] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,791 [Thread-13:123145530540032] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,791 [Thread-12:123145543159808] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,796 [Thread-14:123145547366400] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,804 [Thread-15:123145534746624] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,806 [Thread-16:123145526333440] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:36,810 [Thread-17:123145538953216] [views:92] [views:getAllStaffs] [ERROR]- cannot concatenate 'str' and 'int' objects
+2017-02-15 03:20:59,830 [Thread-2:123145531420672] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,890 [Thread-4:123145539833856] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,891 [Thread-5:123145544040448] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,891 [Thread-7:123145552453632] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,892 [Thread-3:123145535627264] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,892 [Thread-6:123145548247040] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,893 [Thread-8:123145531420672] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,925 [Thread-10:123145544040448] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,928 [Thread-9:123145539833856] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,928 [Thread-12:123145531420672] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,928 [Thread-11:123145535627264] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,933 [Thread-14:123145552453632] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,934 [Thread-13:123145548247040] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:20:59,949 [Thread-15:123145544040448] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,750 [Thread-2:123145473187840] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,805 [Thread-3:123145477394432] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,806 [Thread-6:123145490014208] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,808 [Thread-4:123145481601024] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,808 [Thread-5:123145485807616] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,810 [Thread-8:123145473187840] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,812 [Thread-7:123145494220800] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,835 [Thread-10:123145485807616] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,839 [Thread-9:123145477394432] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,844 [Thread-11:123145473187840] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,848 [Thread-12:123145481601024] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,851 [Thread-14:123145494220800] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,851 [Thread-13:123145490014208] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:19,870 [Thread-15:123145473187840] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:21:43,896 [Thread-17:123145472651264] [views:92] [views:getAllStaffs] [ERROR]- <QuerySet [<Staff: 余某>]> is not JSON serializable
+2017-02-15 03:22:01,713 [Thread-3:123145315897344] [views:92] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:23:58,275 [Thread-3:123145393537024] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,893 [Thread-4:123145393000448] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,912 [Thread-5:123145397207040] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,925 [Thread-7:123145405620224] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,926 [Thread-6:123145401413632] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,927 [Thread-8:123145409826816] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,928 [Thread-9:123145414033408] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,930 [Thread-10:123145393000448] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,943 [Thread-11:123145397207040] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,957 [Thread-12:123145405620224] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,963 [Thread-14:123145409826816] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,963 [Thread-13:123145401413632] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,969 [Thread-16:123145393000448] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,971 [Thread-15:123145414033408] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:03,989 [Thread-17:123145397207040] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:24:18,043 [Thread-22:123145393000448] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:26:13,215 [Thread-30:123145393000448] [views:95] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:28:25,527 [Thread-3:123145457483776] [views:96] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:28:31,952 [Thread-5:123145456410624] [views:96] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:28:48,733 [Thread-3:123145437151232] [views:97] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-15 03:29:18,328 [Thread-3:123145570205696] [views:97] [views:getAllStaffs] [ERROR]- dump() takes at least 2 arguments (1 given)
+2017-02-18 09:46:15,941 [Thread-3:123145456566272] [views:40] [views:staffs] [ERROR]- Staff matching query does not exist.
+2017-02-18 09:46:31,100 [Thread-4:123145456566272] [views:40] [views:staffs] [ERROR]- Staff matching query does not exist.
+2017-02-18 09:50:25,740 [Thread-2:123145377837056] [views:40] [views:staffs] [ERROR]- Staff matching query does not exist.
+2017-02-18 09:52:07,712 [Thread-2:123145452515328] [views:40] [views:staffs] [ERROR]- (u"Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the StaffSerializer serializer.",)
+2017-02-18 09:52:43,585 [Thread-2:123145488433152] [views:40] [views:staffs] [ERROR]- Field name `organization__company_name` is not valid for model `Staff`.
+2017-02-20 01:23:57,999 [Thread-3:123145321947136] [views:40] [views:staffs] [ERROR]- Staff matching query does not exist.
+2017-02-20 01:58:56,821 [Thread-2:123145479872512] [views:170] [views:index] [ERROR]- global name 'render' is not defined
+2017-02-20 01:59:09,184 [Thread-5:123145479872512] [views:170] [views:index] [ERROR]- global name 'render' is not defined
+2017-02-20 01:59:10,235 [Thread-6:123145484079104] [views:170] [views:index] [ERROR]- global name 'render' is not defined
+2017-02-20 01:59:28,254 [Thread-2:123145528750080] [views:170] [views:index] [ERROR]- global name 'render' is not defined
+2017-02-20 01:59:48,619 [Thread-2:123145493614592] [views:170] [views:index] [ERROR]- .html
+2017-02-20 01:59:48,672 [Thread-6:123145506234368] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:48,672 [Thread-3:123145493614592] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:48,672 [Thread-4:123145497821184] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:48,672 [Thread-5:123145502027776] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:48,674 [Thread-7:123145510440960] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:48,677 [Thread-8:123145514647552] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:48,697 [Thread-10:123145497821184] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:48,697 [Thread-9:123145493614592] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:48,704 [Thread-11:123145502027776] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:48,705 [Thread-12:123145506234368] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:48,710 [Thread-14:123145514647552] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:48,711 [Thread-13:123145510440960] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:48,724 [Thread-15:123145497821184] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:58,335 [Thread-16:123145492004864] [views:170] [views:index] [ERROR]- login.html
+2017-02-20 01:59:58,361 [Thread-19:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:58,362 [Thread-17:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:58,363 [Thread-18:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:58,364 [Thread-21:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:58,364 [Thread-20:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:58,365 [Thread-22:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 01:59:58,385 [Thread-23:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:58,388 [Thread-24:123145496211456] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:58,389 [Thread-25:123145500418048] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:58,395 [Thread-26:123145504624640] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:58,397 [Thread-27:123145508831232] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:58,412 [Thread-29:123145500418048] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 01:59:58,413 [Thread-28:123145513037824] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:07,883 [Thread-30:123145492004864] [views:170] [views:index] [ERROR]- .html
+2017-02-20 02:00:07,898 [Thread-31:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:07,914 [Thread-32:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:07,919 [Thread-36:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:07,923 [Thread-35:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:07,923 [Thread-33:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:07,928 [Thread-34:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:07,929 [Thread-37:123145496211456] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:07,932 [Thread-38:123145500418048] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:07,943 [Thread-39:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:07,947 [Thread-40:123145504624640] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:07,949 [Thread-41:123145513037824] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:07,961 [Thread-42:123145508831232] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:07,973 [Thread-43:123145500418048] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:29,425 [Thread-44:123145492004864] [views:170] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['index/(\\w*)']
+2017-02-20 02:00:29,451 [Thread-45:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:29,451 [Thread-46:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:29,452 [Thread-50:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:29,452 [Thread-47:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:29,452 [Thread-48:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:29,452 [Thread-49:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:00:29,468 [Thread-51:123145496211456] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:29,473 [Thread-52:123145500418048] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:29,479 [Thread-53:123145508831232] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:29,484 [Thread-54:123145513037824] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:29,487 [Thread-55:123145504624640] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:29,491 [Thread-56:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:00:29,507 [Thread-57:123145496211456] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:01:20,200 [Thread-58:123145492004864] [views:170] [views:index] [ERROR]- .html
+2017-02-20 02:01:20,226 [Thread-61:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:01:20,226 [Thread-62:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:01:20,227 [Thread-63:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:01:20,227 [Thread-59:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:01:20,228 [Thread-60:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:01:20,228 [Thread-64:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:01:20,243 [Thread-65:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:01:20,246 [Thread-66:123145496211456] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:01:20,251 [Thread-67:123145508831232] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:01:20,254 [Thread-68:123145513037824] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:01:20,257 [Thread-69:123145517244416] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:01:20,259 [Thread-70:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:01:20,276 [Thread-71:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:17,979 [Thread-72:123145492004864] [views:170] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['index/(\\w*)']
+2017-02-20 02:02:18,004 [Thread-77:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:18,004 [Thread-74:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:18,006 [Thread-75:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:18,006 [Thread-76:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:18,007 [Thread-73:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:18,008 [Thread-78:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:18,023 [Thread-79:123145513037824] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:18,030 [Thread-80:123145496211456] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:18,035 [Thread-81:123145504624640] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:18,043 [Thread-82:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:18,044 [Thread-83:123145500418048] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:18,047 [Thread-84:123145508831232] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:18,051 [Thread-85:123145496211456] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:30,117 [Thread-88:123145500418048] [views:170] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['index/(\\w*)']
+2017-02-20 02:02:30,145 [Thread-89:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:30,146 [Thread-90:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:30,147 [Thread-94:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:30,148 [Thread-92:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:30,148 [Thread-91:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:30,149 [Thread-93:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:02:30,165 [Thread-95:123145508831232] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:30,169 [Thread-96:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:30,176 [Thread-97:123145500418048] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:30,179 [Thread-98:123145504624640] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:30,180 [Thread-99:123145496211456] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:30,182 [Thread-100:123145513037824] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:02:30,198 [Thread-101:123145508831232] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:20,372 [Thread-108:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:20,416 [Thread-109:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:20,421 [Thread-110:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:20,422 [Thread-111:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:20,427 [Thread-112:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:20,430 [Thread-113:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:20,436 [Thread-114:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:20,437 [Thread-115:123145517244416] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:21,652 [Thread-116:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:21,693 [Thread-117:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:21,709 [Thread-119:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:21,710 [Thread-118:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:21,717 [Thread-120:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:21,722 [Thread-121:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:21,731 [Thread-123:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:21,734 [Thread-122:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:22,442 [Thread-124:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:22,464 [Thread-125:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:22,474 [Thread-126:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:22,478 [Thread-127:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:22,482 [Thread-128:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:22,489 [Thread-129:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:22,491 [Thread-130:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:22,492 [Thread-131:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:23,043 [Thread-132:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:23,074 [Thread-134:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:23,074 [Thread-133:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:23,078 [Thread-135:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:23,080 [Thread-136:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:23,080 [Thread-138:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:23,081 [Thread-137:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:23,092 [Thread-139:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,100 [Thread-140:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:25,132 [Thread-142:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,132 [Thread-143:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,133 [Thread-141:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:25,134 [Thread-144:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,135 [Thread-145:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,139 [Thread-146:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,151 [Thread-147:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,853 [Thread-148:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:25,882 [Thread-149:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,885 [Thread-150:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,885 [Thread-151:123145500418048] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:25,888 [Thread-152:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,896 [Thread-153:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,898 [Thread-154:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:25,904 [Thread-155:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:26,687 [Thread-156:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:26,711 [Thread-157:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:26,716 [Thread-158:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:26,718 [Thread-159:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:26,720 [Thread-160:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:26,742 [Thread-161:123145508831232] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:26,743 [Thread-162:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:26,748 [Thread-163:123145517244416] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:27,522 [Thread-164:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:27,552 [Thread-165:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:27,553 [Thread-166:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:27,554 [Thread-167:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:27,558 [Thread-169:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:27,559 [Thread-168:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:27,561 [Thread-170:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:27,577 [Thread-171:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:28,893 [Thread-172:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:28,921 [Thread-173:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:28,925 [Thread-174:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:28,930 [Thread-176:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:28,930 [Thread-175:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:28,938 [Thread-177:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:28,945 [Thread-179:123145492004864] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:28,946 [Thread-178:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:30,612 [Thread-180:123145492004864] [views:170] [views:index] [ERROR]- index.html
+2017-02-20 02:03:30,644 [Thread-181:123145492004864] [views:170] [views:index] [ERROR]- js.html
+2017-02-20 02:03:30,645 [Thread-184:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:30,647 [Thread-182:123145496211456] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:30,647 [Thread-183:123145500418048] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:30,650 [Thread-185:123145508831232] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:30,651 [Thread-186:123145513037824] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:03:30,669 [Thread-187:123145504624640] [views:170] [views:index] [ERROR]- css.html
+2017-02-20 02:05:41,995 [Thread-4:123145539751936] [views:170] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:07:39,723 [Thread-10:123145530302464] [views:171] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:08:16,687 [Thread-2:123145524064256] [views:171] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:09:17,163 [Thread-2:123145514012672] [views:172] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:32:48,937 [Thread-53:123145514012672] [views:172] [views:index] [ERROR]- cindex.html
+2017-02-20 02:32:59,287 [Thread-69:123145522425856] [views:172] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:33:53,351 [Thread-96:123145518219264] [views:172] [views:index] [ERROR]- cindex.html
+2017-02-20 02:34:41,053 [Thread-105:123145518219264] [views:172] [views:index] [ERROR]- cindex.html
+2017-02-20 02:35:16,830 [Thread-114:123145514012672] [views:172] [views:index] [ERROR]- cindex.html
+2017-02-20 02:35:38,868 [Thread-121:123145518219264] [views:172] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:37:26,839 [Thread-5:123145350062080] [views:171] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:37:54,413 [Thread-26:123145341112320] [views:171] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:39:14,934 [Thread-2:123145438679040] [views:171] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 02:40:54,565 [Thread-29:123145437605888] [views:171] [views:index] [ERROR]- clogin.html
+2017-02-20 02:40:58,310 [Thread-49:123145437605888] [views:171] [views:index] [ERROR]- Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(\\w*)/$']
+2017-02-20 03:00:39,795 [Thread-2:123145565872128] [views:171] [views:index] [ERROR]- .html
+2017-02-20 03:01:01,784 [Thread-8:123145565872128] [views:171] [views:index] [ERROR]- .html
+2017-02-20 03:01:06,339 [Thread-9:123145570078720] [views:171] [views:index] [ERROR]- sdfsdf.html
+2017-02-20 03:01:57,922 [Thread-3:123145536425984] [views:171] [views:index] [ERROR]- sdfsdf.html
+2017-02-20 03:06:24,759 [Thread-2:123145385562112] [views:171] [views:index] [ERROR]- .html
+2017-02-22 01:46:53,009 [Thread-2:123145337761792] [views:121] [views:login] [ERROR]- global name 'CompanyLoginForm' is not defined
+2017-02-22 01:49:40,085 [Thread-6:123145572773888] [views:117] [views:login] [ERROR]- no such table: company_staff
+2017-02-22 01:59:10,968 [Thread-3:123145352323072] [views:117] [views:login] [ERROR]- Staff matching query does not exist.
+2017-02-22 02:56:15,689 [Thread-3:123145442021376] [views:168] [views:index] [ERROR]- .html
+2017-02-22 02:56:17,926 [Thread-4:123145442021376] [views:117] [views:login] [ERROR]- cannot concatenate 'str' and 'ErrorDict' objects
+2017-02-22 03:24:29,232 [Thread-8:123145325211648] [views:175] [views:index] [ERROR]- .html
+2017-02-22 03:25:20,019 [Thread-9:123145325211648] [views:175] [views:index] [ERROR]- .html
