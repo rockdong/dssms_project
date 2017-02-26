@@ -1,16 +1,12 @@
 # coding:utf-8
 
-<<<<<<< HEAD
-from django.shortcuts import render, render_to_response, HttpResponse
-from company.forms import *
-import logging
-=======
-from django.shortcuts import render, render_to_response, HttpResponse, HttpResponseRedirect
 
-import logging, json
->>>>>>> e276f3f7d16b1e767a88825a955af01da4e41916
+from django.shortcuts import render, render_to_response, HttpResponse
+# from company.forms import *
+import logging
+
 from company.models import *
-#from company.forms import *
+from company.forms import *
 
 # Create your views here.
 

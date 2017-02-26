@@ -40,11 +40,8 @@
     <div class="wrapper text-center">
       <strong>欢迎登陆</strong>
     </div>
-<<<<<<< HEAD:company/templates/login.html
     <form name="form" class="form-validation" action="{% url 'login' %}" method="POST" novalidate>
-=======
-    <form name="form" class="form-validation" method="POST", ng-submit="login(user)" novalidate>
->>>>>>> e276f3f7d16b1e767a88825a955af01da4e41916:company/templates/clogin.html
+
       {% csrf_token %}
       <div class="text-danger wrapper text-center" ng-show="authError">
           {{ error }}
