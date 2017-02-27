@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 
@@ -72,7 +73,7 @@ class Skill(models.Model):
         return self.skill_name
 
 
-class Staff(models.Model):
+class Staff(AbstractUser):
     """
     Description: 公司成员信息
     """
@@ -86,8 +87,8 @@ class Staff(models.Model):
     staff_name = models.CharField(max_length=20, null=False, blank=False, verbose_name='姓名')
     
     sex = models.CharField(choices=sex_char, max_length=1, null=False, blank=False, verbose_name='性别')
-    login_name = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆账号')
-    password = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆密码')
+    # login_name = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆账号')
+    # password = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆密码')
     skills = models.ManyToManyField(Skill, verbose_name='技术/能力')
     date_join = models.DateField(verbose_name='入职时间')
     date_out = models.DateField(null=True, verbose_name='离职时间')
