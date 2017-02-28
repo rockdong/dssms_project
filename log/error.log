@@ -1,5 +1,0 @@
-2017-02-26 21:46:07,081 [Thread-11:13480] [views:138] [views:login] [ERROR]- global name 'CompanyLoginForm' is not defined
-2017-02-26 21:47:17,470 [Thread-2:11708] [views:138] [views:login] [ERROR]- global name 'CompanyLoginForm' is not defined
-2017-02-26 21:47:18,688 [Thread-3:3564] [views:138] [views:login] [ERROR]- global name 'CompanyLoginForm' is not defined
-2017-02-26 21:48:31,711 [Thread-2:12412] [views:138] [views:login] [ERROR]- blogin.html
-2017-02-26 21:50:44,145 [Thread-111:7712] [views:196] [views:index] [ERROR]- .html
