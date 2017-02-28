@@ -17,7 +17,7 @@ from django.conf.urls import url
 from company.views import *
 
 urlpatterns = [
-    url(r'^login', login, name='login'),
+    url(r'^login/$', do_login, name='login'),
     url(r'^regist', do_regist, name='regist'),
     url(r'^forget', do_forget, name='forget'),
     url(r'^index/(\w*)$', index, name='index'),

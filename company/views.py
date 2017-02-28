@@ -2,6 +2,7 @@
 
 
 from django.shortcuts import render, render_to_response, HttpResponse
+from django.contrib.auth import authenticate, login
 # from company.forms import *
 import logging
 
@@ -40,31 +41,31 @@ logger = logging.getLogger('views')
 #
 
 
-def login(request):
-	try:
-		print request.path
-		if request.method == 'POST':
-			companyname = request.POST.get('companyname', None)
-			username = request.POST.get('username', None)
-			password = request.POST.get('password', None)
-			staff = Staff.objects.get(organization__company_name=companyname, login_name=username, password=password)
-			if staff:
-				# return render_to_response(request, 'cindex.html')
-				# return index(request, 'cindex')
-				return HttpResponseRedirect('/index/cindex.html')
-		else:
-			return render(request, 'clogin.html')
-	except Exception as e:
-		logger.error(e)
+# def login(request):
+# 	try:
+# 		print request.path
+# 		if request.method == 'POST':
+# 			companyname = request.POST.get('companyname', None)
+# 			username = request.POST.get('username', None)
+# 			password = request.POST.get('password', None)
+# 			staff = Staff.objects.get(organization__company_name=companyname, login_name=username, password=password)
+# 			if staff:
+# 				# return render_to_response(request, 'cindex.html')
+# 				# return index(request, 'cindex')
+# 				return HttpResponseRedirect('/index/cindex.html')
+# 		else:
+# 			return render(request, 'clogin.html')
+# 	except Exception as e:
+# 		logger.error(e)
 
 #页面跳转
-def index(request, value):
-	try:
-		page = value + ".html"
-		return render(request, page)
-	except Exception as e:
-		logger.error(e)
-		return  render(request, 'page_404.html')
+# def index(request, value):
+# 	try:
+# 		page = value + ".html"
+# 		return render(request, page)
+# 	except Exception as e:
+# 		logger.error(e)
+# 		return  render(request, 'page_404.html')
 
 
 
@@ -115,28 +116,38 @@ def index(request, value):
 
 # # 改动之前的代码 # #
 # 公司成员登陆界面
-def login(request):
-	try:
-		company_login = CompanyLoginForm()
-		if request.method == 'POST' :
-			company_login = CompanyLoginForm(request.POST)
-			if company_login.is_valid():
-				# 登陆
-				companyname = company_login.cleaned_data["companyname"]
-				username = company_login.cleaned_data["username"]
-				password = company_login.cleaned_data["password"]
-				staff = Staff.objects.get(organization__company_name=companyname, login_name=username, password=password)
-				logger.debug(staff.staff_name)
-				if staff is not None :
-					return render(request, 'index.html', {'staff':staff})
-				else:
-					return render(request, 'login.html', {'error':'没有该用户', 'company_login':company_login})
-			else:
-				logger.error("数据验证失败 : " + company_login.errors)
-		return render(request, 'login.html', {'company_login': company_login, 'error':company_login.errors})
-	except Exception as e:
-		logger.error(e)
-		return render(request, 'login.html', {'company_login':company_login, 'error':''})
+def do_login(request):
+	if request.method == "POST":
+		companyname = request.POST.get("companyname", "")
+		username = request.POST.get("username", "")
+		password = request.POST.get("password", "")
+		user = authenticate(organization__company_name=companyname, username=username, password=password)
+		if user is not None:
+			login(request, user)
+			return render(request, 'index.html')
+	elif request.method == "GET":
+		return render(request, "login.html")
+	# try:
+	# 	company_login = CompanyLoginForm()
+	# 	if request.method == 'POST' :
+	# 		company_login = CompanyLoginForm(request.POST)
+	# 		if company_login.is_valid():
+	# 			# 登陆
+	# 			companyname = company_login.cleaned_data["companyname"]
+	# 			username = company_login.cleaned_data["username"]
+	# 			password = company_login.cleaned_data["password"]
+	# 			staff = Staff.objects.get(organization__company_name=companyname, login_name=username, password=password)
+	# 			logger.debug(staff.staff_name)
+	# 			if staff is not None :
+	# 				return render(request, 'index.html', {'staff':staff})
+	# 			else:
+	# 				return render(request, 'login.html', {'error':'没有该用户', 'company_login':company_login})
+	# 		else:
+	# 			logger.error("数据验证失败 : " + company_login.errors)
+	# 	return render(request, 'login.html', {'company_login': company_login, 'error':company_login.errors})
+	# except Exception as e:
+	# 	logger.error(e)
+	# 	return render(request, 'login.html', {'company_login':company_login, 'error':''})
 #
 #用户注册
 def do_regist(request):

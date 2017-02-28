@@ -90,7 +90,7 @@ class Staff(AbstractUser):
     # login_name = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆账号')
     # password = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆密码')
     skills = models.ManyToManyField(Skill, verbose_name='技术/能力')
-    date_join = models.DateField(verbose_name='入职时间')
+    date_join = models.DateField(auto_now_add=True, verbose_name='入职时间')
     date_out = models.DateField(null=True, verbose_name='离职时间')
 
     class Meta:

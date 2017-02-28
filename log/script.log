@@ -1,0 +1,158 @@
+2017-02-28 23:23:56,611 [Thread-7:6572] [django.request:182] [base:get_response] [WARNING]- Not Found: /index/cindex.html
+2017-02-28 23:23:56,658 [Thread-8:1296] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-02-28 23:23:58,944 [Thread-9:9816] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:25:24,687 [Thread-15:13416] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:26:46,559 [Thread-7:4424] [django.request:182] [base:get_response] [WARNING]- Not Found: /
+2017-02-28 23:26:54,940 [Thread-8:5136] [django.request:182] [base:get_response] [WARNING]- Not Found: /
+2017-02-28 23:29:39,187 [Thread-7:13336] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:33:46,625 [Thread-8:840] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:33:55,444 [Thread-7:12092] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:41:27,108 [Thread-7:13392] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:41:30,907 [Thread-8:6764] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:41:31,698 [Thread-9:11808] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:41:32,378 [Thread-10:11768] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:41:32,971 [Thread-11:13832] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:41:33,285 [Thread-12:7372] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:41:33,627 [Thread-13:14024] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:42:30,502 [Thread-7:8536] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:43:19,206 [Thread-7:5908] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:43:19,969 [Thread-8:10932] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:43:28,391 [Thread-10:7900] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-02-28 23:44:52,207 [Thread-7:760] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 124, in do_login
+    user = authenticate(organization__company_name=companyname, username=username, password=password)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\auth\__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\auth\backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\auth\base_user.py", line 45, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 381, in get
+    num = len(clone)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 240, in __len__
+    self._fetch_all()
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: company_staff
+2017-03-01 00:13:42,753 [Thread-7:1124] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-03-01 00:14:27,177 [Thread-15:13288] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-03-01 00:42:38,930 [Thread-10:11368] [django.request:182] [base:get_response] [WARNING]- Not Found: /
+2017-03-01 00:42:48,082 [Thread-14:1776] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-03-01 00:43:30,474 [Thread-15:11328] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-03-01 00:43:37,957 [Thread-17:9780] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-03-01 00:44:13,569 [Thread-22:7000] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-01 00:44:20,266 [Thread-23:12280] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-03-01 00:45:09,640 [Thread-13:5640] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
