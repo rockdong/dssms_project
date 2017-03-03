@@ -3,7 +3,8 @@
 
 from django.shortcuts import render, render_to_response, HttpResponse
 from django.contrib.auth import authenticate, login
-# from company.forms import *
+from django.contrib.auth.hashers import make_password
+from django.views.generic.base import View
 import logging
 
 from company.models import *
@@ -12,6 +13,97 @@ from company.forms import *
 # Create your views here.
 
 logger = logging.getLogger('views')
+
+
+class LoginView(View):
+	def get(self, request):
+		login_form = CompanyLoginForm()
+		return render(request, "login.html", {'login_form':login_form})
+
+	def post(self, request):
+		login_form = CompanyLoginForm(request.POST)
+		if login_form.is_valid():
+			companyname = request.POST.get("companyname", "")
+			username = request.POST.get("username", "")
+			password = request.POST.get("password", "")
+			user = authenticate(organization__company_name=companyname, username=username, password=password)
+			if user is not None:
+				login(request, user)
+				return render(request, 'index.html')
+			else:
+				return  render(request, 'login.html', {})
+		else:
+			return render(request, 'login.html', {'login_form':login_form})
+
+
+class RegisterView(View):
+	def get(self, request):
+		register_form = RegisterForm()
+		return render(request, 'regist.html', {'register_form':register_form})
+
+	def post(self, request):
+		register_form = RegisterForm(request.POST)
+		if register_form.is_valid():
+			'''
+				获取页面表格数据
+			'''
+			company_name = request.POST.get('company_name', "")
+			company_license = request.POST.get('company_license', "")
+			corporation = request.POST.get('corporation', "")
+			sex = request.POST.get('sex', "")
+			corporation_contact = request.POST.get('corporation_contact', "")
+			user_name = request.POST.get('user_name', "")
+			password = request.POST.get('password', "")
+			'''
+				创建 organization
+				    company_name = models.CharField(null=False, max_length=50, primary_key=True, verbose_name='企业名称')
+					company_license = models.ImageField(upload_to='license/%s/', \
+										blank=False, null=False, verbose_name='营业执照')
+					corporation = models.CharField(max_length=20, null=False, blank=False, verbose_name='法人代表')
+					corporation_contact = models.CharField(max_length=20, null=False, blank=False, verbose_name='联系方式')
+			'''
+			organization = Organization()
+			organization.company_name = company_name
+			organization.corporation = corporation
+			organization.corporation_contact = corporation_contact
+			organization.save()
+			'''
+				创建 department
+				    organization = models.ForeignKey(Organization, verbose_name='公司')
+					department_name = models.CharField(max_length=50, null=False, blank=False, primary_key=True, verbose_name='部门名称')
+			'''
+			department = Department()
+			department.organization = organization
+			department.department_name = "法人"
+			department.save()
+			'''
+				创建 skills
+				    organization = models.ForeignKey(Organization, verbose_name='公司')
+    				skill_name = models.CharField(max_length=20, primary_key=True, verbose_name='技术')
+			'''
+			skill = Skill()
+			skill.organization = organization
+			skill.skill_name = "管理"
+			skill.save()
+
+			staff = Staff()
+			staff.organization = organization
+			staff.department = department
+			staff.staff_name = corporation
+			staff.sex = sex
+			staff.username = user_name
+			staff.password = make_password(password)
+			staff.save()
+	# organization = models.ForeignKey(Organization, verbose_name='公司')
+	# department = models.ForeignKey(Department, verbose_name='部门')
+	# staff_name = models.CharField(max_length=20, null=False, blank=False, verbose_name='姓名')
+	#
+	# sex = models.CharField(choices=sex_char, max_length=1, null=False, blank=False, verbose_name='性别')
+	# # login_name = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆账号')
+	# # password = models.CharField(max_length=50, null=False, blank=False, verbose_name='登陆密码')
+	# skills = models.ManyToManyField(Skill, verbose_name='技术/能力')
+	# date_join = models.DateField(auto_now_add=True, verbose_name='入职时间')
+	# date_out = models.DateField(null=True, verbose_name='离职时间')
 
 # class JSONResponse(HttpResponse):
 #     """
@@ -116,17 +208,17 @@ logger = logging.getLogger('views')
 
 # # 改动之前的代码 # #
 # 公司成员登陆界面
-def do_login(request):
-	if request.method == "POST":
-		companyname = request.POST.get("companyname", "")
-		username = request.POST.get("username", "")
-		password = request.POST.get("password", "")
-		user = authenticate(organization__company_name=companyname, username=username, password=password)
-		if user is not None:
-			login(request, user)
-			return render(request, 'index.html')
-	elif request.method == "GET":
-		return render(request, "login.html")
+# def do_login(request):
+# 	if request.method == "POST":
+# 		companyname = request.POST.get("companyname", "")
+# 		username = request.POST.get("username", "")
+# 		password = request.POST.get("password", "")
+# 		user = authenticate(organization__company_name=companyname, username=username, password=password)
+# 		if user is not None:
+# 			login(request, user)
+# 			return render(request, 'index.html')
+# 	elif request.method == "GET":
+# 		return render(request, "login.html")
 	# try:
 	# 	company_login = CompanyLoginForm()
 	# 	if request.method == 'POST' :
@@ -149,21 +241,21 @@ def do_login(request):
 	# 	logger.error(e)
 	# 	return render(request, 'login.html', {'company_login':company_login, 'error':''})
 #
-#用户注册
-def do_regist(request):
-	try:
-		if request.method == "POST":
-			print request.POST.get('company_name', None)
-			print request.POST.get('company_license', None)
-			print request.POST.get('corporation', None)
-			print request.POST.get('sex', None)
-			print request.POST.get('corporation_contact', None)
-			print request.POST.get('user_name', None)
-			print request.POST.get('password', None)
-		return render(request, 'regist.html')
-	except Exception as e:
-		logger.error(e)
-		return render(request, 'page_404.html')
+# #用户注册
+# def do_regist(request):
+# 	try:
+		# if request.method == "POST":
+		# 	print request.POST.get('company_name', None)
+		# 	print request.POST.get('company_license', None)
+		# 	print request.POST.get('corporation', None)
+		# 	print request.POST.get('sex', None)
+		# 	print request.POST.get('corporation_contact', None)
+		# 	print request.POST.get('user_name', None)
+		# 	print request.POST.get('password', None)
+	# 	return render(request, 'regist.html')
+	# except Exception as e:
+	# 	logger.error(e)
+	# 	return render(request, 'page_404.html')
 
 #忘记密码
 def do_forget(request):

@@ -156,3 +156,39 @@ Traceback (most recent call last):
   File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
     % (callback.__module__, view_name))
 ValueError: The view company.views.do_login didn't return an HttpResponse object. It returned None instead.
+2017-03-01 23:54:45,288 [Thread-3:9456] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-02 23:45:31,684 [Thread-18:6452] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-02 23:45:31,730 [Thread-19:1364] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:46:05,046 [Thread-2:4284] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:46:05,944 [Thread-3:14108] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:46:07,904 [Thread-4:8416] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:46:27,551 [Thread-10:1324] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:46:31,763 [Thread-11:12124] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:47:03,187 [Thread-2:5220] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:47:03,878 [Thread-3:10124] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:47:04,040 [Thread-4:8088] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-02 23:47:08,217 [Thread-5:7492] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-04 01:32:54,193 [Thread-3:2656] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_env\dssms_project\company\views.py", line 20, in get
+    register_form = RegistForm()
+NameError: global name 'RegistForm' is not defined
+2017-03-04 01:32:54,961 [Thread-4:13932] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-04 01:34:39,164 [Thread-19:13504] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-04 01:35:21,640 [Thread-2:10400] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-04 01:35:24,924 [Thread-3:5944] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-04 01:39:02,069 [Thread-2:1452] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/regist
+2017-03-04 01:41:05,111 [Thread-33:5496] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-04 01:41:36,490 [Thread-39:12392] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /regist
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view company.views.RegisterView didn't return an HttpResponse object. It returned None instead.

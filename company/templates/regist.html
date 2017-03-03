@@ -63,6 +63,9 @@
             <div class="list-group-item">
                <input name="password" type="password" placeholder="登陆密码" class="form-control no-border" >
             </div>
+            <div class="list-group-item">
+               {{ register_form.captcha }}
+            </div>
           </div>
           <div class="checkbox m-b-md m-t-none">
             <label class="i-checks">
@@ -72,7 +75,7 @@
           <button type="submit" class="btn btn-lg btn-primary btn-block" ng-click="signup()">注册</button>
           <div class="line line-dashed"></div>
           <p class="text-center"><small>已经注册了公司账号?</small></p>
-          <a ui-sref="access.signin" class="btn btn-lg btn-default btn-block" onclick="index()">登陆</a>
+          <a ui-sref="access.signin" class="btn btn-lg btn-default btn-block" onclick="login()">登陆</a>
         </form>
       </div>
       <div class="text-center" ng-include="'tpl/blocks/page_footer.html'">

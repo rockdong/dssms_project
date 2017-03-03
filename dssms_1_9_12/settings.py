@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'project',
     'xadmin',
     'crispy_forms',
+    'captcha',
 ]
 
 AUTH_USER_MODEL = 'company.Staff'

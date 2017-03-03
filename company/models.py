@@ -11,8 +11,8 @@ class Organization(models.Model):
     Description: 公司，每个公司注册必需提供所有的信息，信息需要复核，无误后才可以进入平台。
     """
     company_name = models.CharField(null=False, max_length=50, primary_key=True, verbose_name='企业名称')
-    company_license = models.ImageField(upload_to='license/%s/', \
-                        blank=False, null=False, verbose_name='营业执照')
+    # company_license = models.ImageField(upload_to='license/%s/', \
+    #                     blank=False, null=False, verbose_name='营业执照')
     corporation = models.CharField(max_length=20, null=False, blank=False, verbose_name='法人代表')
     corporation_contact = models.CharField(max_length=20, null=False, blank=False, verbose_name='联系方式')
     date_regedit = models.DateTimeField(auto_now_add=True, verbose_name='注册时间')
@@ -25,20 +25,20 @@ class Organization(models.Model):
         return self.company_name
 
 
-class Role(models.Model):
-    """
-    Description: 角色，用来定义权力的模型
-    """
-    organization = models.ForeignKey(Organization, verbose_name='公司')
-    role_name = models.CharField(max_length=20, null=False, blank=False, primary_key=True, verbose_name='角色')
-    level = models.IntegerField(verbose_name='级别')
-
-    class Meta:
-        verbose_name='职权'
-        verbose_name_plural = verbose_name
-
-    def __unicode__(self):
-        return self.role_name
+# class Role(models.Model):
+#     """
+#     Description: 角色，用来定义权力的模型
+#     """
+#     organization = models.ForeignKey(Organization, verbose_name='公司')
+#     role_name = models.CharField(max_length=20, null=False, blank=False, primary_key=True, verbose_name='角色')
+#     level = models.IntegerField(verbose_name='级别')
+#
+#     class Meta:
+#         verbose_name='职权'
+#         verbose_name_plural = verbose_name
+#
+#     def __unicode__(self):
+#         return self.role_name
         
 
 
@@ -48,7 +48,7 @@ class Department(models.Model):
     """
     organization = models.ForeignKey(Organization, verbose_name='公司')
     department_name = models.CharField(max_length=50, null=False, blank=False, primary_key=True, verbose_name='部门名称')
-    role = models.OneToOneField(Role, verbose_name='职权')
+    # role = models.OneToOneField(Role, verbose_name='职权')
 
     class Meta:
         verbose_name='部门'

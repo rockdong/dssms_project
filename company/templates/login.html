@@ -47,21 +47,21 @@
           {{ error }}
       </div>
       <div class="list-group list-group-sm">
-        <div class="list-group-item">
-          <input name="companyname" type="text" placeholder="公司名称" class="form-control no-border" ng-model="user.companyname" required/>
+        <div class="list-group-item {% if login_form.errors.companyname %} has-error {% endif %}">
+          <input name="companyname" type="text" placeholder="公司名称" class="form-control {% if not login_form.errors.companyname %}no-border{% endif %}" />
         </div>
-        <div class="list-group-item">
-          <input name="username" type="text" placeholder="用户名" class="form-control no-border" ng-model="user.username" required/>
+        <div class="list-group-item {% if login_form.errors.username %} has-error {% endif %}">
+          <input name="username" type="text" placeholder="用户名" class="form-control {% if not login_form.errors.username %}no-border{% endif %}" />
         </div>
-        <div class="list-group-item">
-           <input name="password" type="password" placeholder="用户密码" class="form-control no-border" ng-model="user.password" required/>
+        <div class="list-group-item {% if login_form.errors.password %} has-error {% endif %}">
+           <input name="password" type="password" placeholder="用户密码" class="form-control {% if not login_form.errors.password %}no-border{% endif %}" />
         </div>
       </div>
       <button type="submit" class="btn btn-lg btn-primary btn-block">登陆</button>
       <div class="text-center m-t m-b"><a ui-sref="access.forgotpwd">忘记密码?</a></div>
       <div class="line line-dashed"></div>
       <p class="text-center"><small>没有平台账号?那先去注册一个公司账号吧!</small></p>
-      <a ui-sref="access.signup" class="btn btn-lg btn-default btn-block" onclick="regist()">注册</a>
+      <a ui-sref="access.signup" class="btn btn-lg btn-default btn-block" href="{% url 'regist' %}">注册</a>
     </form>
   </div>
   <div class="text-center">
