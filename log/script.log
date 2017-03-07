@@ -192,3 +192,122 @@ Traceback (most recent call last):
   File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 158, in get_response
     % (callback.__module__, view_name))
 ValueError: The view company.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+2017-03-05 11:32:48,588 [Thread-22:4664] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-05 11:37:01,921 [Thread-78:11624] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:37:03,677 [Thread-79:12240] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:37:04,230 [Thread-80:3540] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:37:04,404 [Thread-81:8944] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:37:04,578 [Thread-82:10976] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:37:04,730 [Thread-83:744] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:37:04,891 [Thread-84:10468] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:42:09,283 [Thread-4:2972] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:42:11,881 [Thread-5:10784] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:43:39,614 [Thread-27:10200] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:43:58,813 [Thread-50:6260] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-05 11:43:58,813 [Thread-51:9588] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 11:43:58,813 [Thread-49:11064] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/c0.jpg
+2017-03-05 11:43:58,815 [Thread-52:11404] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 11:43:58,815 [Thread-53:6796] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-05 11:43:58,816 [Thread-54:4216] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 11:43:58,874 [Thread-55:6460] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 11:43:58,878 [Thread-56:8860] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
+2017-03-05 11:43:58,881 [Thread-57:9788] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-05 11:43:58,884 [Thread-58:7532] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-05 11:43:58,884 [Thread-59:8936] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a10.jpg
+2017-03-05 11:51:15,822 [Thread-66:9048] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:52:30,877 [Thread-82:12964] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/c0.jpg
+2017-03-05 11:52:30,877 [Thread-83:3632] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-05 11:52:30,877 [Thread-84:11656] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 11:52:30,878 [Thread-86:10652] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-05 11:52:30,877 [Thread-85:11364] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 11:52:30,878 [Thread-87:13524] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 11:52:30,927 [Thread-88:9360] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 11:52:30,928 [Thread-89:12992] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
+2017-03-05 11:52:30,930 [Thread-90:10352] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-05 11:52:30,931 [Thread-91:400] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-05 11:52:30,944 [Thread-92:4620] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a10.jpg
+2017-03-05 11:52:51,687 [Thread-94:888] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 11:52:51,693 [Thread-97:3960] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 11:52:51,694 [Thread-95:9892] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 11:52:51,694 [Thread-96:10828] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 11:52:51,694 [Thread-98:9916] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-05 11:52:51,696 [Thread-99:8644] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-05 11:52:51,742 [Thread-100:7348] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-05 11:52:51,746 [Thread-101:7260] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-05 11:53:40,523 [Thread-107:4616] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:53:41,313 [Thread-108:6828] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:53:41,477 [Thread-109:13060] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:53:41,631 [Thread-110:720] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:57:10,546 [Thread-122:5680] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:57:13,295 [Thread-123:8104] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:58:33,681 [Thread-131:10508] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 11:58:51,976 [Thread-139:8544] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 11:58:51,976 [Thread-140:228] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 11:58:51,976 [Thread-142:280] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 11:58:51,976 [Thread-141:744] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 11:58:51,976 [Thread-143:9048] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-05 11:58:51,976 [Thread-144:6348] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-05 11:58:52,022 [Thread-145:7520] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-05 11:58:52,022 [Thread-146:8064] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-05 12:26:09,594 [Thread-16:7496] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a0.jpg
+2017-03-05 12:26:09,596 [Thread-17:11776] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 12:26:09,598 [Thread-18:12276] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 12:26:09,598 [Thread-19:10720] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 12:26:09,599 [Thread-20:9144] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 12:26:11,331 [Thread-22:10628] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a0.jpg
+2017-03-05 12:26:11,332 [Thread-23:11904] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
+2017-03-05 12:26:11,332 [Thread-24:8364] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-05 12:26:11,332 [Thread-26:2964] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-05 12:26:11,332 [Thread-25:6628] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 12:26:11,332 [Thread-27:9364] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/c5.jpg
+2017-03-05 12:26:11,382 [Thread-28:11004] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-05 12:26:11,384 [Thread-29:3456] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/c4.jpg
+2017-03-05 12:26:11,384 [Thread-30:12004] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 12:26:11,385 [Thread-31:11804] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 12:26:12,069 [Thread-33:7424] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/c0.jpg
+2017-03-05 12:26:12,071 [Thread-34:10536] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a0.jpg
+2017-03-05 12:26:12,071 [Thread-35:3540] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 12:26:12,071 [Thread-36:13976] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 12:26:12,071 [Thread-37:10848] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/b0.jpg
+2017-03-05 12:26:12,071 [Thread-38:9704] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/b1.jpg
+2017-03-05 12:26:12,112 [Thread-39:9680] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/b2.jpg
+2017-03-05 12:26:16,193 [Thread-43:8460] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/css/bootstrap.css
+2017-03-05 12:26:16,197 [Thread-44:5156] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/css/animate.css
+2017-03-05 12:26:16,198 [Thread-45:12144] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/css/font-awesome.min.css
+2017-03-05 12:26:16,200 [Thread-46:9172] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/css/simple-line-icons.css
+2017-03-05 12:26:16,203 [Thread-47:8264] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/css/font.css
+2017-03-05 12:26:16,204 [Thread-48:10212] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/css/app.css
+2017-03-05 12:26:16,207 [Thread-49:13228] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/js/jquery.min.js
+2017-03-05 12:26:16,255 [Thread-50:11136] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a0.jpg
+2017-03-05 12:26:21,809 [Thread-51:7844] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-05 12:30:31,391 [Thread-83:13912] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/c0.jpg
+2017-03-05 12:30:31,391 [Thread-86:5776] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 12:30:31,391 [Thread-85:4216] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 12:30:31,391 [Thread-84:13128] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-05 12:30:31,391 [Thread-87:3148] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-05 12:30:31,392 [Thread-88:3744] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 12:30:31,447 [Thread-89:856] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 12:30:31,448 [Thread-90:6776] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
+2017-03-05 12:30:31,451 [Thread-91:5940] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-05 12:30:31,454 [Thread-92:11880] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-05 12:30:31,457 [Thread-93:10944] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a10.jpg
+2017-03-05 12:30:42,967 [Thread-100:11772] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/c0.jpg
+2017-03-05 12:30:42,967 [Thread-101:196] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-05 12:30:42,967 [Thread-102:10172] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 12:30:42,967 [Thread-103:2608] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 12:30:42,967 [Thread-105:13832] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 12:30:42,967 [Thread-104:4196] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-05 12:30:43,016 [Thread-106:12592] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 12:30:43,019 [Thread-107:7464] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
+2017-03-05 12:30:43,022 [Thread-108:14064] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-05 12:30:43,026 [Thread-109:13316] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-05 12:30:43,029 [Thread-110:10692] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a10.jpg
+2017-03-05 12:30:45,329 [Thread-113:12380] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-05 12:30:45,329 [Thread-114:14296] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-05 12:30:45,331 [Thread-115:11484] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-05 12:30:45,331 [Thread-116:11356] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 12:30:46,045 [Thread-119:9112] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-05 12:30:46,046 [Thread-118:4464] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-05 12:30:46,046 [Thread-120:2528] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-05 12:30:46,046 [Thread-121:12764] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
+2017-03-05 12:30:46,048 [Thread-122:3836] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a10.jpg
