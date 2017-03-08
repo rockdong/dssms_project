@@ -8428,3 +8428,338 @@ VariableDoesNotExist: Failed lookup for key [audio] in u"[{'False': False, 'None
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 2017-03-05 14:26:10,842 [Dummy-1:7572] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 00:15:18,860 [Dummy-1:140027361191680] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 00:15:18,868 [Dummy-1:140027361191680] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 00:15:22,701 [Thread-2:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:15:22,703 [Thread-2:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:15:22,926 [Thread-3:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:15:22,928 [Thread-3:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:15:22,983 [Thread-4:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:15:22,985 [Thread-4:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:15:30,010 [Thread-6:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'UxZXPjo8N48FIQdSRsdgh3nWCUzK2sgV\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x7f5a9c0607d0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f5a9c0e3e90>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5a9c061c90>, u\'request\': <WSGIRequest: GET \'/login/\'>}, {}, {\'login_form\': <CompanyLoginForm bound=False, valid=Unknown, fields=(companyname;username;password)>}, {\'block\': <Block Node: contain. Contents: [<TextNode: u\'\\n\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\\n    <div class="app app\'>, <django.template.defaulttags.URLNode object at 0x7f5a9c0e1450>, <TextNode: u\'" method="POST" novalidat\'>, <django.template.defaulttags.CsrfTokenNode object at 0x7f5a9c0e14d0>, <TextNode: u\'\\n      <div class="text-d\'>, <Variable Node: error>, <TextNode: u\'\\n      </div>\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n      <div class="list-g\'>, <IfNode>, <TextNode: u\'">\\n          <input name=\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <IfNode>, <TextNode: u\'">\\n          <input name=\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <IfNode>, <TextNode: u\'">\\n           <input name\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <django.template.defaulttags.URLNode object at 0x7f5a9c0e1fd0>, <TextNode: u\'">\\u6ce8\\u518c</a>\\n    </form>\\n  </\'>]>}]'
+2017-03-08 00:15:30,011 [Thread-6:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'companyname' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [companyname] in u''
+2017-03-08 00:15:30,011 [Thread-6:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'companyname' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [companyname] in u''
+2017-03-08 00:15:30,012 [Thread-6:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [username] in u''
+2017-03-08 00:15:30,012 [Thread-6:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [username] in u''
+2017-03-08 00:15:30,012 [Thread-6:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'password' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [password] in u''
+2017-03-08 00:15:30,012 [Thread-6:140027258898176] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'password' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [password] in u''
+2017-03-08 00:22:49,914 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "company_staff"."id", "company_staff"."password", "company_staff"."last_login", "company_staff"."is_superuser", "company_staff"."username", "company_staff"."first_name", "company_staff"."last_name", "company_staff"."email", "company_staff"."is_staff", "company_staff"."is_active", "company_staff"."date_joined", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" WHERE "company_staff"."username" = 'yu'; args=(u'yu',)
+2017-03-08 00:22:49,946 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '4dh7o15p6flgend0rgs9xpbv9g0ou4za' LIMIT 1; args=(u'4dh7o15p6flgend0rgs9xpbv9g0ou4za',)
+2017-03-08 00:22:49,947 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-03-08 00:22:49,950 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '4dh7o15p6flgend0rgs9xpbv9g0ou4za', 'YzI4NzU0M2E1NGFlNjc5NWZmZTU4Y2ExZGFiZDQ4ZmIxYTQyNWJkODp7fQ==', '2017-03-22 00:22:49.946960'; args=(u'4dh7o15p6flgend0rgs9xpbv9g0ou4za', u'YzI4NzU0M2E1NGFlNjc5NWZmZTU4Y2ExZGFiZDQ4ZmIxYTQyNWJkODp7fQ==', u'2017-03-22 00:22:49.946960')
+2017-03-08 00:22:50,057 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '4dh7o15p6flgend0rgs9xpbv9g0ou4za'; args=(u'4dh7o15p6flgend0rgs9xpbv9g0ou4za',)
+2017-03-08 00:22:50,058 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-03-08 00:22:50,059 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('4dh7o15p6flgend0rgs9xpbv9g0ou4za'); args=(u'4dh7o15p6flgend0rgs9xpbv9g0ou4za',)
+2017-03-08 00:22:50,062 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-03-08 00:22:50,064 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) UPDATE "company_staff" SET "last_login" = '2017-03-08 00:22:50.061860' WHERE "company_staff"."id" = 1; args=(u'2017-03-08 00:22:50.061860', 1)
+2017-03-08 00:22:50,076 [Thread-35:140027216934656] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'staff' in template 'index.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [staff] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f5a9c102500>>, 'user': <Staff: \u4f59\u67d0>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f5a9c0e18d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f5a9c08ed10>, u'request': <WSGIRequest: POST '/login/'>}, {}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n'>, <Variable Node: staff.organization.company_name>, <TextNode: u' DSSMS \\u7ba1\\u7406\\u5e73\\u53f0\\n'>]>}]"
+2017-03-08 00:22:50,079 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-03-08 00:22:50,081 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) UPDATE "django_session" SET "session_data" = 'NzhjYjk1ZDQ3YjA5YzVmZWY1ZWZiMmNjMTgxZTAxMGIyNzlhMGE3Yzp7Il9hdXRoX3VzZXJfaGFzaCI6ImM0YWJkZmRlZTMwZGJlMTQzMDFiYWJkYjRmNGMxNTFmMjcyZDViMmUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', "expire_date" = '2017-03-22 00:22:50.079705' WHERE "django_session"."session_key" = '4dh7o15p6flgend0rgs9xpbv9g0ou4za'; args=(u'NzhjYjk1ZDQ3YjA5YzVmZWY1ZWZiMmNjMTgxZTAxMGIyNzlhMGE3Yzp7Il9hdXRoX3VzZXJfaGFzaCI6ImM0YWJkZmRlZTMwZGJlMTQzMDFiYWJkYjRmNGMxNTFmMjcyZDViMmUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', u'2017-03-22 00:22:50.079705', u'4dh7o15p6flgend0rgs9xpbv9g0ou4za')
+2017-03-08 00:22:50,082 [Thread-35:140027216934656] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '4dh7o15p6flgend0rgs9xpbv9g0ou4za', 'NzhjYjk1ZDQ3YjA5YzVmZWY1ZWZiMmNjMTgxZTAxMGIyNzlhMGE3Yzp7Il9hdXRoX3VzZXJfaGFzaCI6ImM0YWJkZmRlZTMwZGJlMTQzMDFiYWJkYjRmNGMxNTFmMjcyZDViMmUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', '2017-03-22 00:22:50.079705'; args=(u'4dh7o15p6flgend0rgs9xpbv9g0ou4za', u'NzhjYjk1ZDQ3YjA5YzVmZWY1ZWZiMmNjMTgxZTAxMGIyNzlhMGE3Yzp7Il9hdXRoX3VzZXJfaGFzaCI6ImM0YWJkZmRlZTMwZGJlMTQzMDFiYWJkYjRmNGMxNTFmMjcyZDViMmUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', u'2017-03-22 00:22:50.079705')
+2017-03-08 00:22:58,618 [Thread-90:140027233720064] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:22:58,620 [Thread-90:140027233720064] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:22:58,631 [Thread-91:140027233720064] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:22:58,633 [Thread-91:140027233720064] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:22:58,648 [Thread-92:140027233720064] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:22:58,659 [Thread-94:140027250505472] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:22:58,662 [Thread-92:140027233720064] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:22:58,673 [Thread-94:140027250505472] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:22:58,686 [Thread-95:140027233720064] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:22:58,695 [Thread-95:140027233720064] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:22:58,699 [Thread-93:140027242112768] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:22:58,701 [Thread-93:140027242112768] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:22:58,715 [Thread-96:140027225327360] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:22:58,719 [Thread-96:140027225327360] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 00:22:58,742 [Thread-97:140027250505472] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 00:22:58,744 [Thread-97:140027250505472] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 23:18:18,888 [Dummy-1:140412892370688] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 23:18:18,915 [Dummy-1:140412892370688] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 23:19:23,880 [Thread-2:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 23:19:23,913 [Thread-2:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 23:19:27,711 [Thread-3:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (xadmin:xadmin) xadmin/>'
+2017-03-08 23:19:27,712 [Thread-3:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'captcha.urls' from '/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/captcha/urls.pyc'> (None:None) ^captcha>"
+2017-03-08 23:19:32,756 [Thread-4:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'8fGNSvl2vPiOLfCMUaSayQrlOooCwg4M\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x343b9b0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb4600e6ed0>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x3441b90>, u\'request\': <WSGIRequest: GET \'/login/\'>}, {}, {\'login_form\': <CompanyLoginForm bound=False, valid=Unknown, fields=(companyname;username;password)>}, {\'block\': <Block Node: contain. Contents: [<TextNode: u\'\\n\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\\n    <div class="app app\'>, <django.template.defaulttags.URLNode object at 0x7fb4600e3490>, <TextNode: u\'" method="POST" novalidat\'>, <django.template.defaulttags.CsrfTokenNode object at 0x7fb4600e3510>, <TextNode: u\'\\n      <div class="text-d\'>, <Variable Node: error>, <TextNode: u\'\\n      </div>\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n      <div class="list-g\'>, <IfNode>, <TextNode: u\'">\\n          <input name=\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <IfNode>, <TextNode: u\'">\\n          <input name=\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <IfNode>, <TextNode: u\'">\\n           <input name\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <django.template.defaulttags.URLNode object at 0x7fb4600e6050>, <TextNode: u\'">\\u6ce8\\u518c</a>\\n    </form>\\n  </\'>]>}]'
+2017-03-08 23:19:32,757 [Thread-4:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'companyname' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [companyname] in u''
+2017-03-08 23:19:32,757 [Thread-4:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'companyname' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [companyname] in u''
+2017-03-08 23:19:32,757 [Thread-4:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [username] in u''
+2017-03-08 23:19:32,757 [Thread-4:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [username] in u''
+2017-03-08 23:19:32,758 [Thread-4:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'password' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [password] in u''
+2017-03-08 23:19:32,758 [Thread-4:140412789737216] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'password' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [password] in u''
+2017-03-08 23:19:38,855 [Thread-27:140412772951808] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "company_staff"."id", "company_staff"."password", "company_staff"."last_login", "company_staff"."is_superuser", "company_staff"."username", "company_staff"."first_name", "company_staff"."last_name", "company_staff"."email", "company_staff"."is_staff", "company_staff"."is_active", "company_staff"."date_joined", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" WHERE "company_staff"."username" = 'yu'; args=(u'yu',)
+2017-03-08 23:19:38,888 [Thread-27:140412772951808] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '4dh7o15p6flgend0rgs9xpbv9g0ou4za' AND "django_session"."expire_date" > '2017-03-08 23:19:38.887534'); args=('4dh7o15p6flgend0rgs9xpbv9g0ou4za', u'2017-03-08 23:19:38.887534')
+2017-03-08 23:19:38,889 [Thread-27:140412772951808] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-03-08 23:19:38,891 [Thread-27:140412772951808] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) UPDATE "company_staff" SET "last_login" = '2017-03-08 23:19:38.889555' WHERE "company_staff"."id" = 1; args=(u'2017-03-08 23:19:38.889555', 1)
+2017-03-08 23:19:39,004 [Thread-27:140412772951808] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'staff' in template 'index.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [staff] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7fb460103500>>, 'user': <Staff: \u4f59\u67d0>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb4600dff50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb4600e7f50>, u'request': <WSGIRequest: POST '/login/'>}, {}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n'>, <Variable Node: staff.organization.company_name>, <TextNode: u' DSSMS \\u7ba1\\u7406\\u5e73\\u53f0\\n'>]>}]"
+2017-03-08 23:19:39,008 [Thread-27:140412772951808] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-03-08 23:19:39,009 [Thread-27:140412772951808] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) UPDATE "django_session" SET "session_data" = 'ZmJlMTZmNjJkMTYwZjQwM2UyOGRkNmYyOTA5NTc1NTM4NTJmNzI1ZDp7Il9hdXRoX3VzZXJfaGFzaCI6ImM0YWJkZmRlZTMwZGJlMTQzMDFiYWJkYjRmNGMxNTFmMjcyZDViMmUiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', "expire_date" = '2017-03-22 23:19:39.008064' WHERE "django_session"."session_key" = '4dh7o15p6flgend0rgs9xpbv9g0ou4za'; args=(u'ZmJlMTZmNjJkMTYwZjQwM2UyOGRkNmYyOTA5NTc1NTM4NTJmNzI1ZDp7Il9hdXRoX3VzZXJfaGFzaCI6ImM0YWJkZmRlZTMwZGJlMTQzMDFiYWJkYjRmNGMxNTFmMjcyZDViMmUiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', u'2017-03-22 23:19:39.008064', '4dh7o15p6flgend0rgs9xpbv9g0ou4za')
+2017-03-08 23:26:30,469 [Dummy-1:139788024182528] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 23:26:30,472 [Dummy-1:139788024182528] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 23:27:10,479 [Dummy-1:140715387254528] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 23:27:10,482 [Dummy-1:140715387254528] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 23:32:49,745 [Dummy-1:139707685029632] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 23:32:49,747 [Dummy-1:139707685029632] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 23:33:02,375 [Dummy-1:140017222878976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 23:33:02,379 [Dummy-1:140017222878976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 23:33:33,335 [Dummy-1:139663029278464] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 23:33:33,338 [Dummy-1:139663029278464] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 23:33:40,879 [Dummy-1:139918914209536] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 23:33:40,882 [Dummy-1:139918914209536] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2017-03-08 23:33:48,336 [Thread-2:139918810973952] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS "__count" FROM "company_staff"; args=()
+2017-03-08 23:33:50,819 [Thread-4:139918810973952] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS "__count" FROM "company_staff"; args=()
+2017-03-08 23:33:51,770 [Thread-5:139918810973952] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS "__count" FROM "company_staff"; args=()
+2017-03-08 23:34:01,645 [Thread-8:139918810973952] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'error' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'csrf_token\': <SimpleLazyObject: u\'s6LbpJzrknXrv2fBW1UPgaSLYYL80bsm\'>, \'user\': <SimpleLazyObject: <function <lambda> at 0x7f415c09c8c0>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x7f415c0a5390>, \'DEFAULT_MESSAGE_LEVELS\': {\'DEBUG\': 10, \'INFO\': 20, \'WARNING\': 30, \'SUCCESS\': 25, \'ERROR\': 40}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f415c0a50d0>, u\'request\': <WSGIRequest: GET \'/login/\'>}, {}, {\'login_form\': <CompanyLoginForm bound=False, valid=Unknown, fields=(companyname;username;password)>}, {\'block\': <Block Node: contain. Contents: [<TextNode: u\'\\n\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\\n    <div class="app app\'>, <django.template.defaulttags.URLNode object at 0x7f415c084c90>, <TextNode: u\'" method="POST" novalidat\'>, <django.template.defaulttags.CsrfTokenNode object at 0x2b22190>, <TextNode: u\'\\n      <div class="text-d\'>, <Variable Node: error>, <TextNode: u\'\\n      </div>\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n\'>, <TextNode: u\'\\n      <div class="list-g\'>, <IfNode>, <TextNode: u\'">\\n          <input name=\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <IfNode>, <TextNode: u\'">\\n          <input name=\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <IfNode>, <TextNode: u\'">\\n           <input name\'>, <IfNode>, <TextNode: u\'" />\\n        </div>\\n     \'>, <django.template.defaulttags.URLNode object at 0x7f415c096a90>, <TextNode: u\'">\\u6ce8\\u518c</a>\\n    </form>\\n  </\'>]>}]'
+2017-03-08 23:34:01,646 [Thread-8:139918810973952] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'companyname' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [companyname] in u''
+2017-03-08 23:34:01,646 [Thread-8:139918810973952] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'companyname' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [companyname] in u''
+2017-03-08 23:34:01,646 [Thread-8:139918810973952] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [username] in u''
+2017-03-08 23:34:01,647 [Thread-8:139918810973952] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'username' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [username] in u''
+2017-03-08 23:34:01,647 [Thread-8:139918810973952] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'password' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [password] in u''
+2017-03-08 23:34:01,647 [Thread-8:139918810973952] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'password' in template 'login.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [password] in u''
+2017-03-08 23:34:05,567 [Thread-13:139918782646016] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT "company_staff"."id", "company_staff"."password", "company_staff"."last_login", "company_staff"."is_superuser", "company_staff"."username", "company_staff"."first_name", "company_staff"."last_name", "company_staff"."email", "company_staff"."is_staff", "company_staff"."is_active", "company_staff"."date_joined", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" WHERE "company_staff"."username" = 'yu'; args=(u'yu',)
+2017-03-08 23:34:05,597 [Thread-13:139918782646016] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '4dh7o15p6flgend0rgs9xpbv9g0ou4za' AND "django_session"."expire_date" > '2017-03-08 23:34:05.596396'); args=('4dh7o15p6flgend0rgs9xpbv9g0ou4za', u'2017-03-08 23:34:05.596396')
+2017-03-08 23:34:05,598 [Thread-13:139918782646016] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-03-08 23:34:05,599 [Thread-13:139918782646016] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) UPDATE "company_staff" SET "last_login" = '2017-03-08 23:34:05.598452' WHERE "company_staff"."id" = 1; args=(u'2017-03-08 23:34:05.598452', 1)
+2017-03-08 23:34:05,609 [Thread-13:139918782646016] [django.template:927] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'staff' in template 'index.html'.
+Traceback (most recent call last):
+  File "/home/rockdong/python_env/dssms_env/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [staff] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f415c13b668>>, 'user': <Staff: \u4f59\u67d0>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f415c0a76d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f415c0a7f50>, u'request': <WSGIRequest: POST '/login/'>}, {}, {'block': <Block Node: title. Contents: [<TextNode: u'\\n'>, <Variable Node: staff.organization.company_name>, <TextNode: u' DSSMS \\u7ba1\\u7406\\u5e73\\u53f0\\n'>]>}]"
+2017-03-08 23:34:05,612 [Thread-13:139918782646016] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) BEGIN; args=None
+2017-03-08 23:34:05,612 [Thread-13:139918782646016] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) UPDATE "django_session" SET "session_data" = 'NzhjYjk1ZDQ3YjA5YzVmZWY1ZWZiMmNjMTgxZTAxMGIyNzlhMGE3Yzp7Il9hdXRoX3VzZXJfaGFzaCI6ImM0YWJkZmRlZTMwZGJlMTQzMDFiYWJkYjRmNGMxNTFmMjcyZDViMmUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', "expire_date" = '2017-03-22 23:34:05.611957' WHERE "django_session"."session_key" = '4dh7o15p6flgend0rgs9xpbv9g0ou4za'; args=(u'NzhjYjk1ZDQ3YjA5YzVmZWY1ZWZiMmNjMTgxZTAxMGIyNzlhMGE3Yzp7Il9hdXRoX3VzZXJfaGFzaCI6ImM0YWJkZmRlZTMwZGJlMTQzMDFiYWJkYjRmNGMxNTFmMjcyZDViMmUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', u'2017-03-22 23:34:05.611957', '4dh7o15p6flgend0rgs9xpbv9g0ou4za')
+2017-03-08 23:34:07,704 [Thread-16:139918424667904] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS "__count" FROM "company_staff"; args=()
+2017-03-08 23:44:03,669 [Thread-20:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS "__count" FROM "company_staff"; args=()
+2017-03-08 23:44:03,671 [Thread-20:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "company_staff"."id", "company_staff"."password", "company_staff"."last_login", "company_staff"."is_superuser", "company_staff"."username", "company_staff"."first_name", "company_staff"."last_name", "company_staff"."email", "company_staff"."is_staff", "company_staff"."is_active", "company_staff"."date_joined", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" LIMIT 5; args=()
+2017-03-08 23:44:03,673 [Thread-20:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "company_department"."organization_id", "company_department"."department_name" FROM "company_department" WHERE "company_department"."department_name" = '法人'; args=(u'\u6cd5\u4eba',)
+2017-03-08 23:44:23,530 [Thread-22:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS "__count" FROM "company_staff"; args=()
+2017-03-08 23:44:23,532 [Thread-22:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "company_staff"."id", "company_staff"."password", "company_staff"."last_login", "company_staff"."is_superuser", "company_staff"."username", "company_staff"."first_name", "company_staff"."last_name", "company_staff"."email", "company_staff"."is_staff", "company_staff"."is_active", "company_staff"."date_joined", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" LIMIT 5; args=()
+2017-03-08 23:44:23,533 [Thread-22:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "company_department"."organization_id", "company_department"."department_name" FROM "company_department" WHERE "company_department"."department_name" = '法人'; args=(u'\u6cd5\u4eba',)
+2017-03-08 23:45:56,902 [Thread-24:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS "__count" FROM "company_staff"; args=()
+2017-03-08 23:45:56,905 [Thread-24:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "company_staff"."id", "company_staff"."password", "company_staff"."last_login", "company_staff"."is_superuser", "company_staff"."username", "company_staff"."first_name", "company_staff"."last_name", "company_staff"."email", "company_staff"."is_staff", "company_staff"."is_active", "company_staff"."date_joined", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" LIMIT 5; args=()
+2017-03-08 23:45:56,906 [Thread-24:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "company_department"."organization_id", "company_department"."department_name" FROM "company_department" WHERE "company_department"."department_name" = '法人'; args=(u'\u6cd5\u4eba',)
+2017-03-08 23:46:01,568 [Thread-26:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS "__count" FROM "company_staff"; args=()
+2017-03-08 23:46:01,570 [Thread-26:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "company_staff"."id", "company_staff"."password", "company_staff"."last_login", "company_staff"."is_superuser", "company_staff"."username", "company_staff"."first_name", "company_staff"."last_name", "company_staff"."email", "company_staff"."is_staff", "company_staff"."is_active", "company_staff"."date_joined", "company_staff"."organization_id", "company_staff"."department_id", "company_staff"."staff_name", "company_staff"."sex", "company_staff"."date_join", "company_staff"."date_out" FROM "company_staff" LIMIT 5; args=()
+2017-03-08 23:46:01,572 [Thread-26:139918407882496] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "company_department"."organization_id", "company_department"."department_name" FROM "company_department" WHERE "company_department"."department_name" = '法人'; args=(u'\u6cd5\u4eba',)
+2017-03-08 23:52:31,087 [Dummy-1:140102996403968] [django.db.backends:89] [utils:execute] [DEBUG]- (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2017-03-08 23:52:31,088 [Dummy-1:140102996403968] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()

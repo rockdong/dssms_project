@@ -29,15 +29,16 @@
                             {#                                <td>{{ staff.password }}</td>#}
                             {#                                <td><a class="btn btn-xs btn-default">查看</a></td>#}
                             {#                            {% endfor %}#}
-
-                            <tr ng-repeat="staff in staffs">
-                                <td>[[ staff.staff_name ]]</td>
-                                <td>[[ staff.sex ]]</td>
-                                <td>[[ staff.department.department_name ]]</td>
+                            {% for staff in staffs %}
+                            <tr>
+                                <td>{{ staff.staff_name }}</td>
+                                <td>{% if staff.sex == "M" %}男{% else %}女{% endif %}</td>
+                                <td>{{ staff.department.department_name }}</td>
                                 <td>职位</td>
                                 <td>状态</td>
                                 <td><a class="btn btn-xs btn-default" ng-click="sayHello()">查看</a></td>
                             </tr>
+                            {% endfor %}
                             </tbody>
                         </table>
                         <!-- 分页 -->
@@ -51,17 +52,7 @@
                                 <li>
                                     <a href="#">1</a>
                                 </li>
-                                <li>
-                                    <a href="#">2</a>
-                                </li>
-                                <li>
-                                    <a href="#">3</a>
-                                </li>
-{#                                <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >#}
-{#                                    <a ng-click="selectPage(page)" >#}
-{#                                        {{ page }}#}
-{#                                    </a>#}
-{#                                </li>#}
+
                                 <li>
                                     <a ng-click="Next()">
                                         <span>下一页</span>

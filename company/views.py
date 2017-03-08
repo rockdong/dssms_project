@@ -94,6 +94,19 @@ class RegisterView(View):
 			staff.username = user_name
 			staff.password = make_password(password)
 			staff.save()
+			return render(request, 'login.html', {})
+		else:
+			register_form = RegisterForm()
+			return render(request, 'regist.html', {'register_form': register_form})
+
+
+class StaffView(View):
+	def get(self, request):
+		staffs = Staff.objects.all()[:5]
+		pages = Staff.objects.count() / 20
+		return render(request, 'all_staffs.html', {'staffs':staffs, 'pages':pages})
+
+
 	# organization = models.ForeignKey(Organization, verbose_name='公司')
 	# department = models.ForeignKey(Department, verbose_name='部门')
 	# staff_name = models.CharField(max_length=20, null=False, blank=False, verbose_name='姓名')

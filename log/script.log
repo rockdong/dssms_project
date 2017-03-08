@@ -311,3 +311,17 @@ ValueError: The view company.views.RegisterView didn't return an HttpResponse ob
 2017-03-05 12:30:46,046 [Thread-120:2528] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
 2017-03-05 12:30:46,046 [Thread-121:12764] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
 2017-03-05 12:30:46,048 [Thread-122:3836] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a10.jpg
+2017-03-08 00:15:22,696 [Thread-2:140027258898176] [django.request:182] [base:get_response] [WARNING]- Not Found: /
+2017-03-08 00:15:22,922 [Thread-3:140027258898176] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-08 00:15:22,981 [Thread-4:140027258898176] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-08 00:22:58,615 [Thread-90:140027233720064] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-08 00:22:58,628 [Thread-91:140027233720064] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-08 00:22:58,641 [Thread-93:140027242112768] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-08 00:22:58,642 [Thread-92:140027233720064] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-08 00:22:58,653 [Thread-94:140027250505472] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-08 00:22:58,669 [Thread-95:140027233720064] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-08 00:22:58,692 [Thread-96:140027225327360] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-08 00:22:58,726 [Thread-97:140027250505472] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-08 23:19:23,874 [Thread-2:140412789737216] [django.request:182] [base:get_response] [WARNING]- Not Found: /
+2017-03-08 23:19:27,707 [Thread-3:140412789737216] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-08 23:33:57,944 [Thread-7:139918810973952] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
