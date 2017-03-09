@@ -1,14 +1,84 @@
 
 
 <!-- content -->
-<div class="app-content-body ">
-
-
+<div class="app-content-body">
     <div class="bg-light lter b-b wrapper-md">
         <h1 class="m-n font-thin h3">人员录入</h1>
     </div>
         <div class="panel panel-default">
             <div class="panel-body">
+{#                人员录入表单#}
+                <form class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="input-id-1">姓名</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="input-id-1">
+                        </div>
+                    </div>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">性别</label>
+                        <div class="col-sm-5">
+                            <div id="sex" class="radio">
+                                <label class="i-checks">
+                                    <input type="radio" name="sex" value="M">
+                                    <i></i>
+                                    男
+                                </label>
+                                <label class="i-checks">
+                                    <input type="radio" name="sex" value="F">
+                                    <i></i>
+                                    女
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">部门选择</label>
+                        <div class="col-sm-5">
+                            <select name="account" class="form-control m-b">
+                                {% for department in departments %}
+                                    <option>{{ department.department_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">职位选择</label>
+                        <div class="col-sm-5">
+                            <select name="account" class="form-control m-b">
+                                <option>option 1</option>
+                                <option>option 2</option>
+                                <option>option 3</option>
+                                <option>option 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="input-id-1">登录账号</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="input-id-1">
+                        </div>
+                    </div>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">登录密码</label>
+                        <div class="col-sm-5">
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="input-id-1">姓名</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="input-id-1">
+                        </div>
+                    </div>
+                </form>
+{#                人员录入表单 end#}
+
                 <form class="form-horizontal" method="get">
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Rounded</label>
@@ -691,7 +761,5 @@
             </div>
         </div>
     </div>
-
-
 </div>
 <!-- / content -->

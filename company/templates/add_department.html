@@ -1,0 +1,33 @@
+
+
+<!-- content -->
+<div class="app-content-body">
+    <div class="bg-light lter b-b wrapper-md">
+        <h1 class="m-n font-thin h3">创建部门</h1>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            {#                人员录入表单#}
+            <form class="form-horizontal" action="{% url 'add_departments' %}" method="post">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-id-1">部门名称</label>
+                    <div class="col-sm-5">
+                        <input name="departmentname" type="text" class="form-control" id="input-id-1">
+                    </div>
+                    <div class="col-sm-2">
+                        <button id="addDepartment" class="btn btn-default" onclick="sayHello()">建立部门</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    function sayHello() {
+        var p = $(".app-content-body").parent();
+        p.cleanHtml()
+        p.load("{% url 'add_departments' %}");
+    }
+</script>
+<!-- / content -->

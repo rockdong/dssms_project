@@ -325,3 +325,233 @@ ValueError: The view company.views.RegisterView didn't return an HttpResponse ob
 2017-03-08 23:19:23,874 [Thread-2:140412789737216] [django.request:182] [base:get_response] [WARNING]- Not Found: /
 2017-03-08 23:19:27,707 [Thread-3:140412789737216] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2017-03-08 23:33:57,944 [Thread-7:139918810973952] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-09 02:33:34,884 [Thread-2:123145389137920] [django.request:182] [base:get_response] [WARNING]- Not Found: /
+2017-03-09 02:33:39,588 [Thread-3:123145388601344] [django.request:182] [base:get_response] [WARNING]- Not Found: /
+2017-03-09 09:42:37,602 [Thread-6:123145566162944] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-09 09:45:07,451 [Thread-10:123145549336576] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-09 10:00:12,259 [Thread-8:123145514020864] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /regist
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/user/workspace/Python/web/dssms_project/company/views.py", line 78, in post
+    department.save()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: company_department.duty_id
+2017-03-09 10:05:57,985 [Thread-11:123145546207232] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/user/workspace/Python/web/dssms_project/company/views.py", line 29, in post
+    user = authenticate(organization__company_name=companyname, username=username, password=password)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/auth/backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/auth/base_user.py", line 45, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 381, in get
+    num = len(clone)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 240, in __len__
+    self._fetch_all()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: company_staff.duty_id
+2017-03-09 10:06:12,409 [Thread-35:123145542000640] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/xadmin/sites.py", line 292, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/xadmin/sites.py", line 199, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/xadmin/views/base.py", line 256, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/xadmin/views/website.py", line 69, in post
+    return self.get(request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/xadmin/views/website.py", line 65, in get
+    return login(request, **defaults)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/auth/views.py", line 49, in inner
+    return func(*args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/auth/views.py", line 69, in login
+    if form.is_valid():
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/forms/forms.py", line 161, in is_valid
+    return self.is_bound and not self.errors
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/forms/forms.py", line 153, in errors
+    self.full_clean()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/forms/forms.py", line 363, in full_clean
+    self._clean_form()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/forms/forms.py", line 390, in _clean_form
+    cleaned_data = self.clean()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/xadmin/forms.py", line 30, in clean
+    username=username, password=password)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/auth/backends.py", line 17, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/contrib/auth/base_user.py", line 45, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 381, in get
+    num = len(clone)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 240, in __len__
+    self._fetch_all()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: company_staff.duty_id
+2017-03-09 10:12:39,066 [Thread-17:123145391710208] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-09 10:12:39,066 [Thread-16:123145387503616] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-09 10:12:39,068 [Thread-18:123145395916800] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-09 10:12:39,070 [Thread-19:123145400123392] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
+2017-03-09 10:12:39,082 [Thread-20:123145404329984] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a10.jpg
+2017-03-09 10:12:39,722 [Thread-22:123145387503616] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-09 10:12:39,731 [Thread-23:123145391710208] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-09 10:12:39,741 [Thread-24:123145395916800] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-09 10:12:39,749 [Thread-25:123145400123392] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-09 10:12:45,424 [Thread-28:123145387503616] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/c0.jpg
+2017-03-09 10:12:45,440 [Thread-29:123145391710208] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a5.jpg
+2017-03-09 10:12:45,442 [Thread-30:123145395916800] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a2.jpg
+2017-03-09 10:12:45,444 [Thread-31:123145387503616] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a4.jpg
+2017-03-09 10:12:45,492 [Thread-32:123145400123392] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a8.jpg
+2017-03-09 10:12:45,494 [Thread-33:123145404329984] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a3.jpg
+2017-03-09 10:12:45,502 [Thread-34:123145408536576] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a1.jpg
+2017-03-09 10:12:45,627 [Thread-35:123145387503616] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a9.jpg
+2017-03-09 10:12:45,629 [Thread-36:123145391710208] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a6.jpg
+2017-03-09 10:12:45,641 [Thread-37:123145395916800] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a7.jpg
+2017-03-09 10:12:45,661 [Thread-38:123145400123392] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/img/a10.jpg
+2017-03-09 14:41:06,638 [Thread-8:123145550901248] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-09 15:04:48,814 [Thread-2:123145389813760] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/user/workspace/Python/web/dssms_project/company/views.py", line 134, in get
+    companyname = request.Session['companyname']
+AttributeError: 'WSGIRequest' object has no attribute 'Session'
+2017-03-09 15:04:51,504 [Thread-4:123145389277184] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/user/workspace/Python/web/dssms_project/company/views.py", line 134, in get
+    companyname = request.Session['companyname']
+AttributeError: 'WSGIRequest' object has no attribute 'Session'
+2017-03-09 15:04:52,767 [Thread-5:123145389277184] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/user/workspace/Python/web/dssms_project/company/views.py", line 134, in get
+    companyname = request.Session['companyname']
+AttributeError: 'WSGIRequest' object has no attribute 'Session'
+2017-03-09 15:05:00,241 [Thread-7:123145393483776] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/user/project_env/dssms_env/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/user/workspace/Python/web/dssms_project/company/views.py", line 32, in post
+    request.Session['companyname'] = companyname
+AttributeError: 'WSGIRequest' object has no attribute 'Session'
+2017-03-09 15:23:56,657 [Thread-12:123145477963776] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-09 15:25:38,271 [Thread-23:123145477963776] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /index/add_departments
+2017-03-09 16:28:20,201 [Thread-8:123145385897984] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-09 16:30:00,975 [Thread-20:123145385897984] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/

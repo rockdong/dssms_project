@@ -21,6 +21,8 @@ urlpatterns = [
     url(r'^regist', RegisterView.as_view(), name='regist'),
     url(r'^forget', do_forget, name='forget'),
     url(r'^index/all_staffs$', StaffView.as_view(), name='all_staffs'),
+    url(r'^index/add_staffs$', AddStaffView.as_view(), name='add_staffs'),
+    url(r'^index/add_departments$', AddDepartmentView.as_view(), name='add_departments'),
     url(r'^index/(\w*)$', index, name='index'),
     url(r'^captcha', include('captcha.urls')),
 ]

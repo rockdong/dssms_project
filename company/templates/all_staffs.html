@@ -1,6 +1,6 @@
 
 <!-- content -->
-<div class="app-content-body " ng-app="staffsApp">
+<div class="app-content-body">
     <div class="bg-light lter b-b wrapper-md">
         <h1 class="m-n font-thin h3">所有人员</h1>
     </div>
@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-body" ng-controller="staffsCtrl">
+                    <div class="panel-body">
                         <table class="table table-hover" data-toggle="table">
                             <thead>
                             <tr>
@@ -29,14 +29,16 @@
                             {#                                <td>{{ staff.password }}</td>#}
                             {#                                <td><a class="btn btn-xs btn-default">查看</a></td>#}
                             {#                            {% endfor %}#}
-                            {% for staff in staffs %}
+                            {% for staff in staffs.object_list %}
                             <tr>
                                 <td>{{ staff.staff_name }}</td>
                                 <td>{% if staff.sex == "M" %}男{% else %}女{% endif %}</td>
                                 <td>{{ staff.department.department_name }}</td>
-                                <td>职位</td>
-                                <td>状态</td>
-                                <td><a class="btn btn-xs btn-default" ng-click="sayHello()">查看</a></td>
+                                <td>{{ staff.department.duty.duty_name }}</td>
+                                <td>{% if staff.is_active %}
+                                在职{% else %}离职
+                                {% endif %}</td>
+                                <td><a class="btn btn-xs btn-default" onclick="sayHello()">查看</a></td>
                             </tr>
                             {% endfor %}
                             </tbody>
@@ -44,20 +46,63 @@
                         <!-- 分页 -->
                         <nav>
                             <ul class="pagination pagination-sm">
-                                <li class="disabled">
-                                    <a ng-click="Previous()">
-                                        <span>上一页</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">1</a>
-                                </li>
+                                {% if staffs.has_previous %}
+                                    <li class="disabled">
+                                        <a>
+                                            <span>上一页</span>
+                                        </a>
+                                    </li>
+                                {% else %}
+                                    <li>
+                                        <a>
+                                            <span>上一页</span>
+                                        </a>
+                                    </li>
+                                {% endif %}
 
-                                <li>
-                                    <a ng-click="Next()">
-                                        <span>下一页</span>
-                                    </a>
-                                </li>
+                                {% for page in staffs.pages %}
+                                    {% if page %}
+                                        {% ifequal page staffs.number %}
+                                            <li class="active">
+                                                <a href="#">{{ page }}</a>
+                                            </li>
+                                        {% else %}
+                                            <li>
+                                                <a href="#">{{ page }}</a>
+                                            </li>
+                                        {% endifequal %}
+                                        
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% if staffs.has_next %}
+                                    <li>
+                                        <a>
+                                            <span>下一页</span>
+                                        </a>
+                                    </li>
+                                {% else %}
+                                    <li class="disabled">
+                                        <a>
+                                            <span>下一页</span>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                                
+{#                                <li class="disabled">#}
+{#                                    <a ng-click="Previous()">#}
+{#                                        <span>上一页</span>#}
+{#                                    </a>#}
+{#                                </li>#}
+{#                                <li>#}
+{#                                    <a href="#">1</a>#}
+{#                                </li>#}
+{##}
+{#                                <li>#}
+{#                                    <a ng-click="Next()">#}
+{#                                        <span>下一页</span>#}
+{#                                    </a>#}
+{#                                </li>#}
                             </ul>
                         </nav>
                         <!-- / 分页 -->
@@ -67,6 +112,14 @@
         </div>
     </div>
 </div>
+
+<script>
+    function sayHello() {
+        var p = $(".app-content-body").parent();
+        p.cleanHtml()
+        p.load('/index/all_staffs?page=2');
+    }
+</script>
 
 
 {#    allStaffsApp.controller('allStaffsCtrl', function ($scope) {#}

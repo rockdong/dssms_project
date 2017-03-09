@@ -25,21 +25,19 @@ class Organization(models.Model):
         return self.company_name
 
 
-# class Role(models.Model):
-#     """
-#     Description: 角色，用来定义权力的模型
-#     """
-#     organization = models.ForeignKey(Organization, verbose_name='公司')
-#     role_name = models.CharField(max_length=20, null=False, blank=False, primary_key=True, verbose_name='角色')
-#     level = models.IntegerField(verbose_name='级别')
-#
-#     class Meta:
-#         verbose_name='职权'
-#         verbose_name_plural = verbose_name
-#
-#     def __unicode__(self):
-#         return self.role_name
-        
+class Duty(models.Model):
+    """
+    Description: 部门下面的职位
+    """
+    organization = models.ForeignKey(Organization, verbose_name='公司')
+    duty_name = models.CharField(max_length=20,verbose_name='职位名称')
+
+    class Meta:
+        verbose_name='职位名称'
+        verbose_name_plural=verbose_name
+
+    def __unicode__(self):
+        return self.duty_name
 
 
 class Department(models.Model):
@@ -48,7 +46,7 @@ class Department(models.Model):
     """
     organization = models.ForeignKey(Organization, verbose_name='公司')
     department_name = models.CharField(max_length=50, null=False, blank=False, primary_key=True, verbose_name='部门名称')
-    # role = models.OneToOneField(Role, verbose_name='职权')
+    duty = models.ForeignKey(Duty, verbose_name='职位')
 
     class Meta:
         verbose_name='部门'
@@ -84,6 +82,7 @@ class Staff(AbstractUser):
 
     organization = models.ForeignKey(Organization, verbose_name='公司')
     department = models.ForeignKey(Department, verbose_name='部门')
+    duty = models.ForeignKey(Duty, verbose_name='职位')
     staff_name = models.CharField(max_length=20, null=False, blank=False, verbose_name='姓名')
     
     sex = models.CharField(choices=sex_char, max_length=1, null=False, blank=False, verbose_name='性别')
