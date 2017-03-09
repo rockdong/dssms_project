@@ -15,7 +15,7 @@ class Organization(models.Model):
     #                     blank=False, null=False, verbose_name='营业执照')
     corporation = models.CharField(max_length=20, null=False, blank=False, verbose_name='法人代表')
     corporation_contact = models.CharField(max_length=20, null=False, blank=False, verbose_name='联系方式')
-    date_regedit = models.DateTimeField(auto_now_add=True, verbose_name='注册时间')
+    date_regedit = models.DateTimeField(auto_now=True, verbose_name='注册时间')
 
     class Meta:
         verbose_name = '企业'
@@ -25,11 +25,27 @@ class Organization(models.Model):
         return self.company_name
 
 
+class Department(models.Model):
+    """
+    Description: 部门，用来定义公司的组织架构，目前只支持一层架构
+    """
+    organization = models.ForeignKey(Organization, verbose_name='公司')
+    department_name = models.CharField(max_length=50, null=False, blank=False, primary_key=True, verbose_name='部门名称')
+
+    class Meta:
+        verbose_name='部门'
+        verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return self.department_name
+
+
 class Duty(models.Model):
     """
     Description: 部门下面的职位
     """
     organization = models.ForeignKey(Organization, verbose_name='公司')
+    department = models.ForeignKey(Department, verbose_name='部门')
     duty_name = models.CharField(max_length=20,verbose_name='职位名称')
 
     class Meta:
@@ -38,22 +54,6 @@ class Duty(models.Model):
 
     def __unicode__(self):
         return self.duty_name
-
-
-class Department(models.Model):
-    """
-    Description: 部门，用来定义公司的组织架构，目前只支持一层架构
-    """
-    organization = models.ForeignKey(Organization, verbose_name='公司')
-    department_name = models.CharField(max_length=50, null=False, blank=False, primary_key=True, verbose_name='部门名称')
-    duty = models.ForeignKey(Duty, verbose_name='职位')
-
-    class Meta:
-        verbose_name='部门'
-        verbose_name_plural = verbose_name
-
-    def __unicode__(self):
-        return self.department_name
 
 
 class Skill(models.Model):

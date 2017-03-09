@@ -29,7 +29,6 @@ class LoginView(View):
             password = request.POST.get("password", "")
             user = authenticate(organization__company_name=companyname, username=username, password=password)
             if user is not None:
-                request.session['companyname'] = companyname
                 login(request, user)
                 return render(request, 'index.html')
             else:
@@ -70,15 +69,6 @@ class RegisterView(View):
             organization.corporation_contact = corporation_contact
             organization.save()
             '''
-                创建 duty
-                    organization = models.ForeignKey(Organization, verbose_name='公司')
-                    duty_name = models.CharField(max_length=20,verbose_name='职位名称')
-            '''
-            duty = Duty()
-            duty.organization = organization
-            duty.duty_name = "法人"
-            duty.save()
-            '''
 				创建 department
 				    organization = models.ForeignKey(Organization, verbose_name='公司')
 					department_name = models.CharField(max_length=50, null=False, blank=False, primary_key=True, verbose_name='部门名称')
@@ -86,8 +76,17 @@ class RegisterView(View):
             department = Department()
             department.organization = organization
             department.department_name = "法人"
-            department.duty = duty
             department.save()
+            '''
+                创建 duty
+                    organization = models.ForeignKey(Organization, verbose_name='公司')
+                    duty_name = models.CharField(max_length=20,verbose_name='职位名称')
+            '''
+            duty = Duty()
+            duty.organization = organization
+            duty.department = department
+            duty.duty_name = "法人"
+            duty.save()
             '''
 				创建 skills
 				    organization = models.ForeignKey(Organization, verbose_name='公司')
@@ -101,6 +100,7 @@ class RegisterView(View):
             staff = Staff()
             staff.organization = organization
             staff.department = department
+            staff.duty = duty
             staff.staff_name = corporation
             staff.sex = sex
             staff.username = user_name
@@ -131,8 +131,8 @@ class StaffView(View):
 
 class AddStaffView(View):
     def get(self, request):
-        companyname = request.session['companyname']
-        departments = Department.objects.filter(organization__company_name__contains=companyname)
+        companyname = request.user.organization.company_name
+        departments = Department.objects.filter(organization__company_name=companyname)
         return render(request, 'add_staffs.html', {'departments': departments})
 
 
@@ -142,16 +142,20 @@ class AddDepartmentView(View):
 
 
     def post(self, request):
-        print '````````````'
-        companyname = request.session['companyname']
+        companyname = request.user.organization.company_name
         department_name = request.POST.get('departmentname', '')
+        department = None
 
-        department = Department.objects.filter(organization__company_name__contains=companyname, department_name__contains=department_name)
+        try:
+            department = Department.objects.get(organization__company_name=companyname, department_name=department_name)
+        except Exception as e:
+            pass
 
         if department is None:
             company = Organization.objects.get(company_name__contains=companyname)
             department = Department()
             department.organization = company
+            department.department_name = department_name
             department.save()
             return render(request, 'add_department.html', {'msg':'部门添加完成'})
         else:

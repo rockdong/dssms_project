@@ -555,3 +555,639 @@ AttributeError: 'WSGIRequest' object has no attribute 'Session'
 2017-03-09 15:25:38,271 [Thread-23:123145477963776] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /index/add_departments
 2017-03-09 16:28:20,201 [Thread-8:123145385897984] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
 2017-03-09 16:30:00,975 [Thread-20:123145385897984] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /login/
+2017-03-09 22:13:08,279 [Thread-22:12768] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-09 22:14:06,670 [Thread-29:4252] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /regist
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\python_env\dssms_project\company\views.py", line 71, in post
+    organization.save()
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 801, in _save_table
+    forced_update)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 851, in _do_update
+    return filtered._update(values) > 0
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 645, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\sql\compiler.py", line 1149, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: company_organization.date_regedit
+2017-03-09 22:14:52,680 [Thread-80:3260] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /index/add_departments
+2017-03-09 22:15:18,992 [Thread-81:9916] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /index/add_departments
+2017-03-09 22:26:21,825 [Thread-95:4200] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
+2017-03-09 22:27:14,974 [Thread-102:12552] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
+2017-03-09 22:28:34,703 [Thread-6:7276] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
+2017-03-09 22:30:56,726 [Thread-6:10048] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
+2017-03-09 22:48:38,683 [Thread-10:9140] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 146, in post
+    department_name = request.POST['departmentname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'departmentname'"
+2017-03-09 22:50:30,657 [Thread-9:488] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /index/add_departments
+2017-03-09 22:51:02,516 [Thread-9:1252] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /index/add_departments
+2017-03-09 23:04:41,835 [Thread-7:7580] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() takes exactly 3 arguments (2 given)
+2017-03-09 23:04:43,117 [Thread-9:4600] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() takes exactly 3 arguments (2 given)
+2017-03-09 23:04:51,048 [Thread-13:9136] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() takes exactly 3 arguments (2 given)
+2017-03-09 23:04:53,269 [Thread-15:7476] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() takes exactly 3 arguments (2 given)
+2017-03-09 23:11:00,894 [Thread-28:11536] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-09 23:11:00,911 [Thread-29:8656] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-09 23:13:00,479 [Thread-81:9744] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-09 23:13:00,520 [Thread-82:2356] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-09 23:22:30,223 [Thread-7:10768] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name__contains=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:23:03,293 [Thread-13:12252] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name__contains=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:24:47,898 [Thread-9:6300] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:28:26,605 [Thread-11:10048] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
+2017-03-09 23:28:37,483 [Thread-15:4688] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
+2017-03-09 23:30:00,447 [Thread-12:7856] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:30:44,973 [Thread-15:10564] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:38:31,013 [Thread-11:4728] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:39:17,217 [Thread-7:8288] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name__contains=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:39:32,638 [Thread-8:5192] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name__contains=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:40:15,907 [Thread-7:5316] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:43:36,298 [Thread-9:4284] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 148, in post
+    department = Department.objects.get(organization__company_name=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-09 23:56:49,036 [Thread-15:1168] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 149, in post
+    department = Department.objects.get(organization__company_name=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-10 00:01:31,640 [Thread-13:7900] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /regist
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 79, in post
+    duty.save()
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\sql\compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: company_duty.department_id
+2017-03-10 00:03:01,803 [Thread-13:12816] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /regist
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 70, in post
+    organization.save()
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 801, in _save_table
+    forced_update)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 851, in _do_update
+    return filtered._update(values) > 0
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 645, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\sql\compiler.py", line 1149, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\sql\compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: company_organization.date_regedit
+2017-03-10 00:04:51,434 [Thread-13:7900] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /regist
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 107, in post
+    staff.save()
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\auth\base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\sql\compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: company_staff.duty_id
+2017-03-10 00:05:53,112 [Thread-20:13264] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /regist
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 107, in post
+    staff.password = make_password(password)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\auth\base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\sql\compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\backends\sqlite3\base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: company_staff.duty_id
+2017-03-10 00:07:12,413 [Thread-21:11912] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 150, in post
+    department = Department.objects.get(organization__company_name=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-10 00:08:10,144 [Thread-22:7856] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 150, in post
+    department = Department.objects.get(organization__company_name__contains=companyname, department_name=department_name)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\db\models\query.py", line 387, in get
+    self.model._meta.object_name
+DoesNotExist: Department matching query does not exist.
+2017-03-10 00:15:52,200 [Thread-13:12964] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_departments
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 155, in post
+    if department is None:
+UnboundLocalError: local variable 'department' referenced before assignment
+2017-03-10 00:17:38,158 [Thread-9:11336] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
+2017-03-10 00:17:41,645 [Thread-10:11800] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:17:43,153 [Thread-11:9120] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:17:43,315 [Thread-12:4200] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:18:13,109 [Thread-16:11856] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
+2017-03-10 00:18:16,634 [Thread-17:10536] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:18:17,107 [Thread-18:1144] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:18:25,177 [Thread-23:740] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:18:27,582 [Thread-26:2800] [django.request:182] [base:get_response] [WARNING]- Not Found: /login//
+2017-03-10 00:18:32,895 [Thread-28:8328] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:18:35,595 [Thread-30:9160] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:18:36,460 [Thread-32:7492] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index/add_staffs
+Traceback (most recent call last):
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:/python_env/dssms_project\company\views.py", line 134, in get
+    companyname = request.session['companyname']
+  File "D:\python_env\dssms_env_for_win\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __getitem__
+    return self._session[key]
+KeyError: 'companyname'
+2017-03-10 00:21:03,332 [Thread-10:13308] [django.request:182] [base:get_response] [WARNING]- Not Found: /login/<!--
