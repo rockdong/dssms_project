@@ -9,7 +9,7 @@
             <div class="form-horizontal">
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="input-id-1">部门名称</label>
-                    <div class="col-sm-5">
+                    <div class="col-sm-5{% if error %}has-error{% endif %}">
                         <input id="departmentname" name="departmentname" type="text" class="form-control" id="input-id-1">
                     </div>
                     <div class="col-sm-2">
@@ -26,14 +26,16 @@
         data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
     });
     function sayHello() {
+        var name = $("#departmentname").val();
         $.ajax({
             url: "{% url 'add_departments' %}",
-            data: {departmentname:'设计部'},
+            data: {departmentname:name},
             type: "POST",
             success: function (result) {
-                var p = $(".app-content-body");
-                p.cleanHtml();
-                p.load(result);
+                alert("success")
+            },
+            error: function (result) {
+                alert("error")
             }
         });
     }

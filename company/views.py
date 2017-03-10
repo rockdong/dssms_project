@@ -146,6 +146,9 @@ class AddDepartmentView(View):
         department_name = request.POST.get('departmentname', '')
         department = None
 
+        if department_name == '':
+            return render(request, 'add_department.html', {'error': '部门不能为空'})
+
         try:
             department = Department.objects.get(organization__company_name=companyname, department_name=department_name)
         except Exception as e:
@@ -160,6 +163,15 @@ class AddDepartmentView(View):
             return render(request, 'add_department.html', {'msg':'部门添加完成'})
         else:
             return render(request, 'add_department.html', {'error':'部门已存在, 请重新添加'})
+
+
+class AddDutyView(View):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        pass
+
 
 
 
