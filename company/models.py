@@ -44,9 +44,8 @@ class Duty(models.Model):
     """
     Description: 部门下面的职位
     """
-    organization = models.ForeignKey(Organization, verbose_name='公司')
     department = models.ForeignKey(Department, verbose_name='部门')
-    duty_name = models.CharField(max_length=20,verbose_name='职位名称')
+    duty_name = models.CharField(primary_key=True, max_length=20, verbose_name='职位名称')
 
     class Meta:
         verbose_name='职位名称'

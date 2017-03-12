@@ -27,6 +27,7 @@ class RegisterForm(forms.Form):
     user_name = forms.CharField()
     password = forms.CharField()
     captcha = CaptchaField()
+
     # organization = models.ForeignKey(Organization, verbose_name='公司')
     # department = models.ForeignKey(Department, verbose_name='部门')
     # staff_name = models.CharField(max_length=20, null=False, blank=False, verbose_name='姓名')

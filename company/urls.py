@@ -23,6 +23,8 @@ urlpatterns = [
     url(r'^index/all_staffs$', StaffView.as_view(), name='all_staffs'),
     url(r'^index/add_staffs$', AddStaffView.as_view(), name='add_staffs'),
     url(r'^index/add_departments$', AddDepartmentView.as_view(), name='add_departments'),
+    url(r'^index/add_duties$', AddDutyView.as_view(), name='add_duties'),
+    url(r'^data/get_duties$', GetDutiesView.as_view(), name='get_duties'),
     url(r'^index/(\w*)$', index, name='index'),
     url(r'^captcha', include('captcha.urls')),
 ]

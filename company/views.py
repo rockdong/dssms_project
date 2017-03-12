@@ -6,6 +6,8 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.hashers import make_password
 from django.views.generic.base import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
+from django.db.models import Q
+import json
 import logging
 
 from company.models import *
@@ -83,7 +85,6 @@ class RegisterView(View):
                     duty_name = models.CharField(max_length=20,verbose_name='职位名称')
             '''
             duty = Duty()
-            duty.organization = organization
             duty.department = department
             duty.duty_name = "法人"
             duty.save()
@@ -132,8 +133,28 @@ class StaffView(View):
 class AddStaffView(View):
     def get(self, request):
         companyname = request.user.organization.company_name
-        departments = Department.objects.filter(organization__company_name=companyname)
-        return render(request, 'add_staffs.html', {'departments': departments})
+        departments = Department.objects.filter(~Q(department_name='法人'), organization__company_name=companyname)
+        print departments[0].department_name
+        duties = Duty.objects.filter(department__department_name=departments[0].department_name)
+        return render(request, 'add_staffs.html', {'departments': departments, 'duties':duties})
+
+
+class GetDutiesView(View):
+    def post(self, request):
+        department = request.POST.get('department', '')
+        companyname = request.user.organization.company_name
+        print department
+        print companyname
+        data = []
+        duties = Duty.objects.filter(department__organization__company_name=companyname, department__department_name=department)
+        for duty in duties:
+            d = {}
+            d['name'] = duty.duty_name
+            data.append(d)
+        print data
+        return HttpResponse(json.dumps(data), content_type='application/json')
+
+
 
 
 class AddDepartmentView(View):
@@ -167,10 +188,36 @@ class AddDepartmentView(View):
 
 class AddDutyView(View):
     def get(self, request):
-        pass
+        companyname = request.user.organization.company_name
+        departments = Department.objects.filter(~Q(department_name='法人'), organization__company_name=companyname)
+        return render(request, 'add_duty.html', {'departments':departments})
 
     def post(self, request):
-        pass
+        companyname = request.user.organization.company_name
+        department_name = request.POST.get('departmentname', '')
+        duty_name = request.POST.get('dutyname', '')
+
+        department = None
+        duty = None
+
+        if duty_name == '':
+            return render(request, 'add_duty.html', {'error': '部门不能为空'})
+
+        try:
+            department = Department.objects.get(organization__company_name=companyname, department_name=department_name)
+        except Exception as e:
+            pass
+
+        if duty is None:
+            company = Organization.objects.get(company_name__contains=companyname)
+            duty = Duty()
+            duty.organization = company
+            duty.department = department
+            duty.duty_name = duty_name
+            duty.save()
+            return render(request, 'add_duty.html', {'msg':'部门添加完成'})
+        else:
+            return render(request, 'add_duty.html', {'error':'部门已存在, 请重新添加'})
 
 
 

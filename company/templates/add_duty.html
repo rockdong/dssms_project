@@ -1,0 +1,60 @@
+{% extends 'index.html' %}
+{% block content %}
+    <!-- content -->
+    <div class="app-content-body">
+        <div class="bg-light lter b-b wrapper-md">
+            <h1 class="m-n font-thin h3">创建部门</h1>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {#                人员录入表单#}
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">部门选择</label>
+                        <div class="col-sm-5">
+                            <select name="department" id="department" class="form-control m-b" onchange="changeVal(this.value)">
+                                {% for department in departments %}
+                                    <option value="{{ department.department_name }}">{{ department.department_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="input-id-1">部门名称</label>
+                        <div class="col-sm-5{% if error %}has-error{% endif %}">
+                            <input id="dutyname" name="dutyname" type="text" class="form-control" id="input-id-1">
+                        </div>
+                        <div class="col-sm-2">
+                            <button id="addDuty" class="btn btn-default" onclick="sayHello()">创建职位</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+<!-- / content -->
+
+{% block js %}
+    <script>
+        $.ajaxSetup({
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
+        });
+        function sayHello() {
+            var department = $("#department").val();
+            var duty = $("#dutyname").val();
+            $.ajax({
+                url: "{% url 'add_duties' %}",
+                data: {departmentname:department, dutyname:duty},
+                type: "POST",
+                success: function (result) {
+
+                },
+                error: function (result) {
+
+                }
+            });
+        }
+    </script>
+{% endblock %}
